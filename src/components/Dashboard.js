@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Dashboard.css'; // Asegúrate de crear un archivo CSS para estilos específicos del dashboard
 
 function Dashboard() {
@@ -8,10 +9,10 @@ function Dashboard() {
             <h2>Resultados de la Liga de Bádminton</h2>
             {/* Aquí puedes agregar tablas, gráficos, etc. para mostrar los resultados */}
             <div className="card-container">
-                <div className="card">
+                <Link to="/ranking" className="card">
                     <h3>Ranking</h3>
                     <p>Accede al ranking de jugadores.</p>
-                </div>
+                </Link>
                 <div className="card">
                     <h3>Equipos</h3>
                     <p>Consulta la lista de equipos.</p>

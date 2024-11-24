@@ -35,3 +35,12 @@
     font-size: 14px;
     color: #555;
 } 
+.card {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.card:hover {
+    color: #ff0000;
+}
