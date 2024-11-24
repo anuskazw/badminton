@@ -13,10 +13,10 @@ function Dashboard() {
                     <h3>Ranking</h3>
                     <p>Accede al ranking de jugadores.</p>
                 </Link>
-                <div className="card">
+                <Link to="/equipos" className="card">
                     <h3>Equipos</h3>
                     <p>Consulta la lista de equipos.</p>
-                </div>
+                </Link>
                 <div className="card">
                     <h3>Jugadores</h3>
                     <p>Información sobre los jugadores.</p>
