@@ -1,11 +1,17 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Ranking.css';
 
 function Ranking() {
     const [openSection, setOpenSection] = useState(null);
+    const navigate = useNavigate();
 
     const toggleSection = (section) => {
         setOpenSection(openSection === section ? null : section);
+    };
+
+    const handlePlayerClick = (id) => {
+        navigate(`/jugadores?id=${id}`);
     };
 
     const renderTable = (players) => (
@@ -23,7 +29,9 @@ function Ranking() {
             <tbody>
                 {players.map((player, index) => (
                     <tr key={index}>
-                        <td>{player.name}</td>
+                        <td onClick={() => handlePlayerClick(player.id)} style={{ cursor: 'pointer' }}>
+                            {player.name}
+                        </td>
                         <td>{player.j1}</td>
                         <td>{player.j2}</td>
                         <td>{player.j3}</td>
@@ -36,7 +44,7 @@ function Ranking() {
     );
 
     const globalRanking = [
-        { name: 'Jugador 1', j1: 10, j2: 15, j3: 20, total: 45 },
+        { id: 1, name: 'Jugador 1', j1: 10, j2: 15, j3: 20, total: 45 },
         // Añade más jugadores
     ];
 

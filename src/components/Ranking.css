@@ -1,6 +1,8 @@
 .ranking-container {
+    width: 400px;
     margin: 20px;
     font-family: Arial, sans-serif;
+
 }
 
 .ranking-container h2 {
@@ -13,16 +15,17 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 5px;
-    background-color: #007BFF;
+    background-color: #D32F2F;
     color: white;
     border: none;
     cursor: pointer;
     text-align: left;
     font-size: 16px;
+    border-radius: 5px;
 }
 
 .ranking-container button:hover {
-    background-color: #0056b3;
+    background-color: #B71C1C;
 }
 
 .ranking-list {
