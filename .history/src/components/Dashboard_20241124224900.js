@@ -25,6 +25,7 @@ function Dashboard() {
                     <p>Revisa las normativas del juego.</p>
                 </div>
             </div>
+            <p>Próximamente: Resultados detallados...</p>
         </div>
     );
 }
