@@ -1,0 +1,80 @@
+.player {
+    /* Estilo general del contenedor del jugador */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.player-controls {
+    /* Estilo para los controles del jugador */
+    display: flex;
+    gap: 10px;
+}
+
+.player-button {
+    /* Estilo para los botones del jugador */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.player-button:hover {
+    /* Efecto hover para los botones */
+    background-color: #0056b3;
+}
+
+.player-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.player-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.player-item:hover {
+    background-color: #e0e0e0;
+}
+
+.player-name {
+    font-weight: bold;
+}
+
+.player-points {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.player-modalities {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    /* margin-top: 10px; */
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.player-modalities ul {
+    padding-left: 20px;
+}
+
+.player-card {
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    width: 400px;
+}
