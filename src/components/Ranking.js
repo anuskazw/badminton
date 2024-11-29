@@ -1,10 +1,20 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Ranking.css';
+import RANKINGS from './RANKINGS.json';
 
 function Ranking() {
     const [openSection, setOpenSection] = useState(null);
     const navigate = useNavigate();
+
+    const rankings = {
+        'Global': RANKINGS.RANKING,
+        'Dobles Femenino': RANKINGS['RANK FEM DOB'],
+        'Dobles Masculino': RANKINGS['RANK MASC DOB'],
+        'Dobles Mixto': RANKINGS['RANK MIX DOB'],
+        'Individual Femenino': RANKINGS['RANK FEM IND'],
+        'Individual Masculino': RANKINGS['RANK MASC IND'],
+    };
 
     const toggleSection = (section) => {
         setOpenSection(openSection === section ? null : section);
@@ -14,47 +24,28 @@ function Ranking() {
         navigate(`/jugadores?id=${id}`);
     };
 
-    const renderTable = (players) => (
-        <table>
-            <thead>
-                <tr>
-                    <th>Jugador/Equipo</th>
-                    <th>J1</th>
-                    <th>J2</th>
-                    <th>J3</th>
-                    {/* Añade más columnas según sea necesario */}
-                    <th>Total</th>
-                </tr>
-            </thead>
-            <tbody>
-                {players.map((player, index) => (
-                    <tr key={index}>
-                        <td onClick={() => handlePlayerClick(player.id)} style={{ cursor: 'pointer' }}>
-                            {player.name}
-                        </td>
-                        <td>{player.j1}</td>
-                        <td>{player.j2}</td>
-                        <td>{player.j3}</td>
-                        {/* Añade más celdas según sea necesario */}
-                        <td>{player.total}</td>
+    const renderTable = (players) => {
+        const headers = Object.keys(players[0]);
+        return (
+            <table>
+                <thead className='sticky'>
+                    <tr>
+                        {headers.map((header) => (
+                            header !== 'id' && <th key={header}>{header}</th>
+                        ))}
                     </tr>
-                ))}
-            </tbody>
-        </table>
-    );
-
-    const globalRanking = [
-        { id: 1, name: 'Jugador 1', j1: 10, j2: 15, j3: 20, total: 45 },
-        // Añade más jugadores
-    ];
-
-    const rankings = {
-        'Global': globalRanking,
-        'Dobles Femenino': globalRanking,
-        'Dobles Masculino': globalRanking,
-        'Dobles Mixto': globalRanking,
-        'Individual Femenino': globalRanking,
-        'Individual Masculino': globalRanking,
+                </thead>
+                <tbody>
+                    {players.map((player, index) => (
+                        <tr key={index} onClick={() => handlePlayerClick(player['ID'])}>
+                            {headers.map((header) => (
+                                header !== 'id' && <td key={header}>{player[header]}</td>
+                            ))}
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        );
     };
 
     return (

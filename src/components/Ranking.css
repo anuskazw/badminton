@@ -1,5 +1,5 @@
 .ranking-container {
-    width: 400px;
+    width: 90vw;
     margin: 20px;
     font-family: Arial, sans-serif;
 
@@ -30,6 +30,8 @@
 
 .ranking-list {
     margin-bottom: 20px;
+    max-height: 400px;
+    overflow-y: auto;
 }
 
 table {
@@ -55,4 +57,11 @@ tr:nth-child(even) {
 
 tr:hover {
     background-color: #ddd;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
 } 

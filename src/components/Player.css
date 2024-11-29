@@ -40,7 +40,7 @@
     align-items: center;
     border: 1px solid #ccc;
     padding: 10px;
-    margin: 10px 0;
+    /* margin: 10px 0; */
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -61,7 +61,7 @@
 
 .player-modalities {
     border: 1px solid #ccc;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     padding: 10px;
     /* margin-top: 10px; */
     opacity: 1;
@@ -77,4 +77,11 @@
     margin: 10px 0;
     cursor: pointer;
     width: 400px;
+}
+
+.player-modalidad{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
 }

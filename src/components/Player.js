@@ -2,44 +2,86 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import './Player.css';
+import RANKINGS from './RANKINGS.json';
+import JUGADORES from './ID_JUGADORES.json';
 
 
-function Player({ players = [
-    { id: 1, name: 'Jugador 1', lastName: 'Apellido', total: 45, modalidades: ['Individual Masculino', 'Dobles Mixto'] },
-    { id: 2, name: 'Jugador 2', lastName: 'Apellido', total: 35, modalidades: ['Individual Femenino'] },
-    { id: 3, name: 'Jugador 3', lastName: 'Apellido', total: 55, modalidades: ['Dobles Masculino', 'Dobles Mixto'] }
-] }) {
+function Player({ players }) {
+    
     const location = useLocation();
     const queryParams = new URLSearchParams(location.search);
     const playerId = queryParams.get('id');
     const [openPlayerId, setOpenPlayerId] = useState(null);
+    
+    const getFilteredPlayers = (playerId) => {
+        return playerId ? (JUGADORES || []).filter(p => p.ID === parseInt(playerId)) : JUGADORES;
+    };
 
-    const filteredPlayers = playerId ? players.filter(p => p.id === parseInt(playerId)) : players;
+    const assignModalities = (jugador, playerId) => {
+        let modalidades = [];
+        Object.keys(RANKINGS).forEach(key => {
+            RANKINGS[key].forEach(element => {
+                if (element.ID === parseInt(playerId)) {
+                    if (key === 'RANKING') {
+                        jugador.total = element.Total;
+                    } else {
+                        modalidades.push({ mod: key, value: element.Total });
+                    }
+                }
+            });
+        });
+        jugador.modalidades = modalidades;
+    };
+
+    let filteredPlayers = getFilteredPlayers(playerId);
+    filteredPlayers.forEach(jugador => assignModalities(jugador, jugador.ID));
+
+    const getText = (key) => {
+        switch (key) {
+            case 'RANK FEM IND':
+                return 'Individual femenino: ';
+            case 'RANK MASC IND':
+                return 'Individual masculino: ';
+            case 'RANK FEM DOB':
+                return 'Dobles femenino: ';
+            case 'RANK MASC DOB':
+                return 'Dobles masculino: ';
+            case 'RANK MIX DOB':
+                return 'Dobles mixto: ';
+            default:
+                return '';
+        }
+    }
 
     return (
         <div>
-            <h2>Lista de Jugadores</h2>
+            <h2>{playerId ? 'Jugador ':'Lista de Jugadores'}</h2>
+            
             <ul className="player-list">
-                {filteredPlayers.map(player => (
+                {filteredPlayers.map((player) => (
                     <li 
-                        key={player.id} 
-                        onClick={() => setOpenPlayerId(openPlayerId === player.id ? null : player.id)}
+                        id={player.id}
+                        key={'p_'+player.id} 
+                        onClick={() => setOpenPlayerId(openPlayerId === player.ID ? null : player.ID)}
                         className="player-card"
                     >
                         <div className="player-item">
                             <div className="player-name">
-                                {player.name} {player.lastName}
+                                {player.PLAYER}
                             </div>
                             <div className="player-points">
                                 {player.total}
                             </div>
                         </div>
-                        {openPlayerId === player.id && (
-                            <div className="player-modalities" style={{ marginTop: '10px' }}>
-                                <strong>Modalidades:</strong>
+                        {openPlayerId === player.ID && (
+                            <div className="player-modalities">
+                                <strong>MODALIDADES:</strong>
                                 <ul>
                                     {(player.modalidades || []).map((modalidad, index) => (
-                                        <li key={index}>{modalidad}</li>
+                                        <li id={'m_'+index} key={'m_'+index} className='player-modalidad'>
+                                            <span>{getText(modalidad.mod)}</span>
+                                            <span className="player-points">{modalidad.value}</span>
+                                        </li>
                                     ))}
                                 </ul>
                             </div>
