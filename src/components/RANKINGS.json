@@ -1,6 +1,25 @@
 {
   "RANKING": [
     {
+      "ID": 11,
+      "JUGADOR": "ANDRÉS RODRÍGUEZ FALQUINA",
+      "J1": 6,
+      "J2": 6,
+      "J3": 6,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 18
+    },
+    {
       "ID": 7,
       "JUGADOR": "MARGARITA ARIZAGA VALDIVIESO",
       "J1": 4,
@@ -592,6 +611,25 @@
   ],
   "RANK MIX DOB": [
     {
+      "ID": 7,
+      "JUGADOR": "MARGARITA ARIZAGA VALDIVIESO",
+      "J1": 3,
+      "J2": 3,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 9
+    },
+    {
       "ID": 11,
       "JUGADOR": "ANDRÉS RODRÍGUEZ FALQUINA",
       "J1": 3,
@@ -898,6 +936,25 @@
   ],
   "RANK MASC IND": [
     {
+      "ID": 9,
+      "JUGADOR": "SIMON BAK",
+      "J1": 3,
+      "J2": 0,
+      "J3": 0,
+      "J4": 3,
+      "J5": 3,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 9
+    },
+    {
       "ID": 1,
       "JUGADOR": "ALBERTO ARJONA ROMERO",
       "J1": 1,
@@ -1013,6 +1070,25 @@
     }
   ],
   "RANK MASC DOB": [
+    {
+      "ID": 11,
+      "JUGADOR": "ANDRÉS RODRÍGUEZ FALQUINA",
+      "J1": 3,
+      "J2": 3,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 9
+    },
     {
       "ID": 18,
       "JUGADOR": "JAVIER MARTÍNEZ POZO",
@@ -1148,6 +1224,25 @@
     }
   ],
   "RANK FEM IND": [
+    {
+      "ID": 7,
+      "JUGADOR": "MARGARITA ARIZAGA VALDIVIESO",
+      "J1": 1,
+      "J2": 3,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 7
+    },
     {
       "ID": 8,
       "JUGADOR": "MÓNICA RODRÍGUEZ VARELA",
@@ -1378,6 +1473,25 @@
     }
   ],
   "RANK FEM DOB": [
+    {
+      "ID": 30,
+      "JUGADOR": "MARTA RODRÍGUEZ AYUSO",
+      "J1": 3,
+      "J2": 3,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 9
+    },
     {
       "ID": 21,
       "JUGADOR": "MARÍA JESÚS SERNA SERNA",

@@ -17,10 +17,10 @@ function Dashboard() {
                     <h3>Equipos</h3>
                     <p>Consulta la lista de equipos.</p>
                 </Link>
-                <div className="card">
+                <Link to="/jugadores" className="card">
                     <h3>Jugadores</h3>
                     <p>Información sobre los jugadores.</p>
-                </div>
+                </Link>
                 <div className="card">
                     <h3>Normativa</h3>
                     <p>Revisa las normativas del juego.</p>

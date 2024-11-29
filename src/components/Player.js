@@ -7,14 +7,16 @@ import JUGADORES from './ID_JUGADORES.json';
 
 
 function Player({ players }) {
-    
+
     const location = useLocation();
     const queryParams = new URLSearchParams(location.search);
     const playerId = queryParams.get('id');
     const [openPlayerId, setOpenPlayerId] = useState(null);
-    
+
     const getFilteredPlayers = (playerId) => {
-        return playerId ? (JUGADORES || []).filter(p => p.ID === parseInt(playerId)) : JUGADORES;
+        const filtered = playerId ? (JUGADORES || []).filter(p => p.ID === parseInt(playerId)) : JUGADORES;
+        filtered.sort((a, b) => b.total - a.total);
+        return filtered;
     };
 
     const assignModalities = (jugador, playerId) => {
@@ -55,17 +57,17 @@ function Player({ players }) {
 
     return (
         <div>
-            <h2>{playerId ? 'Jugador ':'Lista de Jugadores'}</h2>
-            
+            <h2>{playerId ? 'Jugador ' : 'Lista de Jugadores'}</h2>
+
             <ul className="player-list">
                 {filteredPlayers.map((player) => (
-                    <li 
+                    <li
                         id={player.id}
-                        key={'p_'+player.id} 
-                        onClick={() => setOpenPlayerId(openPlayerId === player.ID ? null : player.ID)}
+                        key={'p_' + player.id}
                         className="player-card"
                     >
-                        <div className="player-item">
+                        <div className={`player-item ${openPlayerId === player?.ID ? 'selected' : ''}`}
+                            onClick={() => setOpenPlayerId(openPlayerId === player.ID ? null : player.ID)}>
                             <div className="player-name">
                                 {player.PLAYER}
                             </div>
@@ -75,15 +77,20 @@ function Player({ players }) {
                         </div>
                         {openPlayerId === player.ID && (
                             <div className="player-modalities">
-                                <strong>MODALIDADES:</strong>
+                                <p><strong>MODALIDADES:</strong></p>
                                 <ul>
                                     {(player.modalidades || []).map((modalidad, index) => (
-                                        <li id={'m_'+index} key={'m_'+index} className='player-modalidad'>
+                                        <li id={'m_' + index} key={'m_' + index} className='player-modalidad'>
                                             <span>{getText(modalidad.mod)}</span>
                                             <span className="player-points">{modalidad.value}</span>
                                         </li>
                                     ))}
                                 </ul>
+                            </div>
+                        )}
+                        {playerId && openPlayerId === player.ID && (
+                            <div className="player-competiciones">
+                                <p><strong>Competiciones:</strong></p>
                             </div>
                         )}
                     </li>

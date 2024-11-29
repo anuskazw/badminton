@@ -5,6 +5,7 @@ import Dashboard from './components/Dashboard';
 import Ranking from './components/Ranking';
 import Player from './components/Player';
 import Teams from './components/Teams';
+import SetForm from './components/SetForm';
 
 const players = [
   { id: 1, name: 'Jugador 1', j1: 10, j2: 15, j3: 20, total: 45 },
@@ -29,6 +30,7 @@ function App() {
                     <Route path="/ranking" element={<Ranking />} />
                     <Route path="/jugadores" element={<Player players={players} />} />
                     <Route path="/equipos" element={<Teams teams={teams}/>} />
+                    <Route path="/form" element={<SetForm/>} />
 
                 </Routes>
             </div>

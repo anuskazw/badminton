@@ -65,3 +65,7 @@ tr:hover {
     background-color: white;
     z-index: 10;
 } 
+
+.bold{
+    font-weight: bold;
+}

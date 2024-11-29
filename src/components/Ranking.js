@@ -31,7 +31,7 @@ function Ranking() {
                 <thead className='sticky'>
                     <tr>
                         {headers.map((header) => (
-                            header !== 'id' && <th key={header}>{header}</th>
+                            header !== 'ID' && <th key={header}>{header}</th>
                         ))}
                     </tr>
                 </thead>
@@ -39,7 +39,8 @@ function Ranking() {
                     {players.map((player, index) => (
                         <tr key={index} onClick={() => handlePlayerClick(player['ID'])}>
                             {headers.map((header) => (
-                                header !== 'id' && <td key={header}>{player[header]}</td>
+                                header !== 'ID' && 
+                                <td className={`${header === 'Total' ? 'bold':''}`} key={header}>{player[header]}</td>
                             ))}
                         </tr>
                     ))}
