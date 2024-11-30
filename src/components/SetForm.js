@@ -20,6 +20,10 @@ function SetForm({ onSubmit }) {
     const [scoresLocal, setScoresLocal] = useState([0, 0, 0]);
     const [scoresVisitante, setScoresVisitante] = useState([0, 0, 0]);
 
+    const [pointsLocal, setPointsLocal] = useState(0);
+    const [pointsVisitante, setPointsVisitante] = useState(0);
+
+
     const handleTeamChange = (index, value) => {
         if (index === 0) {
             setTeamNameLocal(value);
@@ -44,16 +48,33 @@ function SetForm({ onSubmit }) {
 
 
     const handleScoreChange = (isLocal, index, value) => {
-        if(isLocal){
+        if (isLocal) {
             const newScores = [...scoresLocal];
             newScores[index] = value;
             setScoresLocal(newScores);
+            calcularScore(newScores, scoresVisitante);
         } else {
             const newScores = [...scoresVisitante];
             newScores[index] = value;
             setScoresVisitante(newScores);
+            calcularScore(scoresLocal, newScores);
         }
     };
+
+    const calcularScore = (_scoresLocal, _scoresVisitante) => {
+        let puntosLocal = 0;
+        let puntosVisitante = 0;
+
+        for (let i = 0; i < _scoresLocal.length; i++) {
+            if (_scoresLocal[i] > _scoresVisitante[i]) {
+                puntosLocal++;
+            } else if (_scoresVisitante[i] > _scoresLocal[i]) {
+                puntosVisitante++;
+            }
+        }
+        setPointsLocal(puntosLocal);
+        setPointsVisitante(puntosVisitante);
+    }
 
     // const handleSubmit = (e) => {
     //     e.preventDefault();
@@ -62,7 +83,7 @@ function SetForm({ onSubmit }) {
     //     setPlayers(['', '']);
     //     setSetScores(['', '']);
     // };
-    
+
     // const EQUIPOS_POR_MODALIDAD = [];
     const extractEquiposModalidad = (modalidad) => {
         setEquipos(EQUIPOS[modalidad]);
@@ -138,7 +159,7 @@ function SetForm({ onSubmit }) {
                         </select>
                     </div>
                     <div className="form-group">
-                        <label className="form-label">JUGADORES:</label>
+                        <label className="form-label">JUGADORES LOCAL:</label>
                         <div className='d-flex'>
                             <select
                                 key={0}
@@ -170,7 +191,7 @@ function SetForm({ onSubmit }) {
 
                 <div className='visitante'>
                     <div className="form-group">
-                        <label className="form-label">EQUIPO LOCAL:</label>
+                        <label className="form-label">EQUIPO VISITANTE:</label>
                         <select
                             key={0}
                             onChange={(e) => handleTeamChange(1, e.target.value)}
@@ -184,7 +205,7 @@ function SetForm({ onSubmit }) {
                         </select>
                     </div>
                     <div className="form-group">
-                        <label className="form-label">JUGADORES:</label>
+                        <label className="form-label">JUGADORES VISITANTE:</label>
                         <div className='d-flex'>
                             <select
                                 key={0}
@@ -221,6 +242,7 @@ function SetForm({ onSubmit }) {
                         required
                         disabled
                         className="form-input"
+                        value={pointsLocal}
                     />
                 </div>
                 <div key={'vs'} className={'header_vs'}>
@@ -233,6 +255,7 @@ function SetForm({ onSubmit }) {
                         required
                         disabled
                         className="form-input"
+                        value={pointsVisitante}
                     />
                 </div>
                 {scoresLocal.map((score, index) => (
