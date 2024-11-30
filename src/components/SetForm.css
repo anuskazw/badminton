@@ -59,6 +59,7 @@
 }
 .local, .visitante{
     margin: 10px;
+    width: 421px;
 }
 .local select, .visitante select {
     width: 100%; /* Asegura que el select ocupe toda la anchura del contenedor */

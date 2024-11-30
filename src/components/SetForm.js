@@ -28,10 +28,16 @@ function SetForm({ onSubmit }) {
         if (index === 0) {
             setTeamNameLocal(value);
             setPlayersTeamLocal(equipos[value]);
+            if(equipos[value].length === 2){
+                setCompetitorsLocal([equipos[value][0].PLAYER, equipos[value][1].PLAYER]);
+            }
         }
         else {
             setTeamNameVisitante(value);
             setPlayersTeamVisitante(equipos[value]);
+            if(equipos[value].length === 2){
+                setCompetitorsVisitante([equipos[value][0].PLAYER, equipos[value][1].PLAYER]);
+            }
         }
     };
 
@@ -80,8 +86,12 @@ function SetForm({ onSubmit }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log({ teamNameLocal, teamNameVisitante, competitorLocal, competitorVisitante, scoresLocal, scoresVisitante, pointsLocal, pointsVisitante });
-        // onSubmit({ teamNameLocal, teamNameVisitante, players, setScores });
+        if (!!teamNameLocal && !!teamNameVisitante && competitorLocal && competitorVisitante && scoresLocal && scoresVisitante && !!pointsLocal && !!pointsVisitante) {
+            console.log({ teamNameLocal, teamNameVisitante, competitorLocal, competitorVisitante, scoresLocal, scoresVisitante, pointsLocal, pointsVisitante });
+            // onSubmit({ teamNameLocal, teamNameVisitante, players, setScores });
+        } else {
+            alert('Por favor, rellene todos los campos.');
+        }
     };
 
     // const EQUIPOS_POR_MODALIDAD = [];
@@ -165,6 +175,7 @@ function SetForm({ onSubmit }) {
                                 key={0}
                                 onChange={(e) => handlePlayerChange(true, 0, e.target.value)}
                                 required
+                                value={competitorLocal[0]}
                                 className="form-input jugador1"
                             >
                                 <option value="">Seleccione un jugador</option>
@@ -176,6 +187,7 @@ function SetForm({ onSubmit }) {
                                 key={0}
                                 onChange={(e) => handlePlayerChange(true, 1, e.target.value)}
                                 required
+                                value={competitorLocal[1]}
                                 className="form-input jugador2"
                             >
                                 <option value="">Seleccione un jugador</option>
@@ -211,6 +223,7 @@ function SetForm({ onSubmit }) {
                                 key={0}
                                 onChange={(e) => handlePlayerChange(false, 0, e.target.value)}
                                 required
+                                value={competitorVisitante[0]}
                                 className="form-input jugador1"
                             >
                                 <option value="">Seleccione un jugador</option>
@@ -222,6 +235,7 @@ function SetForm({ onSubmit }) {
                                 key={0}
                                 onChange={(e) => handlePlayerChange(false, 1, e.target.value)}
                                 required
+                                value={competitorVisitante[1]}
                                 className="form-input jugador2"
                             >
                                 <option value="">Seleccione un jugador</option>
