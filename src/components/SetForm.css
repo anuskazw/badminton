@@ -1,5 +1,4 @@
 .set-form {
-    max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -9,7 +8,7 @@
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin: 10px;
 }
 
 .form-label {
@@ -17,13 +16,13 @@
     margin-bottom: 5px;
     font-weight: bold;
 }
-
 .form-input {
-    width: 100%;
+    width: -webkit-fill-available;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    margin: 5px 0;
 }
 
 .form-input:focus {
@@ -44,3 +43,17 @@
 .form-button:hover {
     background-color: #0056b3;
 }
+
+.d-flex{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.local, .visitante{
+    margin: 10px;
+}
+.local select, .visitante select {
+    width: 100%; /* Asegura que el select ocupe toda la anchura del contenedor */
+}
+

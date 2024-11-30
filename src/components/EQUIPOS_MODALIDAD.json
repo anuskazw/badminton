@@ -1,0 +1,350 @@
+{
+  "DOBLES FEMENINO": {
+    "CDC ALTATORRE A": [
+      {
+        "PLAYER": "MÓNICA RODRÍGUEZ VARELA",
+        "ID": 8
+      },
+      {
+        "PLAYER": "ANA MARÍA CABALLERO GÓMEZ",
+        "ID": 10
+      },
+      {
+        "PLAYER": "MARÍA JOSÉ LÓPEZ ESPEJO",
+        "ID": 28
+      }
+    ],
+    "CDC ALTATORRE B + CDS PARLA": [
+      {
+        "PLAYER": "MARTA RODRÍGUEZ AYUSO",
+        "ID": 30
+      },
+      {
+        "PLAYER": "MÓNICA CASTRILLEJO MANSO",
+        "ID": 22
+      },
+      {
+        "PLAYER": "DIANA BAK",
+        "ID": 14
+      }
+    ],
+    "CDC ALTATORRE C": [
+      {
+        "PLAYER": "MARGARITA ARIZAGA VALDIVIESO",
+        "ID": 7
+      },
+      {
+        "PLAYER": "DORA YANEZ RAMOS",
+        "ID": 15
+      },
+      {
+        "PLAYER": "MARÍA JOSÉ SERNA SERNA",
+        "ID": 29
+      }
+    ],
+    "CDC ALTATORRE D": [
+      {
+        "PLAYER": "LUCÍA ALMORZA CORNEJO",
+        "ID": 20
+      },
+      {
+        "PLAYER": "BELÉN NAVAS SERNA",
+        "ID": 2
+      },
+      {
+        "PLAYER": "MARÍA JESÚS SERNA SERNA",
+        "ID": 21
+      }
+    ],
+    "CDC ALTATORRE E": [
+      {
+        "PLAYER": "PAULA BAK",
+        "ID": 23
+      },
+      {
+        "PLAYER": "JAMIE GISSEL",
+        "ID": 17
+      }
+    ],
+    "CDC ALTATORRE F": [
+      {
+        "PLAYER": "CHARLOTTE BERTHIER",
+        "ID": 3
+      },
+      {
+        "PLAYER": "ESTHER RIVERO GARCÍA",
+        "ID": 5
+      },
+      {
+        "PLAYER": "LUCÍA RODRÍGUEZ AYUSO",
+        "ID": 27
+      }
+    ],
+    "CDC ALTATORRE G": [
+      {
+        "PLAYER": "CLARA EVA FERNÁNDEZ DELGADO",
+        "ID": 26
+      },
+      {
+        "PLAYER": "ALEXANDRA COROBA BELLAVISTA",
+        "ID": 25
+      },
+      {
+        "PLAYER": "NADIA MARCOS",
+        "ID": 31
+      }
+    ]
+  },
+  "DOBLES MASCULINO": {
+    "CDC ALTATORRE A": [
+      {
+        "PLAYER": "ANDRÉS RODRÍGUEZ FALQUINA",
+        "ID": 11
+      },
+      {
+        "PLAYER": "JAVIER MARTÍNEZ POZO",
+        "ID": 18
+      }
+    ],
+    "CDC ALTATORRE B": [
+      {
+        "PLAYER": "FRANCISCO JAVIER PEÑA RODRIGO",
+        "ID": 16
+      },
+      {
+        "PLAYER": "RAUL BAK MAJ",
+        "ID": 24
+      }
+    ],
+    "CDC ALTATORRE C": [
+      {
+        "PLAYER": "DAVY VAN LANDUYT",
+        "ID": 4
+      },
+      {
+        "PLAYER": "SIMON BAK",
+        "ID": 9
+      }
+    ],
+    "CDC ALTATORRE D + ASM": [
+      {
+        "PLAYER": "ALBERTO ARJONA ROMERO",
+        "ID": 1
+      },
+      {
+        "PLAYER": "JAVIER ILIE CANDEA",
+        "ID": 6
+      }
+    ]
+  },
+  "DOBLES MIXTO": {
+    "CDC ALTATORRE A": [
+      {
+        "PLAYER": "MARÍA JESÚS SERNA SERNA",
+        "ID": 21
+      },
+      {
+        "PLAYER": "JAVIER MARTÍNEZ POZO",
+        "ID": 18
+      }
+    ],
+    "CDC ALTATORRE B": [
+      {
+        "PLAYER": "MARGARITA ARIZAGA VALDIVIESO",
+        "ID": 7
+      },
+      {
+        "PLAYER": "ANDRÉS RODRÍGUEZ FALQUINA",
+        "ID": 11
+      }
+    ],
+    "CDC ALTATORRE C": [
+      {
+        "PLAYER": "MÓNICA RODRÍGUEZ VARELA",
+        "ID": 8
+      },
+      {
+        "PLAYER": "RAUL BAK MAJ",
+        "ID": 24
+      }
+    ],
+    "CDC ALTATORRE D": [
+      {
+        "PLAYER": "DORA YANEZ RAMOS",
+        "ID": 15
+      },
+      {
+        "PLAYER": "ALBERTO ARJONA ROMERO",
+        "ID": 1
+      }
+    ],
+    "CDC ALTATORRE E": [
+      {
+        "PLAYER": "ESTHER RIVERO GARCÍA",
+        "ID": 5
+      },
+      {
+        "PLAYER": "DAVY VAN LANDUYT",
+        "ID": 4
+      },
+      {
+        "PLAYER": "BELÉN NAVAS SERNA",
+        "ID": 2
+      }
+    ],
+    "CDC ALTATORRE F": [
+      {
+        "PLAYER": "CHARLOTTE BERTHIER",
+        "ID": 3
+      },
+      {
+        "PLAYER": "SIMON BAK",
+        "ID": 9
+      }
+    ],
+    "ASM": [
+      {
+        "PLAYER": "CLAUDIA LIMA NEBRERA",
+        "ID": 13
+      },
+      {
+        "PLAYER": "JAVIER ILIE CANDEA",
+        "ID": 6
+      }
+    ],
+    "LEGANES": [
+      {
+        "PLAYER": "CARLOTA KIELBUS ALONSO",
+        "ID": 12
+      },
+      {
+        "PLAYER": "KEVIN KIELBUS ALONSO ",
+        "ID": 19
+      }
+    ]
+  },
+  "FEMENINO INDIVIDUAL": {
+    "MÓNICA RODRÍGUEZ VARELA": [
+      {
+        "PLAYER": "MÓNICA RODRÍGUEZ VARELA",
+        "ID": 8
+      }
+    ],
+    "ANA MARÍA CABALLERO GÓMEZ": [
+      {
+        "PLAYER": "ANA MARÍA CABALLERO GÓMEZ",
+        "ID": 10
+      }
+    ],
+    "PAULA BAK": [
+      {
+        "PLAYER": "PAULA BAK",
+        "ID": 23
+      }
+    ],
+    "LUCÍA ALMORZA CORNEJO": [
+      {
+        "PLAYER": "LUCÍA ALMORZA CORNEJO",
+        "ID": 20
+      }
+    ],
+    "MARGARITA ARIZAGA VALDIVIESO": [
+      {
+        "PLAYER": "MARGARITA ARIZAGA VALDIVIESO",
+        "ID": 7
+      }
+    ],
+    "BELÉN NAVAS SERNA": [
+      {
+        "PLAYER": "BELÉN NAVAS SERNA",
+        "ID": 2
+      }
+    ],
+    "MÓNICA CASTRILLEJO MANSO": [
+      {
+        "PLAYER": "MÓNICA CASTRILLEJO MANSO",
+        "ID": 22
+      }
+    ],
+    "CHARLOTTE BERTHIER": [
+      {
+        "PLAYER": "CHARLOTTE BERTHIER",
+        "ID": 3
+      }
+    ],
+    "ESTHER RIVERO GARCÍA": [
+      {
+        "PLAYER": "ESTHER RIVERO GARCÍA",
+        "ID": 5
+      }
+    ],
+    "JAMIE GISSEL": [
+      {
+        "PLAYER": "JAMIE GISSEL",
+        "ID": 17
+      }
+    ],
+    "DIANA BAK": [
+      {
+        "PLAYER": "DIANA BAK",
+        "ID": 14
+      }
+    ],
+    "CLAUDIA LIMA NEBRERA": [
+      {
+        "PLAYER": "CLAUDIA LIMA NEBRERA",
+        "ID": 13
+      }
+    ],
+    "CARLOTA KIELBUS ALONSO": [
+      {
+        "PLAYER": "CARLOTA KIELBUS ALONSO",
+        "ID": 12
+      }
+    ]
+  },
+  "MASCULINO INDIVIDUAL": {
+    "FRANCISCO JAVIER PEÑA RODRIGO": [
+      {
+        "PLAYER": "FRANCISCO JAVIER PEÑA RODRIGO",
+        "ID": 16
+      }
+    ],
+    "ALBERTO ARJONA ROMERO": [
+      {
+        "PLAYER": "ALBERTO ARJONA ROMERO",
+        "ID": 1
+      }
+    ],
+    "RAUL BAK MAJ": [
+      {
+        "PLAYER": "RAUL BAK MAJ",
+        "ID": 24
+      }
+    ],
+    "DAVY VAN LANDUYT": [
+      {
+        "PLAYER": "DAVY VAN LANDUYT",
+        "ID": 4
+      }
+    ],
+    "SIMON BAK": [
+      {
+        "PLAYER": "SIMON BAK",
+        "ID": 9
+      }
+    ],
+    "JAVIER ILIE CANDEA": [
+      {
+        "PLAYER": "JAVIER ILIE CANDEA",
+        "ID": 6
+      }
+    ],
+    "KEVIN KIELBUS ALONSO": [
+      {
+        "PLAYER": "KEVIN KIELBUS ALONSO",
+        "ID": ""
+      }
+    ]
+  }
+}
