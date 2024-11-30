@@ -17,8 +17,8 @@ function SetForm({ onSubmit }) {
     const [competitorLocal, setCompetitorsLocal] = useState(['', '']);
     const [competitorVisitante, setCompetitorsVisitante] = useState(['', '']);
 
-    const [setScoresLocal, setSetScoresLocal] = useState([0, 0, 0]);
-    const [setScoresVisitante, setSetScoresVisitante] = useState([0, 0, 0]);
+    const [scoresLocal, setScoresLocal] = useState([0, 0, 0]);
+    const [scoresVisitante, setScoresVisitante] = useState([0, 0, 0]);
 
     const handleTeamChange = (index, value) => {
         if (index === 0) {
@@ -31,16 +31,29 @@ function SetForm({ onSubmit }) {
         }
     };
 
-    const handlePlayerChange = () => {
-
+    const handlePlayerChange = (isLocal, index, value) => {
+        if (isLocal) {
+            competitorLocal[index] = value;
+            setCompetitorsLocal(competitorLocal);
+        }
+        else {
+            competitorVisitante[index] = value;
+            setCompetitorsVisitante(competitorVisitante);
+        }
     }
 
 
-    // const handleScoreChange = (index, value) => {
-    //     const newScores = [...setScores];
-    //     newScores[index] = value;
-    //     setSetScores(newScores);
-    // };
+    const handleScoreChange = (isLocal, index, value) => {
+        if(isLocal){
+            const newScores = [...scoresLocal];
+            newScores[index] = value;
+            setScoresLocal(newScores);
+        } else {
+            const newScores = [...scoresVisitante];
+            newScores[index] = value;
+            setScoresVisitante(newScores);
+        }
+    };
 
     // const handleSubmit = (e) => {
     //     e.preventDefault();
@@ -49,6 +62,7 @@ function SetForm({ onSubmit }) {
     //     setPlayers(['', '']);
     //     setSetScores(['', '']);
     // };
+    
     // const EQUIPOS_POR_MODALIDAD = [];
     const extractEquiposModalidad = (modalidad) => {
         setEquipos(EQUIPOS[modalidad]);
@@ -76,6 +90,7 @@ function SetForm({ onSubmit }) {
 
     return (
         <form className="set-form">
+            {/* MODALIDAD */}
             <div className="form-group">
                 <label className="form-label">MODALIDAD:</label>
                 <select
@@ -89,6 +104,7 @@ function SetForm({ onSubmit }) {
                     ))}
                 </select>
             </div>
+            {/* JORNADA */}
             <div className="form-group">
                 <label className="form-label">JORNADA:</label>
                 <select
@@ -101,6 +117,7 @@ function SetForm({ onSubmit }) {
                     ))}
                 </select>
             </div>
+            {/* EQUIPOS LOCAL - VISITANTE */}
             <div className='d-flex'>
 
                 {/* LOCAL */}
@@ -195,18 +212,50 @@ function SetForm({ onSubmit }) {
                     </div>
                 </div>
             </div>
-            <div className="form-group">
-                <label className="form-label">Sets:</label>
-                {setScoresLocal.map((score, index) => (
+            {/* PUNTUACION SETS */}
+            <div className='sets' >
+                <div key={'local_0'} className={'header_local'} style={{ gridRow: 0 }}>
                     <input
-                        key={index}
                         type="number"
-                        value={score}
                         min={0}
-                        placeholder={`Set ${index + 1}`}
                         required
+                        disabled
                         className="form-input"
                     />
+                </div>
+                <div key={'vs'} className={'header_vs'}>
+                    VS
+                </div>
+                <div key={'visitante_0'} className={'header_visitante'} style={{ gridRow: 0 }}>
+                    <input
+                        type="number"
+                        min={0}
+                        required
+                        disabled
+                        className="form-input"
+                    />
+                </div>
+                {scoresLocal.map((score, index) => (
+                    <div key={'local_' + index} className={'sets_local'} style={{ gridRow: index + 2 }}>
+                        <input
+                            type="number"
+                            onChange={(e) => handleScoreChange(true, index, e.target.value)}
+                            placeholder={`Set ${index + 1}`}
+                            required
+                            className="form-input"
+                        />
+                    </div>
+                ))}
+                {scoresVisitante.map((score, index) => (
+                    <div key={'visitante_' + index} className={'sets_visitante'} style={{ gridRow: index + 2 }}>
+                        <input
+                            type="number"
+                            onChange={(e) => handleScoreChange(false, index, e.target.value)}
+                            placeholder={`Set ${index + 1}`}
+                            required
+                            className="form-input"
+                        />
+                    </div>
                 ))}
             </div>
             <button type="submit" className="form-button">Enviar</button>

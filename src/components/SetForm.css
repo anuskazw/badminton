@@ -45,15 +45,62 @@
 }
 
 .d-flex{
-    max-width: 1200px;
+    /* max-width: 1200px; */
     display: flex;
     flex-wrap: wrap;
 }
-
+.sets{
+    margin: 20px;
+    display: grid; 
+    grid-template-columns: 100px 20px 100px; 
+    grid-template-rows: repeat(4, 1fr); 
+    gap: 10px;
+    justify-content: center;
+}
 .local, .visitante{
     margin: 10px;
 }
 .local select, .visitante select {
     width: 100%; /* Asegura que el select ocupe toda la anchura del contenedor */
 }
+.header_local{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    grid-column: 0;
+    grid-row: 1;
+}
+.header_vs{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    grid-column: 2;
+    grid-row: 1;
+}
+.header-visitante{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    grid-column: 3;
+    grid-row: 1;
+}
 
+
+.sets_local{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    grid-column: 0;
+}
+
+.sets_visitante{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    grid-column: 3;
+}
