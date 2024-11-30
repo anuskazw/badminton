@@ -37,12 +37,14 @@ function SetForm({ onSubmit }) {
 
     const handlePlayerChange = (isLocal, index, value) => {
         if (isLocal) {
-            competitorLocal[index] = value;
-            setCompetitorsLocal(competitorLocal);
+            let array = [...competitorLocal];
+            array[index] = value;
+            setCompetitorsLocal(array);
         }
         else {
-            competitorVisitante[index] = value;
-            setCompetitorsVisitante(competitorVisitante);
+            let array = [...competitorVisitante];
+            array[index] = value;
+            setCompetitorsVisitante(array);
         }
     }
 
@@ -76,13 +78,11 @@ function SetForm({ onSubmit }) {
         setPointsVisitante(puntosVisitante);
     }
 
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     onSubmit({ teamName, players, setScores });
-    //     setTeamName('');
-    //     setPlayers(['', '']);
-    //     setSetScores(['', '']);
-    // };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log({ teamNameLocal, teamNameVisitante, competitorLocal, competitorVisitante, scoresLocal, scoresVisitante, pointsLocal, pointsVisitante });
+        // onSubmit({ teamNameLocal, teamNameVisitante, players, setScores });
+    };
 
     // const EQUIPOS_POR_MODALIDAD = [];
     const extractEquiposModalidad = (modalidad) => {
@@ -163,7 +163,7 @@ function SetForm({ onSubmit }) {
                         <div className='d-flex'>
                             <select
                                 key={0}
-                                onChange={(e) => handlePlayerChange(0, e.target.value)}
+                                onChange={(e) => handlePlayerChange(true, 0, e.target.value)}
                                 required
                                 className="form-input jugador1"
                             >
@@ -174,7 +174,7 @@ function SetForm({ onSubmit }) {
                             </select>
                             <select
                                 key={0}
-                                onChange={(e) => handlePlayerChange(0, e.target.value)}
+                                onChange={(e) => handlePlayerChange(true, 1, e.target.value)}
                                 required
                                 className="form-input jugador2"
                             >
@@ -209,7 +209,7 @@ function SetForm({ onSubmit }) {
                         <div className='d-flex'>
                             <select
                                 key={0}
-                                onChange={(e) => handlePlayerChange(0, e.target.value)}
+                                onChange={(e) => handlePlayerChange(false, 0, e.target.value)}
                                 required
                                 className="form-input jugador1"
                             >
@@ -220,7 +220,7 @@ function SetForm({ onSubmit }) {
                             </select>
                             <select
                                 key={0}
-                                onChange={(e) => handlePlayerChange(0, e.target.value)}
+                                onChange={(e) => handlePlayerChange(false, 1, e.target.value)}
                                 required
                                 className="form-input jugador2"
                             >
@@ -281,7 +281,7 @@ function SetForm({ onSubmit }) {
                     </div>
                 ))}
             </div>
-            <button type="submit" className="form-button">Enviar</button>
+            <button type="submit" className="form-button" onClick={handleSubmit}>Enviar</button>
         </form>
     );
 }
