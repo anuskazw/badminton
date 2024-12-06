@@ -1,0 +1,43 @@
+.contenedor {
+    border: 1px #d0d0d0 solid;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.jornadas-container{
+    width: 50vw;
+    /* background: #d0d0d0; */
+}
+/* .ronda {
+    border: 1px #d0d0d0 solid;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background: #f0f0f0; 
+} */
+/* .competidores{
+    padding: 0.5rem;
+    border: 1px #d0d0d0 solid;
+    border-radius: 5px;
+    background: #f0f0f0;
+} */
+
+.competidor {
+    display: flex;
+    justify-content: between;
+}
+.competidor:active{
+    background: #f8f8f8; 
+}
+
+.set{
+    margin: 0 .5rem;
+    width:20px;
+    text-align: center;
+}
+
+.participante{
+    flex: 3;
+}
+.participante:hover{
+    background: #f8f8f8; 
+}
