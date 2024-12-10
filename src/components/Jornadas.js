@@ -100,16 +100,21 @@ const Jornadas = () => {
                     <h4 className="">{ronda.titulo}</h4>
                     {ronda.competidores.filter(c => modalidad === 'Todos' || c.local.modalidad === modalidad).map((c) => (
                         <div>
-                            <div className='contenedor competidor'>
+                            <div className='contenedor competidor' onClick={() => setCompetidor(c)}>
                                 <div className="contenedor participante">{c.local.nombre}</div>
                                 <div className="contenedor set">{c.local.puntos}</div>
                                 <div className="contenedor set">{c.visitante.puntos}</div>
                                 <div className="contenedor participante">{c.visitante.nombre}</div>
                             </div>
-                            <div>
+                            <div className='contenedor competidor'>
                             {
                                 c.local.jugadores && c.local.jugadores.map((jugador)=> (
-                                    <p>{jugador}</p>
+                                    <p className='participante'>{jugador}</p>
+                                ))
+                            }
+                            {
+                                c.local.jugadores && c.visitante.jugadores.map((jugador)=> (
+                                    <p className='participante'>{jugador}</p>
                                 ))
                             }
                             </div>

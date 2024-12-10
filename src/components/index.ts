@@ -1,0 +1,1 @@
+export {CompeticionPistas} from './CompeticionPistas';

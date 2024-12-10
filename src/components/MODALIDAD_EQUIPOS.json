@@ -1,0 +1,613 @@
+[
+    {
+        "id": 1,
+        "idModalidad": 1,
+        "modalidad": "DOBLES FEMENINO",
+        "idEquipo": 1,
+        "equipo": "CDC ALTATORRE A",
+        "jugadores": [
+            {
+                "PLAYER": "MÓNICA RODRÍGUEZ VARELA",
+                "ID": 8
+            },
+            {
+                "PLAYER": "ANA MARÍA CABALLERO GÓMEZ",
+                "ID": 10
+            },
+            {
+                "PLAYER": "MARÍA JOSÉ LÓPEZ ESPEJO",
+                "ID": 28
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "idModalidad": 1,
+        "modalidad": "DOBLES FEMENINO",
+        "idEquipo": 2,
+        "equipo": "CDC ALTATORRE B + CDS PARLA",
+        "jugadores": [
+            {
+                "PLAYER": "MARTA RODRÍGUEZ AYUSO",
+                "ID": 30
+            },
+            {
+                "PLAYER": "MÓNICA CASTRILLEJO MANSO",
+                "ID": 22
+            },
+            {
+                "PLAYER": "DIANA BAK",
+                "ID": 14
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "idModalidad": 1,
+        "modalidad": "DOBLES FEMENINO",
+        "idEquipo": 3,
+        "equipo": "CDC ALTATORRE C",
+        "jugadores": [
+            {
+                "PLAYER": "MARGARITA ARIZAGA VALDIVIESO",
+                "ID": 7
+            },
+            {
+                "PLAYER": "DORA YANEZ RAMOS",
+                "ID": 15
+            },
+            {
+                "PLAYER": "MARÍA JOSÉ SERNA SERNA",
+                "ID": 29
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "idModalidad": 1,
+        "modalidad": "DOBLES FEMENINO",
+        "idEquipo": 4,
+        "equipo": "CDC ALTATORRE D",
+        "jugadores": [
+            {
+                "PLAYER": "LUCÍA ALMORZA CORNEJO",
+                "ID": 20
+            },
+            {
+                "PLAYER": "BELÉN NAVAS SERNA",
+                "ID": 2
+            },
+            {
+                "PLAYER": "MARÍA JESÚS SERNA SERNA",
+                "ID": 21
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "idModalidad": 1,
+        "modalidad": "DOBLES FEMENINO",
+        "idEquipo": 5,
+        "equipo": "CDC ALTATORRE E",
+        "jugadores": [
+            {
+                "PLAYER": "PAULA BAK",
+                "ID": 23
+            },
+            {
+                "PLAYER": "JAMIE GISSEL",
+                "ID": 17
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "idModalidad": 1,
+        "modalidad": "DOBLES FEMENINO",
+        "idEquipo": 6,
+        "equipo": "CDC ALTATORRE F",
+        "jugadores": [
+            {
+                "PLAYER": "CHARLOTTE BERTHIER",
+                "ID": 3
+            },
+            {
+                "PLAYER": "ESTHER RIVERO GARCÍA",
+                "ID": 5
+            },
+            {
+                "PLAYER": "LUCÍA RODRÍGUEZ AYUSO",
+                "ID": 27
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "idModalidad": 1,
+        "modalidad": "DOBLES FEMENINO",
+        "idEquipo": 7,
+        "equipo": "CDC ALTATORRE G",
+        "jugadores": [
+            {
+                "PLAYER": "CLARA EVA FERNÁNDEZ DELGADO",
+                "ID": 26
+            },
+            {
+                "PLAYER": "ALEXANDRA COROBA BELLAVISTA",
+                "ID": 25
+            },
+            {
+                "PLAYER": "NADIA MARCOS",
+                "ID": 31
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "idModalidad": 2,
+        "modalidad": "DOBLES MASCULINO",
+        "idEquipo": 1,
+        "equipo": "CDC ALTATORRE A",
+        "jugadores": [
+            {
+                "PLAYER": "ANDRÉS RODRÍGUEZ FALQUINA",
+                "ID": 11
+            },
+            {
+                "PLAYER": "JAVIER MARTÍNEZ POZO",
+                "ID": 18
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "idModalidad": 2,
+        "modalidad": "DOBLES MASCULINO",
+        "idEquipo": 2,
+        "equipo": "CDC ALTATORRE B",
+        "jugadores": [
+            {
+                "PLAYER": "FRANCISCO JAVIER PEÑA RODRIGO",
+                "ID": 16
+            },
+            {
+                "PLAYER": "RAUL BAK MAJ",
+                "ID": 24
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "idModalidad": 2,
+        "modalidad": "DOBLES MASCULINO",
+        "idEquipo": 3,
+        "equipo": "CDC ALTATORRE C",
+        "jugadores": [
+            {
+                "PLAYER": "DAVY VAN LANDUYT",
+                "ID": 4
+            },
+            {
+                "PLAYER": "SIMON BAK",
+                "ID": 9
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "idModalidad": 2,
+        "modalidad": "DOBLES MASCULINO",
+        "idEquipo": 4,
+        "equipo": "CDC ALTATORRE D + ASM",
+        "jugadores": [
+            {
+                "PLAYER": "ALBERTO ARJONA ROMERO",
+                "ID": 1
+            },
+            {
+                "PLAYER": "JAVIER ILIE CANDEA",
+                "ID": 6
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "idModalidad": 3,
+        "modalidad": "DOBLES MIXTO",
+        "idEquipo": 1,
+        "equipo": "CDC ALTATORRE A",
+        "jugadores": [
+            {
+                "PLAYER": "MARÍA JESÚS SERNA SERNA",
+                "ID": 21
+            },
+            {
+                "PLAYER": "JAVIER MARTÍNEZ POZO",
+                "ID": 18
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "idModalidad": 3,
+        "modalidad": "DOBLES MIXTO",
+        "idEquipo": 2,
+        "equipo": "CDC ALTATORRE B",
+        "jugadores": [
+            {
+                "PLAYER": "MARGARITA ARIZAGA VALDIVIESO",
+                "ID": 7
+            },
+            {
+                "PLAYER": "ANDRÉS RODRÍGUEZ FALQUINA",
+                "ID": 11
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "idModalidad": 3,
+        "modalidad": "DOBLES MIXTO",
+        "idEquipo": 3,
+        "equipo": "CDC ALTATORRE C",
+        "jugadores": [
+            {
+                "PLAYER": "MÓNICA RODRÍGUEZ VARELA",
+                "ID": 8
+            },
+            {
+                "PLAYER": "RAUL BAK MAJ",
+                "ID": 24
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "idModalidad": 3,
+        "modalidad": "DOBLES MIXTO",
+        "idEquipo": 4,
+        "equipo": "CDC ALTATORRE D",
+        "jugadores": [
+            {
+                "PLAYER": "DORA YANEZ RAMOS",
+                "ID": 15
+            },
+            {
+                "PLAYER": "ALBERTO ARJONA ROMERO",
+                "ID": 1
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "idModalidad": 3,
+        "modalidad": "DOBLES MIXTO",
+        "idEquipo": 5,
+        "equipo": "CDC ALTATORRE E",
+        "jugadores": [
+            {
+                "PLAYER": "ESTHER RIVERO GARCÍA",
+                "ID": 5
+            },
+            {
+                "PLAYER": "DAVY VAN LANDUYT",
+                "ID": 4
+            },
+            {
+                "PLAYER": "BELÉN NAVAS SERNA",
+                "ID": 2
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "idModalidad": 3,
+        "modalidad": "DOBLES MIXTO",
+        "idEquipo": 6,
+        "equipo": "CDC ALTATORRE F",
+        "jugadores": [
+            {
+                "PLAYER": "CHARLOTTE BERTHIER",
+                "ID": 3
+            },
+            {
+                "PLAYER": "SIMON BAK",
+                "ID": 9
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "idModalidad": 3,
+        "modalidad": "DOBLES MIXTO",
+        "idEquipo": 7,
+        "equipo": "ASM",
+        "jugadores": [
+            {
+                "PLAYER": "CLAUDIA LIMA NEBRERA",
+                "ID": 13
+            },
+            {
+                "PLAYER": "JAVIER ILIE CANDEA",
+                "ID": 6
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "idModalidad": 3,
+        "modalidad": "DOBLES MIXTO",
+        "idEquipo": 8,
+        "equipo": "LEGANES",
+        "jugadores": [
+            {
+                "PLAYER": "CARLOTA KIELBUS ALONSO",
+                "ID": 12
+            },
+            {
+                "PLAYER": "KEVIN KIELBUS ALONSO",
+                "ID": 19
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "idModalidad": 4,
+        "modalidad": "FEMENINO INDIVIDUAL",
+        "idEquipo": 1,
+        "equipo": "MÓNICA RODRÍGUEZ VARELA",
+        "jugadores": [
+            {
+                "PLAYER": "MÓNICA RODRÍGUEZ VARELA",
+                "ID": 8
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "idModalidad": 4,
+        "modalidad": "FEMENINO INDIVIDUAL",
+        "idEquipo": 2,
+        "equipo": "ANA MARÍA CABALLERO GÓMEZ",
+        "jugadores": [
+            {
+                "PLAYER": "ANA MARÍA CABALLERO GÓMEZ",
+                "ID": 10
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "idModalidad": 4,
+        "modalidad": "FEMENINO INDIVIDUAL",
+        "idEquipo": 3,
+        "equipo": "PAULA BAK",
+        "jugadores": [
+            {
+                "PLAYER": "PAULA BAK",
+                "ID": 23
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "idModalidad": 4,
+        "modalidad": "FEMENINO INDIVIDUAL",
+        "idEquipo": 4,
+        "equipo": "LUCÍA ALMORZA CORNEJO",
+        "jugadores": [
+            {
+                "PLAYER": "LUCÍA ALMORZA CORNEJO",
+                "ID": 20
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "idModalidad": 4,
+        "modalidad": "FEMENINO INDIVIDUAL",
+        "idEquipo": 5,
+        "equipo": "MARGARITA ARIZAGA VALDIVIESO",
+        "jugadores": [
+            {
+                "PLAYER": "MARGARITA ARIZAGA VALDIVIESO",
+                "ID": 7
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "idModalidad": 4,
+        "modalidad": "FEMENINO INDIVIDUAL",
+        "idEquipo": 6,
+        "equipo": "BELÉN NAVAS SERNA",
+        "jugadores": [
+            {
+                "PLAYER": "BELÉN NAVAS SERNA",
+                "ID": 2
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "idModalidad": 4,
+        "modalidad": "FEMENINO INDIVIDUAL",
+        "idEquipo": 7,
+        "equipo": "MÓNICA CASTRILLEJO MANSO",
+        "jugadores": [
+            {
+                "PLAYER": "MÓNICA CASTRILLEJO MANSO",
+                "ID": 22
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "idModalidad": 4,
+        "modalidad": "FEMENINO INDIVIDUAL",
+        "idEquipo": 8,
+        "equipo": "CHARLOTTE BERTHIER",
+        "jugadores": [
+            {
+                "PLAYER": "CHARLOTTE BERTHIER",
+                "ID": 3
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "idModalidad": 4,
+        "modalidad": "FEMENINO INDIVIDUAL",
+        "idEquipo": 9,
+        "equipo": "ESTHER RIVERO GARCÍA",
+        "jugadores": [
+            {
+                "PLAYER": "ESTHER RIVERO GARCÍA",
+                "ID": 5
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "idModalidad": 4,
+        "modalidad": "FEMENINO INDIVIDUAL",
+        "idEquipo": 10,
+        "equipo": "JAMIE GISSEL",
+        "jugadores": [
+            {
+                "PLAYER": "JAMIE GISSEL",
+                "ID": 17
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "idModalidad": 4,
+        "modalidad": "FEMENINO INDIVIDUAL",
+        "idEquipo": 11,
+        "equipo": "DIANA BAK",
+        "jugadores": [
+            {
+                "PLAYER": "DIANA BAK",
+                "ID": 14
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "idModalidad": 4,
+        "modalidad": "FEMENINO INDIVIDUAL",
+        "idEquipo": 12,
+        "equipo": "CLAUDIA LIMA NEBRERA",
+        "jugadores": [
+            {
+                "PLAYER": "CLAUDIA LIMA NEBRERA",
+                "ID": 13
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "idModalidad": 4,
+        "modalidad": "FEMENINO INDIVIDUAL",
+        "idEquipo": 13,
+        "equipo": "CARLOTA KIELBUS ALONSO",
+        "jugadores": [
+            {
+                "PLAYER": "CARLOTA KIELBUS ALONSO",
+                "ID": 12
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "idModalidad": 5,
+        "modalidad": "MASCULINO INDIVIDUAL",
+        "idEquipo": 1,
+        "equipo": "FRANCISCO JAVIER PEÑA RODRIGO",
+        "jugadores": [
+            {
+                "PLAYER": "FRANCISCO JAVIER PEÑA RODRIGO",
+                "ID": 16
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "idModalidad": 5,
+        "modalidad": "MASCULINO INDIVIDUAL",
+        "idEquipo": 2,
+        "equipo": "ALBERTO ARJONA ROMERO",
+        "jugadores": [
+            {
+                "PLAYER": "ALBERTO ARJONA ROMERO",
+                "ID": 1
+            }
+        ]
+    },
+    {
+        "id": 35,
+        "idModalidad": 5,
+        "modalidad": "MASCULINO INDIVIDUAL",
+        "idEquipo": 3,
+        "equipo": "RAUL BAK MAJ",
+        "jugadores": [
+            {
+                "PLAYER": "RAUL BAK MAJ",
+                "ID": 24
+            }
+        ]
+    },
+    {
+        "id": 36,
+        "idModalidad": 5,
+        "modalidad": "MASCULINO INDIVIDUAL",
+        "idEquipo": 4,
+        "equipo": "DAVY VAN LANDUYT",
+        "jugadores": [
+            {
+                "PLAYER": "DAVY VAN LANDUYT",
+                "ID": 4
+            }
+        ]
+    },
+    {
+        "id": 37,
+        "idModalidad": 5,
+        "modalidad": "MASCULINO INDIVIDUAL",
+        "idEquipo": 5,
+        "equipo": "SIMON BAK",
+        "jugadores": [
+            {
+                "PLAYER": "SIMON BAK",
+                "ID": 9
+            }
+        ]
+    },
+    {
+        "id": 38,
+        "idModalidad": 5,
+        "modalidad": "MASCULINO INDIVIDUAL",
+        "idEquipo": 6,
+        "equipo": "JAVIER ILIE CANDEA",
+        "jugadores": [
+            {
+                "PLAYER": "JAVIER ILIE CANDEA",
+                "ID": 6
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "idModalidad": 5,
+        "modalidad": "MASCULINO INDIVIDUAL",
+        "idEquipo": 7,
+        "equipo": "KEVIN KIELBUS ALONSO",
+        "jugadores": [
+            {
+                "PLAYER": "KEVIN KIELBUS ALONSO",
+                "ID": 19
+            }
+        ]
+    }
+]

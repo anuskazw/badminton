@@ -1,0 +1,87 @@
+.contenedor {
+    position: relative;
+    border: 1px #d0d0d0 solid;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+.caja{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+}
+
+.principal-equipos{
+    flex-grow: 1;
+    overflow: hidden auto;
+}
+.pista{
+    flex-grow: 2;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.equipo{
+    background: white;
+    position: relative;
+    font-size: 12px;
+    padding: 1rem 0.5rem 0.5rem;
+    margin: 0.5rem;
+    /* width: 360px; */
+}
+
+.badge{
+    font-size: 10px;
+    padding: 0.25rem 0.5rem;
+    background: lightgrey;
+    border-radius: 5px;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.badge-1{
+    background: green;
+}
+.badge-2{
+    background: #f2c464; /* Color aleatorio */
+}
+.badge-3{
+    background: #8bc34a; /* Color aleatorio */
+}
+.badge-4{
+    background: #4caf50; /* Color aleatorio */
+}
+.badge-5{
+    background: #f2c464; /* Color aleatorio */
+}
+.badge-6{
+    background: #8bc34a; /* Color aleatorio */
+}
+.badge-7{
+    background: #4caf50; /* Color aleatorio */
+}
+.badge-8{
+    background: #9c27b0; /* Color aleatorio */
+}
+.badge-9{
+    background: #03a9f4; /* Color aleatorio */
+}
+.badge-10{
+    background: #e91e63; /* Color aleatorio */
+}
+.badge-11{
+    background: #4caf50; /* Color aleatorio */
+}
+.badge-12{
+    background: #f2c464; /* Color aleatorio */
+}
+.badge-13{
+    background: #8bc34a; /* Color aleatorio */
+}
+.badge-14{
+    background: #9c27b0; /* Color aleatorio */
+}

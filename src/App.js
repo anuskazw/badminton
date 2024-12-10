@@ -7,6 +7,7 @@ import Player from './components/Player';
 import Teams from './components/Teams';
 import SetForm from './components/SetForm';
 import Jornadas from './components/Jornadas';
+import Competicion from './components/Competicion';
 
 const players = [
   { id: 1, name: 'Jugador 1', j1: 10, j2: 15, j3: 20, total: 45 },
@@ -33,6 +34,7 @@ function App() {
                     <Route path="/equipos" element={<Teams teams={teams}/>} />
                     <Route path="/form" element={<SetForm/>} />
                     <Route path="/jornadas" element={<Jornadas />} />
+                    <Route path="/competicion" element={<Competicion />} />
 
                 </Routes>
             </div>
