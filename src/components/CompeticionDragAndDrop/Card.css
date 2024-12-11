@@ -1,0 +1,14 @@
+article {
+  border: 1px #d0d0d0 solid;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  cursor: grab;
+  height: 100px;
+}
+
+article:active{
+    border: 1px black solid;
+    opacity: 0.2;
+    cursor: grabbing;
+}

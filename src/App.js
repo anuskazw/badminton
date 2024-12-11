@@ -8,6 +8,7 @@ import Teams from './components/Teams';
 import SetForm from './components/SetForm';
 import Jornadas from './components/Jornadas';
 import Competicion from './components/Competicion';
+import CompeticionDragAndDrop from './components/CompeticionDragAndDrop/CompeticionDragAndDrop';
 
 const players = [
   { id: 1, name: 'Jugador 1', j1: 10, j2: 15, j3: 20, total: 45 },
@@ -35,6 +36,7 @@ function App() {
                     <Route path="/form" element={<SetForm/>} />
                     <Route path="/jornadas" element={<Jornadas />} />
                     <Route path="/competicion" element={<Competicion />} />
+                    <Route path="/competicion-2" element={<CompeticionDragAndDrop />} />
 
                 </Routes>
             </div>

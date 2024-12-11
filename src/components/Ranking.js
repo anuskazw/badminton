@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Ranking.css';
-import RANKINGS from './RANKINGS.json';
+import RANKINGS from './ficheros/RANKINGS.json';
 
 function Ranking() {
     const [openSection, setOpenSection] = useState(null);

@@ -7,13 +7,13 @@
 }
 .caja{
     width: 100vw;
-    height: 80vh;
+    /* height: 80vh; */
     display: flex;
 }
 
 .principal-equipos{
     flex-grow: 1;
-    overflow: hidden auto;
+    /* overflow: hidden auto; */
 }
 .pista{
     flex-grow: 2;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './SetForm.css';
-import EQUIPOS from './EQUIPOS_MODALIDAD.json'
+import EQUIPOS from './ficheros/EQUIPOS_MODALIDAD.json'
 
 
 function SetForm({ onSubmit }) {

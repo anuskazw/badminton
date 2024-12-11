@@ -1,9 +1,9 @@
-import { closestCenter, closestCorners, DndContext, useDroppable } from '@dnd-kit/core';
+import { closestCorners, DndContext, useDroppable } from '@dnd-kit/core';
 import { CSS } from '@dnd-kit/utilities';
-import { SortableContext, useSortable, verticalListSortingStrategy } from '@dnd-kit/sortable';
+import { arrayMove, SortableContext, useSortable, verticalListSortingStrategy } from '@dnd-kit/sortable';
 import React, { useState } from 'react';
 import './Competicion.css';
-import EQUIPOS from './MODALIDAD_EQUIPOS.json'
+import EQUIPOS from './ficheros/MODALIDAD_EQUIPOS.json'
 
 const Equipo = ({ id, index, modalidad, equipo, jugadores }) => {
 
@@ -36,18 +36,20 @@ const Competicion = () => {
 
     const { setNodeRef1 } = useDroppable({ id: 'PISTA_1' });
 
-    const [equipos/* , setEquipos */] = useState(EQUIPOS);
+    const [equipos, setEquipos] = useState(EQUIPOS);
 
+    const getPosicion = id => equipos.findIndex(eq => eq.id === id);
 
     function handleDragEnd(event) {
         const { active, over } = event;
-        console.log(active.data);
-        if (over && over.data.current?.accepts?.includes(active.data.current?.type)) {
-            // do stuff
-        }
-    }
+        if (active.id === over.id) return;
 
-    // Ejecución
+        setEquipos((equipos) => {
+            const originalPos = getPosicion(active.id);
+            const newPos = getPosicion(over.id);
+            return arrayMove(equipos, originalPos, newPos);
+        })
+    }
 
 
 
@@ -61,11 +63,11 @@ const Competicion = () => {
                             <SortableContext items={equipos} strategy={verticalListSortingStrategy}>
                                 {equipos?.map((eq, index) => (
                                     <Equipo
-                                     id={eq.id} 
-                                     index={eq.idModalidad} 
-                                     modalidad={eq.modalidad} 
-                                     equipo={eq.equipo} 
-                                     jugadores={eq.jugadores} 
+                                        id={eq.id}
+                                        index={eq.idModalidad}
+                                        modalidad={eq.modalidad}
+                                        equipo={eq.equipo}
+                                        jugadores={eq.jugadores}
                                     />
                                 ))}
                             </SortableContext>
@@ -75,7 +77,7 @@ const Competicion = () => {
                         <div id="1" className="contenedor">
 
                         </div>
-                        <div id="2" className="contenedor">s
+                        <div id="2" className="contenedor">
 
                         </div>
                         <div id="3" className="contenedor">

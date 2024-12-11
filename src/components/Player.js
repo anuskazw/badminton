@@ -2,8 +2,8 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import './Player.css';
-import RANKINGS from './RANKINGS.json';
-import JUGADORES from './ID_JUGADORES.json';
+import RANKINGS from './ficheros/RANKINGS.json';
+import JUGADORES from './ficheros/ID_JUGADORES.json';
 
 
 function Player({ players }) {
