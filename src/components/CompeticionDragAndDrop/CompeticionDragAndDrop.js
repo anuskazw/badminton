@@ -3,7 +3,7 @@ import Column from './Column';
 import './CompeticionDragAndDrop.css';
 
 import EQUIPOS from './../ficheros/MODALIDAD_EQUIPOS.json';
-const Elementos = EQUIPOS.map(element => ({pista: '0', title: element.equipo, ...element}))
+const Elementos = EQUIPOS.map(element => ({ pista: '0', title: element.equipo, ...element }))
 const oldElementos = JSON.stringify(Elementos);
 
 const CompeticionDragAndDrop = () => {
@@ -14,7 +14,40 @@ const CompeticionDragAndDrop = () => {
 
   useEffect(() => {
     localStorage.setItem('elementos', JSON.stringify(elementos))
+    comprobar();
   }, [elementos])
+
+  const comprobar = () => {
+    // const tramo_2 = elementos.filter(e => +e.pista > 4 && +e.pista <= 8);
+    // const tramo_3 = elementos.filter(e => +e.pista > 8 && +e.pista <= 12);
+    const tramosRepetidos1 = comprobarTramo(0, 4);
+    const tramosRepetidos2 = comprobarTramo(5, 8);
+    const tramosRepetidos3 = comprobarTramo(9, 12);
+    console.log({tramosRepetidos1, tramosRepetidos2, tramosRepetidos3});
+
+  }
+
+  const comprobarTramo = (min, max) => {
+    const tramo = elementos.filter(e => +e.pista > min && +e.pista <= max);
+    let jugadores_tramo = {};
+    let pistasRepetidas = [];
+    tramo.forEach(elemento => {
+      elemento.jugadores.forEach(jugador => {
+        if (jugadores_tramo[jugador.PLAYER]) {
+          jugadores_tramo[jugador.PLAYER].push(elemento.pista);
+        } else {
+          jugadores_tramo[jugador.PLAYER] = [elemento.pista];
+        }
+      });
+    });
+    Object.entries(jugadores_tramo).forEach(([jugador, pistas]) => {
+      if (pistas.length > 1) {
+        pistasRepetidas.push(pistas);
+      }
+    });
+    return pistasRepetidas;
+  }
+
 
   const onDrop = (columna, position) => {
     // console.log(`${elementoActivo} se va a mover a la pista ${columna} en la posición ${position}`);
@@ -30,15 +63,17 @@ const CompeticionDragAndDrop = () => {
     })
 
     setElementos(elementosActualizar);
+
+
   }
 
   return (
     <main>
       <div className="contenedor-draggable">
-      <Column
+        <Column
           pista="0"
           className="competidores"
-          title="Competidores"
+          title={'Competidores (' + elementos.length + ')'}
           // noDroppable
           elementos={elementos}
           setElementoActivo={setElementoActivo}
