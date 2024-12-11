@@ -54,7 +54,7 @@ const Competicion = () => {
 
 
     return (
-        <div>
+        <div className="competicion-page">
             <h1>Competicion</h1>
             <div className="caja">
                 <DndContext onDragEnd={handleDragEnd} collisionDetection={closestCorners}>

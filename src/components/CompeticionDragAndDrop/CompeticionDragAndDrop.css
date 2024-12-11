@@ -1,4 +1,12 @@
 .contenedor-draggable{
-    width: 90vw;
-    display: flex;
+    width: 95vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.competidores{
+    grid-row-start: 1;
+    grid-row-end: 4;
 }
