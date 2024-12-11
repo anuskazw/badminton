@@ -15,6 +15,7 @@ const Column = ({ title, elementos, pista, setElementoActivo, onDrop, noDroppabl
                 elementos?.map((item, index) => item.pista === pista && (
                     <React.Fragment key={index}>
                         <Card
+                            elemento={item}
                             index={index}
                             title={item.title}
                             setElementoActivo={setElementoActivo}

@@ -353,7 +353,7 @@
     {
         "id": 20,
         "idModalidad": 4,
-        "modalidad": "FEMENINO INDIVIDUAL",
+        "modalidad": "INDIVIDUAL FEMENINO",
         "idEquipo": 1,
         "equipo": "MÓNICA RODRÍGUEZ VARELA",
         "jugadores": [
@@ -366,7 +366,7 @@
     {
         "id": 21,
         "idModalidad": 4,
-        "modalidad": "FEMENINO INDIVIDUAL",
+        "modalidad": "INDIVIDUAL FEMENINO",
         "idEquipo": 2,
         "equipo": "ANA MARÍA CABALLERO GÓMEZ",
         "jugadores": [
@@ -379,7 +379,7 @@
     {
         "id": 22,
         "idModalidad": 4,
-        "modalidad": "FEMENINO INDIVIDUAL",
+        "modalidad": "INDIVIDUAL FEMENINO",
         "idEquipo": 3,
         "equipo": "PAULA BAK",
         "jugadores": [
@@ -392,7 +392,7 @@
     {
         "id": 23,
         "idModalidad": 4,
-        "modalidad": "FEMENINO INDIVIDUAL",
+        "modalidad": "INDIVIDUAL FEMENINO",
         "idEquipo": 4,
         "equipo": "LUCÍA ALMORZA CORNEJO",
         "jugadores": [
@@ -405,7 +405,7 @@
     {
         "id": 24,
         "idModalidad": 4,
-        "modalidad": "FEMENINO INDIVIDUAL",
+        "modalidad": "INDIVIDUAL FEMENINO",
         "idEquipo": 5,
         "equipo": "MARGARITA ARIZAGA VALDIVIESO",
         "jugadores": [
@@ -418,7 +418,7 @@
     {
         "id": 25,
         "idModalidad": 4,
-        "modalidad": "FEMENINO INDIVIDUAL",
+        "modalidad": "INDIVIDUAL FEMENINO",
         "idEquipo": 6,
         "equipo": "BELÉN NAVAS SERNA",
         "jugadores": [
@@ -431,7 +431,7 @@
     {
         "id": 26,
         "idModalidad": 4,
-        "modalidad": "FEMENINO INDIVIDUAL",
+        "modalidad": "INDIVIDUAL FEMENINO",
         "idEquipo": 7,
         "equipo": "MÓNICA CASTRILLEJO MANSO",
         "jugadores": [
@@ -444,7 +444,7 @@
     {
         "id": 27,
         "idModalidad": 4,
-        "modalidad": "FEMENINO INDIVIDUAL",
+        "modalidad": "INDIVIDUAL FEMENINO",
         "idEquipo": 8,
         "equipo": "CHARLOTTE BERTHIER",
         "jugadores": [
@@ -457,7 +457,7 @@
     {
         "id": 28,
         "idModalidad": 4,
-        "modalidad": "FEMENINO INDIVIDUAL",
+        "modalidad": "INDIVIDUAL FEMENINO",
         "idEquipo": 9,
         "equipo": "ESTHER RIVERO GARCÍA",
         "jugadores": [
@@ -470,7 +470,7 @@
     {
         "id": 29,
         "idModalidad": 4,
-        "modalidad": "FEMENINO INDIVIDUAL",
+        "modalidad": "INDIVIDUAL FEMENINO",
         "idEquipo": 10,
         "equipo": "JAMIE GISSEL",
         "jugadores": [
@@ -483,7 +483,7 @@
     {
         "id": 30,
         "idModalidad": 4,
-        "modalidad": "FEMENINO INDIVIDUAL",
+        "modalidad": "INDIVIDUAL FEMENINO",
         "idEquipo": 11,
         "equipo": "DIANA BAK",
         "jugadores": [
@@ -496,7 +496,7 @@
     {
         "id": 31,
         "idModalidad": 4,
-        "modalidad": "FEMENINO INDIVIDUAL",
+        "modalidad": "INDIVIDUAL FEMENINO",
         "idEquipo": 12,
         "equipo": "CLAUDIA LIMA NEBRERA",
         "jugadores": [
@@ -509,7 +509,7 @@
     {
         "id": 32,
         "idModalidad": 4,
-        "modalidad": "FEMENINO INDIVIDUAL",
+        "modalidad": "INDIVIDUAL FEMENINO",
         "idEquipo": 13,
         "equipo": "CARLOTA KIELBUS ALONSO",
         "jugadores": [
@@ -522,7 +522,7 @@
     {
         "id": 33,
         "idModalidad": 5,
-        "modalidad": "MASCULINO INDIVIDUAL",
+        "modalidad": "INDIVIDUAL MASCULINO",
         "idEquipo": 1,
         "equipo": "FRANCISCO JAVIER PEÑA RODRIGO",
         "jugadores": [
@@ -535,7 +535,7 @@
     {
         "id": 34,
         "idModalidad": 5,
-        "modalidad": "MASCULINO INDIVIDUAL",
+        "modalidad": "INDIVIDUAL MASCULINO",
         "idEquipo": 2,
         "equipo": "ALBERTO ARJONA ROMERO",
         "jugadores": [
@@ -548,7 +548,7 @@
     {
         "id": 35,
         "idModalidad": 5,
-        "modalidad": "MASCULINO INDIVIDUAL",
+        "modalidad": "INDIVIDUAL MASCULINO",
         "idEquipo": 3,
         "equipo": "RAUL BAK MAJ",
         "jugadores": [
@@ -561,7 +561,7 @@
     {
         "id": 36,
         "idModalidad": 5,
-        "modalidad": "MASCULINO INDIVIDUAL",
+        "modalidad": "INDIVIDUAL MASCULINO",
         "idEquipo": 4,
         "equipo": "DAVY VAN LANDUYT",
         "jugadores": [
@@ -574,7 +574,7 @@
     {
         "id": 37,
         "idModalidad": 5,
-        "modalidad": "MASCULINO INDIVIDUAL",
+        "modalidad": "INDIVIDUAL MASCULINO",
         "idEquipo": 5,
         "equipo": "SIMON BAK",
         "jugadores": [
@@ -587,7 +587,7 @@
     {
         "id": 38,
         "idModalidad": 5,
-        "modalidad": "MASCULINO INDIVIDUAL",
+        "modalidad": "INDIVIDUAL MASCULINO",
         "idEquipo": 6,
         "equipo": "JAVIER ILIE CANDEA",
         "jugadores": [
@@ -600,7 +600,7 @@
     {
         "id": 39,
         "idModalidad": 5,
-        "modalidad": "MASCULINO INDIVIDUAL",
+        "modalidad": "INDIVIDUAL MASCULINO",
         "idEquipo": 7,
         "equipo": "KEVIN KIELBUS ALONSO",
         "jugadores": [

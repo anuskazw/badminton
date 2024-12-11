@@ -2,12 +2,9 @@ import React, { useEffect, useState } from 'react';
 import Column from './Column';
 import './CompeticionDragAndDrop.css';
 
-const oldElementos = /* localStorage.getItem('elementos') ||  */JSON.stringify([
-  { pista: '0', title: "CDC ALTATORRE A VS CDC ALTATORRE G" },
-  { pista: '0', title: "CDC ALTATORRE C VS CDC ALTATORRE D" },
-  { pista: '0', title: "CDS LEGANES VS CDC ALTATORRE E" },
-  { pista: '0', title: "CDC ALTATORRE F VS CDC ALTATORRE B + ASM" },
-]);
+import EQUIPOS from './../ficheros/MODALIDAD_EQUIPOS.json';
+const Elementos = EQUIPOS.map(element => ({pista: '0', title: element.equipo, ...element}))
+const oldElementos = JSON.stringify(Elementos);
 
 const CompeticionDragAndDrop = () => {
 
@@ -37,23 +34,12 @@ const CompeticionDragAndDrop = () => {
 
   return (
     <main>
-      {/* <div className='contenedor-competidores'>
-        <Column
-          pista="0"
-          className="contenedor"
-          title="Competidores"
-          noDroppable
-          elementos={elementos}
-          setElementoActivo={setElementoActivo}
-          onDrop={onDrop}
-        ></Column>
-      </div> */}
       <div className="contenedor-draggable">
       <Column
           pista="0"
           className="competidores"
           title="Competidores"
-          noDroppable
+          // noDroppable
           elementos={elementos}
           setElementoActivo={setElementoActivo}
           onDrop={onDrop}
@@ -61,7 +47,7 @@ const CompeticionDragAndDrop = () => {
         <Column
           pista="1"
           className="contenedor"
-          title="PISTA 1 / 1ª FASE"
+          title="PISTA 1 - 1ª FASE"
           elementos={elementos}
           setElementoActivo={setElementoActivo}
           onDrop={onDrop}
@@ -70,7 +56,7 @@ const CompeticionDragAndDrop = () => {
         <Column
           pista="2"
           className="contenedor"
-          title="PISTA 2 / 1ª FASE"
+          title="PISTA 2 - 1ª FASE"
           elementos={elementos}
           setElementoActivo={setElementoActivo}
           onDrop={onDrop}
@@ -79,7 +65,7 @@ const CompeticionDragAndDrop = () => {
         <Column
           pista="3"
           className="contenedor"
-          title="PISTA 3 / 1ª FASE"
+          title="PISTA 3 - 1ª FASE"
           elementos={elementos}
           setElementoActivo={setElementoActivo}
           onDrop={onDrop}
@@ -88,7 +74,7 @@ const CompeticionDragAndDrop = () => {
         <Column
           pista="4"
           className="contenedor"
-          title="PISTA 4 / 1ª FASE"
+          title="PISTA 4 - 1ª FASE"
           elementos={elementos}
           setElementoActivo={setElementoActivo}
           onDrop={onDrop}
@@ -97,7 +83,7 @@ const CompeticionDragAndDrop = () => {
         <Column
           pista="5"
           className="contenedor"
-          title="PISTA 1 / 2ª FASE"
+          title="PISTA 1 - 2ª FASE"
           elementos={elementos}
           setElementoActivo={setElementoActivo}
           onDrop={onDrop}
@@ -106,7 +92,7 @@ const CompeticionDragAndDrop = () => {
         <Column
           pista="6"
           className="contenedor"
-          title="PISTA 2 / 2ª FASE"
+          title="PISTA 2 - 2ª FASE"
           elementos={elementos}
           setElementoActivo={setElementoActivo}
           onDrop={onDrop}
@@ -115,7 +101,7 @@ const CompeticionDragAndDrop = () => {
         <Column
           pista="7"
           className="contenedor"
-          title="PISTA 3 / 2ª FASE"
+          title="PISTA 3 - 2ª FASE"
           elementos={elementos}
           setElementoActivo={setElementoActivo}
           onDrop={onDrop}
@@ -124,7 +110,7 @@ const CompeticionDragAndDrop = () => {
         <Column
           pista="8"
           className="contenedor"
-          title="PISTA 4 / 2ª FASE"
+          title="PISTA 4 - 2ª FASE"
           elementos={elementos}
           setElementoActivo={setElementoActivo}
           onDrop={onDrop}
@@ -133,7 +119,7 @@ const CompeticionDragAndDrop = () => {
         <Column
           pista="9"
           className="contenedor"
-          title="PISTA 1 / 3ª FASE"
+          title="PISTA 1 - 3ª FASE"
           elementos={elementos}
           setElementoActivo={setElementoActivo}
           onDrop={onDrop}
@@ -142,7 +128,7 @@ const CompeticionDragAndDrop = () => {
         <Column
           pista="10"
           className="contenedor"
-          title="PISTA 2 / 3ª FASE"
+          title="PISTA 2 - 3ª FASE"
           elementos={elementos}
           setElementoActivo={setElementoActivo}
           onDrop={onDrop}
@@ -151,7 +137,7 @@ const CompeticionDragAndDrop = () => {
         <Column
           pista="11"
           className="contenedor"
-          title="PISTA 3 / 3ª FASE"
+          title="PISTA 3 - 3ª FASE"
           elementos={elementos}
           setElementoActivo={setElementoActivo}
           onDrop={onDrop}
@@ -160,7 +146,7 @@ const CompeticionDragAndDrop = () => {
         <Column
           pista="12"
           className="contenedor"
-          title="PISTA 4 / 3ª FASE"
+          title="PISTA 4 - 3ª FASE"
           elementos={elementos}
           setElementoActivo={setElementoActivo}
           onDrop={onDrop}
