@@ -520,10 +520,10 @@ export default function DescargaTab({ temporada, jornadas, participantes, onRefr
                 <td style={{ padding: '5px 8px' }}>{j.modalidad}</td>
                 <td style={{ padding: '5px 8px' }}>{j.local.equipo}</td>
                 <td style={{ padding: '5px 8px' }}>{j.visitante.equipo}</td>
-                <td style={{ padding: '5px 8px', color: '#888' }}>
+                <td style={{ padding: '5px 8px' }}>
                   {j.resultado?.sets?.length
-                    ? `${j.resultado.puntos.local}-${j.resultado.puntos.visitante} (${j.resultado.sets.map(s => `${s.local}-${s.visitante}`).join('/')})`
-                    : 'Pendiente'}
+                    ? <span style={{ color: '#888' }}>{j.resultado.puntos.local}-{j.resultado.puntos.visitante} ({j.resultado.sets.map(s => `${s.local}-${s.visitante}`).join('/')})</span>
+                    : <span style={{ background: '#fff3cd', color: '#7d6608', fontSize: '.75rem', fontWeight: 700, padding: '2px 8px', borderRadius: 10, letterSpacing: '0.03em' }}>Pendiente</span>}
                 </td>
                 {editable && (
                   <td style={{ padding: '5px 8px' }}>
