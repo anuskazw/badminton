@@ -14,11 +14,14 @@ export async function descargarPartidosExcel(filas, nombreHoja, nombreArchivo) {
   const sheet = workbook.addWorksheet(nombreHoja);
 
   const headers = Object.keys(filas[0]);
-  sheet.columns = headers.map(h => ({
-    header: h,
-    key: h,
-    width: Math.max(h.length + 4, 14),
-  }));
+  sheet.columns = headers.map(h => {
+    const maxContenido = Math.max(...filas.map(f => String(f[h] ?? '').length));
+    return {
+      header: h,
+      key: h,
+      width: Math.max(h.length, maxContenido) + 3,
+    };
+  });
 
   // Cabecera bloqueada con fondo gris
   sheet.getRow(1).eachCell(cell => {
