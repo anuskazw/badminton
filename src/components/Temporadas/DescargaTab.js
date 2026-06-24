@@ -412,7 +412,9 @@ export default function DescargaTab({ temporada, jornadas, participantes, onRefr
                 <td style={{ padding: '5px 8px' }}>{j.local.equipo}</td>
                 <td style={{ padding: '5px 8px' }}>{j.visitante.equipo}</td>
                 <td style={{ padding: '5px 8px', color: '#888' }}>
-                  {j.resultado ? j.resultado.ganador : 'Pendiente'}
+                  {j.resultado?.sets?.length
+                    ? `${j.resultado.puntos.local}-${j.resultado.puntos.visitante} (${j.resultado.sets.map(s => `${s.local}-${s.visitante}`).join('/')})`
+                    : 'Pendiente'}
                 </td>
               </tr>
             ))}
