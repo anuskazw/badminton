@@ -1,5 +1,7 @@
 import * as XLSX from 'xlsx';
 import ExcelJS from 'exceljs';
+import jsPDF from 'jspdf';
+import autoTable from 'jspdf-autotable';
 
 const SETS_EDITABLES = [
   'Set 1 Local', 'Set 1 Visitante',
@@ -70,6 +72,21 @@ export function descargarExcel(filas, nombreHoja, nombreArchivo) {
   const libro = XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(libro, hoja, nombreHoja);
   XLSX.writeFile(libro, nombreArchivo);
+}
+
+export function descargarTablaPDF(cabeceras, filas, titulo, nombreArchivo) {
+  const doc = new jsPDF({ orientation: filas.length && cabeceras.length > 5 ? 'landscape' : 'portrait' });
+  doc.setFontSize(13);
+  doc.text(titulo, 14, 15);
+  autoTable(doc, {
+    head: [cabeceras],
+    body: filas,
+    startY: 22,
+    styles: { fontSize: 8, cellPadding: 3 },
+    headStyles: { fillColor: [26, 34, 56], textColor: 255, fontStyle: 'bold' },
+    alternateRowStyles: { fillColor: [245, 247, 250] },
+  });
+  doc.save(nombreArchivo);
 }
 
 export function descargarCSV(filas, nombreArchivo) {

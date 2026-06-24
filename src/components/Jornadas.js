@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Jornadas.css';
 import { useTemporada } from '../context/TemporadaContext';
 import { getJornadas } from '../services/jornadasService';
+import { descargarExcel, descargarTablaPDF } from '../utils/download';
 
 const MODALIDADES = [
     'DOBLES FEMENINO',
@@ -56,6 +57,38 @@ const Jornadas = () => {
 
     const numeros = Object.keys(agrupadas).map(Number).sort((a, b) => a - b);
 
+    const formatResultado = (j) =>
+        j.resultado?.sets?.length
+            ? `${j.resultado.puntos.local}-${j.resultado.puntos.visitante} (${j.resultado.sets.map(s => `${s.local}-${s.visitante}`).join('/')})`
+            : 'Pendiente';
+
+    const nombreBase = () => {
+        const mod = modalidad === 'Todos' ? 'todas' : modalidad.toLowerCase().replace(/ /g, '-');
+        const busq = term ? `_${term.replace(/ /g, '-')}` : '';
+        return `jornadas_${temporada}_${mod}${busq}`;
+    };
+
+    const exportarExcel = () => {
+        const filas = jornadasFiltradas.map(j => ({
+            Jornada: j.jornada,
+            Tipo: j.tipo,
+            Modalidad: j.modalidad,
+            Local: j.local.equipo,
+            Visitante: j.visitante.equipo,
+            Resultado: formatResultado(j),
+        }));
+        descargarExcel(filas, 'Jornadas', `${nombreBase()}.xlsx`);
+    };
+
+    const exportarPDF = () => {
+        const cabeceras = ['J.', 'Tipo', 'Modalidad', 'Local', 'Visitante', 'Resultado'];
+        const filas = jornadasFiltradas.map(j => [
+            j.jornada, j.tipo, j.modalidad, j.local.equipo, j.visitante.equipo, formatResultado(j),
+        ]);
+        const titulo = `Jornadas · ${temporada}${modalidad !== 'Todos' ? ` · ${modalidad}` : ''}${term ? ` · "${busqueda}"` : ''}`;
+        descargarTablaPDF(cabeceras, filas, titulo, `${nombreBase()}.pdf`);
+    };
+
     return (
         <div className="jornadas-page">
             <h2 className="jornadas-titulo">Temporada {temporada}</h2>
@@ -73,7 +106,7 @@ const Jornadas = () => {
                 ))}
             </div>
 
-            <div className="jornadas-busqueda">
+            <div className="jornadas-toolbar">
                 <input
                     type="search"
                     placeholder="Buscar participante..."
@@ -81,6 +114,24 @@ const Jornadas = () => {
                     onChange={e => setBusqueda(e.target.value)}
                     className="jornadas-busqueda-input"
                 />
+                <div className="jornadas-acciones">
+                    <button
+                        className="jornadas-btn-descarga"
+                        onClick={exportarExcel}
+                        disabled={!jornadasFiltradas.length}
+                        title="Descargar Excel"
+                    >
+                        Excel
+                    </button>
+                    <button
+                        className="jornadas-btn-descarga"
+                        onClick={exportarPDF}
+                        disabled={!jornadasFiltradas.length}
+                        title="Descargar PDF"
+                    >
+                        PDF
+                    </button>
+                </div>
             </div>
 
             {cargando && <p className="jornadas-mensaje">Cargando...</p>}
