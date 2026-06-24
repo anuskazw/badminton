@@ -13,6 +13,7 @@ import Competicion from './components/Competicion';
 import CompeticionDragAndDrop from './components/CompeticionDragAndDrop/CompeticionDragAndDrop';
 import TemporadasList from './components/Temporadas/TemporadasList';
 import TemporadaDetalle from './components/Temporadas/TemporadaDetalle';
+import Styling from './components/Styling';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/ranking"   element={<Ranking />} />
           <Route path="/jugadores" element={<Player />} />
           <Route path="/jornadas"  element={<Jornadas />} />
+          <Route path="/styling"   element={<Styling />} />
         </Route>
 
         {/* Rutas del dashboard (requieren login) */}
