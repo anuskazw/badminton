@@ -37,13 +37,6 @@ function validarFilas(filas, jornadas) {
       return;
     }
 
-    const set1L = Number(f['Set 1 Local'] ?? 0);
-    const set1V = Number(f['Set 1 Visitante'] ?? 0);
-    if (set1L === 0 && set1V === 0) {
-      errores.push(`${ref} (${f['Local']} vs ${f['Visitante']}): "Set 1 Local" y "Set 1 Visitante" estan a 0 o vacios.`);
-      return;
-    }
-
     const existe = jornadas.some(j =>
       j.modalidad === String(f['Modalidad']).trim() &&
       Number(j.jornada) === Number(f['Jornada']) &&
@@ -90,6 +83,8 @@ function parsearFilas(filas, jornadas) {
     const sets = pares
       .filter(([l, v]) => l > 0 || v > 0)
       .map(([l, v]) => ({ local: l, visitante: v }));
+
+    if (!sets.length) return null;
 
     let pL = 0, pV = 0;
     sets.forEach(s => { if (s.local > s.visitante) pL++; else if (s.visitante > s.local) pV++; });
