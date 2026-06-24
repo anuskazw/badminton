@@ -408,6 +408,7 @@ export default function DescargaTab({ temporada, jornadas, participantes, onRefr
                 <td style={{ padding: '5px 8px' }}>
                   <span className={`tipo-badge${j.tipo === 'VUELTA' ? ' vuelta' : ''}`}>{j.tipo}</span>
                 </td>
+                <td style={{ padding: '5px 8px' }}>{j.modalidad}</td>
                 <td style={{ padding: '5px 8px' }}>{j.local.equipo}</td>
                 <td style={{ padding: '5px 8px' }}>{j.visitante.equipo}</td>
                 <td style={{ padding: '5px 8px', color: '#888' }}>
