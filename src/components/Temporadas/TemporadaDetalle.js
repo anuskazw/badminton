@@ -206,7 +206,7 @@ export default function TemporadaDetalle() {
         />
       )}
       {tab === 'descarga' && (
-        <DescargaTab temporada={id} jornadas={jornadas} />
+        <DescargaTab temporada={id} jornadas={jornadas} participantes={participantes} onRefresh={cargar} />
       )}
     </div>
   );

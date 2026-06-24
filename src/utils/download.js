@@ -1,3 +1,13 @@
+import * as XLSX from 'xlsx';
+
+export function descargarExcel(filas, nombreHoja, nombreArchivo) {
+  if (!filas.length) return;
+  const hoja = XLSX.utils.json_to_sheet(filas);
+  const libro = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(libro, hoja, nombreHoja);
+  XLSX.writeFile(libro, nombreArchivo);
+}
+
 export function descargarCSV(filas, nombreArchivo) {
   if (!filas.length) return;
   const cols = Object.keys(filas[0]);
