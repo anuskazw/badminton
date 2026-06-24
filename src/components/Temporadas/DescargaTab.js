@@ -136,6 +136,102 @@ function parsearFilas(filas, jornadas) {
   }).filter(Boolean);
 }
 
+function ModalEditarPartido({ partido, onGuardar, onClose }) {
+  const [sets, setSets] = useState([
+    { local: partido.resultado?.sets?.[0]?.local ?? '', visitante: partido.resultado?.sets?.[0]?.visitante ?? '' },
+    { local: partido.resultado?.sets?.[1]?.local ?? '', visitante: partido.resultado?.sets?.[1]?.visitante ?? '' },
+    { local: partido.resultado?.sets?.[2]?.local ?? '', visitante: partido.resultado?.sets?.[2]?.visitante ?? '' },
+  ]);
+  const [error, setError] = useState(null);
+  const [guardando, setGuardando] = useState(false);
+
+  const actualizar = (i, lado, val) =>
+    setSets(prev => prev.map((s, idx) => idx === i ? { ...s, [lado]: val } : s));
+
+  const guardar = async () => {
+    setError(null);
+    const haySet = sets.map(s => Number(s.local) > 0 || Number(s.visitante) > 0);
+    if (haySet[1] && !haySet[0]) { setError('Set 2 relleno con Set 1 vacío.'); return; }
+    if (haySet[2] && !haySet[1]) { setError('Set 3 relleno con Set 2 vacío.'); return; }
+    if (haySet[2]) {
+      const g1 = Number(sets[0].local) > Number(sets[0].visitante) ? 'l' : 'v';
+      const g2 = Number(sets[1].local) > Number(sets[1].visitante) ? 'l' : 'v';
+      if (g1 === g2) { setError('Set 3 no válido — un mismo equipo ya ganó los dos primeros sets.'); return; }
+    }
+
+    const setsValidos = sets
+      .filter((_, i) => haySet[i])
+      .map(s => ({ local: Number(s.local), visitante: Number(s.visitante) }));
+
+    let pL = 0, pV = 0;
+    setsValidos.forEach(s => { if (s.local > s.visitante) pL++; else if (s.visitante > s.local) pV++; });
+
+    const resultado = setsValidos.length ? {
+      sets: setsValidos,
+      puntos: { local: pL, visitante: pV },
+      ganador: pL > pV ? partido.local.equipo : pV > pL ? partido.visitante.equipo : null,
+    } : null;
+
+    setGuardando(true);
+    try {
+      await onGuardar(partido.id, resultado);
+      onClose();
+    } catch {
+      setError('Error al guardar. ¿Está el servidor en marcha?');
+      setGuardando(false);
+    }
+  };
+
+  const thStyle = { padding: '6px 10px', textAlign: 'center', fontWeight: 600, fontSize: '.82rem', color: 'var(--c-muted)', borderBottom: '2px solid var(--c-border)' };
+  const tdStyle = { padding: '6px 8px', textAlign: 'center' };
+  const inputStyle = { width: '60px', padding: '4px 6px', border: '1px solid var(--c-border)', borderRadius: 'var(--radius-sm)', textAlign: 'center', fontSize: '.9rem', fontFamily: 'var(--font-base)' };
+
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-box" onClick={e => e.stopPropagation()}>
+        <h3 style={{ marginTop: 0 }}>Editar resultado</h3>
+        <p style={{ color: 'var(--c-muted)', fontSize: '.88rem', margin: '0 0 1.25rem' }}>
+          <strong>{partido.local.equipo}</strong> vs <strong>{partido.visitante.equipo}</strong>
+          <span style={{ marginLeft: 8 }}>— J.{partido.jornada} · {partido.modalidad}</span>
+        </p>
+        <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '1rem' }}>
+          <thead>
+            <tr>
+              <th style={thStyle}>Set</th>
+              <th style={thStyle}>{partido.local.equipo}</th>
+              <th style={{ ...thStyle, color: '#bbb', width: 20 }}></th>
+              <th style={thStyle}>{partido.visitante.equipo}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {sets.map((s, i) => (
+              <tr key={i}>
+                <td style={{ ...tdStyle, color: 'var(--c-muted)', fontSize: '.82rem' }}>Set {i + 1}</td>
+                <td style={tdStyle}>
+                  <input style={inputStyle} type="number" min="0" value={s.local}
+                    onChange={e => actualizar(i, 'local', e.target.value)} />
+                </td>
+                <td style={{ ...tdStyle, color: '#bbb' }}>–</td>
+                <td style={tdStyle}>
+                  <input style={inputStyle} type="number" min="0" value={s.visitante}
+                    onChange={e => actualizar(i, 'visitante', e.target.value)} />
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        {error && <p className="error-msg" style={{ marginBottom: '1rem' }}>{error}</p>}
+        <div className="modal-footer">
+          <button className="btn btn-secondary" onClick={onClose}>Cancelar</button>
+          <button className="btn btn-primary" onClick={guardar} disabled={guardando}>
+            {guardando ? 'Guardando...' : 'Guardar'}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function ModalError({ titulo, lineas, onClose }) {
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -173,14 +269,20 @@ function ModalError({ titulo, lineas, onClose }) {
   );
 }
 
-export default function DescargaTab({ temporada, jornadas, participantes, onRefresh }) {
+export default function DescargaTab({ temporada, jornadas, participantes, onRefresh, editable }) {
   const [modFiltro, setModFiltro] = useState('TODAS');
   const [jornadaFiltro, setJornadaFiltro] = useState('TODAS');
   const [preview, setPreview] = useState(null);
   const [importando, setImportando] = useState(false);
   const [feedback, setFeedback] = useState(null);
   const [errorModal, setErrorModal] = useState(null);
+  const [partidoEditando, setPartidoEditando] = useState(null);
   const fileRef = useRef();
+
+  const guardarEdicion = async (id, resultado) => {
+    await updatePartido(id, { resultado });
+    onRefresh?.();
+  };
 
   const modalidades = ['TODAS', ...new Set(jornadas.map(j => j.modalidad))];
   const numJornadas = jornadas.length ? Math.max(...jornadas.map(j => j.jornada)) : 0;
@@ -296,6 +398,13 @@ export default function DescargaTab({ temporada, jornadas, participantes, onRefr
           onClose={() => setErrorModal(null)}
         />
       )}
+      {partidoEditando && (
+        <ModalEditarPartido
+          partido={partidoEditando}
+          onGuardar={guardarEdicion}
+          onClose={() => setPartidoEditando(null)}
+        />
+      )}
 
       <div className="descarga-form">
         <label>
@@ -396,8 +505,8 @@ export default function DescargaTab({ temporada, jornadas, participantes, onRefr
         <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '.82rem', marginTop: '1.5rem' }}>
           <thead>
             <tr style={{ background: '#f8f9fa' }}>
-              {['J.', 'Tipo', 'Modalidad', 'Local', 'Visitante', 'Resultado'].map(h => (
-                <th key={h} style={{ padding: '6px 8px', textAlign: 'left', borderBottom: '2px solid #e0e0e0' }}>{h}</th>
+              {['J.', 'Tipo', 'Modalidad', 'Local', 'Visitante', 'Resultado', ...(editable ? [''] : [])].map((h, i) => (
+                <th key={i} style={{ padding: '6px 8px', textAlign: 'left', borderBottom: '2px solid #e0e0e0' }}>{h}</th>
               ))}
             </tr>
           </thead>
@@ -416,6 +525,17 @@ export default function DescargaTab({ temporada, jornadas, participantes, onRefr
                     ? `${j.resultado.puntos.local}-${j.resultado.puntos.visitante} (${j.resultado.sets.map(s => `${s.local}-${s.visitante}`).join('/')})`
                     : 'Pendiente'}
                 </td>
+                {editable && (
+                  <td style={{ padding: '5px 8px' }}>
+                    <button
+                      className="btn btn-secondary"
+                      style={{ padding: '2px 10px', fontSize: '.78rem' }}
+                      onClick={() => setPartidoEditando(j)}
+                    >
+                      Editar
+                    </button>
+                  </td>
+                )}
               </tr>
             ))}
           </tbody>
