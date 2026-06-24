@@ -37,6 +37,36 @@ function validarFilas(filas, jornadas) {
       return;
     }
 
+    const set1L = Number(f['Set 1 Local'] ?? 0);
+    const set1V = Number(f['Set 1 Visitante'] ?? 0);
+    const set2L = Number(f['Set 2 Local'] ?? 0);
+    const set2V = Number(f['Set 2 Visitante'] ?? 0);
+    const set3L = Number(f['Set 3 Local'] ?? 0);
+    const set3V = Number(f['Set 3 Visitante'] ?? 0);
+    const haySet1 = set1L > 0 || set1V > 0;
+    const haySet2 = set2L > 0 || set2V > 0;
+    const haySet3 = set3L > 0 || set3V > 0;
+
+    if (haySet2 && !haySet1) {
+      errores.push(`${ref} (${f['Local']} vs ${f['Visitante']}): Set 2 relleno con Set 1 vacío.`);
+      return;
+    }
+    if (haySet3 && !haySet2) {
+      errores.push(`${ref} (${f['Local']} vs ${f['Visitante']}): Set 3 relleno con Set 2 vacío.`);
+      return;
+    }
+    if (haySet3) {
+      const ganSet1 = set1L > set1V ? 'local' : set1V > set1L ? 'visitante' : null;
+      const ganSet2 = set2L > set2V ? 'local' : set2V > set2L ? 'visitante' : null;
+      if (ganSet1 !== null && ganSet2 !== null && ganSet1 === ganSet2) {
+        errores.push(
+          `${ref} (${f['Local']} vs ${f['Visitante']}): Set 3 no válido — ` +
+          `un mismo equipo ya ganó los dos primeros sets.`
+        );
+        return;
+      }
+    }
+
     const existe = jornadas.some(j =>
       j.modalidad === String(f['Modalidad']).trim() &&
       Number(j.jornada) === Number(f['Jornada']) &&
