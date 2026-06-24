@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import * as XLSX from 'xlsx';
 import './Temporadas.css';
-import { descargarExcel } from '../../utils/download';
+import { descargarPartidosExcel, descargarExcel } from '../../utils/download';
 import { updatePartido } from '../../services/jornadasService';
 
 const COLUMNAS_REQUERIDAS = [
@@ -171,7 +171,7 @@ export default function DescargaTab({ temporada, jornadas, participantes, onRefr
     return `${temporada}_${mod}_${jorn}`;
   };
 
-  const descargarPartidos = () => {
+  const descargarPartidos = async () => {
     const filas = filtradas.map(j => ({
       Temporada: j.temporada,
       Jornada: j.jornada,
@@ -187,7 +187,7 @@ export default function DescargaTab({ temporada, jornadas, participantes, onRefr
       'Set 3 Visitante': j.resultado?.sets?.[2]?.visitante ?? '',
       Ganador: j.resultado?.ganador ?? '',
     }));
-    descargarExcel(filas, 'Partidos', `${nombreBase()}.xlsx`);
+    await descargarPartidosExcel(filas, 'Partidos', `${nombreBase()}.xlsx`);
   };
 
   const descargarParticipantesFiltrados = () => {
