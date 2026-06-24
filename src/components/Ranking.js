@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './Ranking.css';
 import { getRankings } from '../services/rankingsService';
 import { useTemporada } from '../context/TemporadaContext';
@@ -20,7 +20,9 @@ function Ranking() {
   const [openSection, setOpenSection] = useState(null);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
+  const location = useLocation();
   const { temporada } = useTemporada();
+  const jugadoresPath = location.pathname.startsWith('/dashboard') ? '/dashboard/jugadores' : '/jugadores';
 
   useEffect(() => {
     if (!temporada) return;
@@ -45,7 +47,7 @@ function Ranking() {
         </thead>
         <tbody>
           {entries.map((entry, i) => (
-            <tr key={i} onClick={() => navigate(`/jugadores?id=${entry.ID}`)}>
+            <tr key={i} onClick={() => navigate(`${jugadoresPath}?id=${entry.ID}`)}>
               {headers.map(h => (
                 <td className={h === 'Total' ? 'bold' : ''} key={h}>{entry[h]}</td>
               ))}

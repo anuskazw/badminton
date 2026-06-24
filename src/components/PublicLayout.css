@@ -1,0 +1,162 @@
+/* ── Layout ─────────────────────────────────────────────── */
+.public-layout {
+  min-height: 100vh;
+  background: var(--c-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Cabecera ────────────────────────────────────────────── */
+.public-header {
+  background: var(--c-primary);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.public-header-inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 var(--pad-h);
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-xl);
+}
+
+/* ── Marca ───────────────────────────────────────────────── */
+.public-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.public-brand-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--c-accent);
+  border-radius: var(--radius-md);
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.public-brand-text {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* ── Navegación ─────────────────────────────────────────── */
+.public-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-xs);
+  flex: 1;
+}
+
+.public-nav-link {
+  padding: 6px 14px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  transition: background 0.15s, color 0.15s;
+}
+
+.public-nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.public-nav-link.active {
+  background: rgba(230, 57, 70, 0.25);
+  color: #fff;
+}
+
+/* ── Acciones (selector temporada + botón entrar) ────────── */
+.public-header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-sm);
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.public-temporada-select {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-md);
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  outline: none;
+  font-family: var(--font-base);
+  transition: border-color 0.15s;
+}
+
+.public-temporada-select:hover,
+.public-temporada-select:focus {
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.public-temporada-select option {
+  background: var(--c-primary);
+  color: #fff;
+}
+
+.public-login-btn {
+  padding: 6px 16px;
+  background: var(--c-accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+
+.public-login-btn:hover {
+  background: var(--c-accent-dk);
+}
+
+/* ── Contenido ───────────────────────────────────────────── */
+.public-main {
+  flex: 1;
+}
+
+/* ── Responsivo ─────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .public-header-inner {
+    gap: var(--sp-md);
+  }
+
+  .public-brand-text {
+    display: none;
+  }
+
+  .public-nav {
+    gap: 0;
+  }
+
+  .public-nav-link {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .public-temporada-select {
+    max-width: 100px;
+    font-size: 0.75rem;
+  }
+}

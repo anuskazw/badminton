@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import { useTemporada } from '../context/TemporadaContext';
 
 const NAV_ITEMS = [
-  { to: '/ranking',       label: 'Ranking' },
-  { to: '/equipos',       label: 'Equipos' },
-  { to: '/jugadores',     label: 'Jugadores' },
-  { to: '/jornadas',      label: 'Jornadas' },
-  { to: '/form',          label: 'Introducir resultado' },
-  { to: '/competicion-2', label: 'Competición' },
-  { to: '/temporadas',    label: 'Temporadas' },
+  { to: '/dashboard/ranking',        label: 'Ranking' },
+  { to: '/dashboard/equipos',        label: 'Equipos' },
+  { to: '/dashboard/jugadores',      label: 'Jugadores' },
+  { to: '/dashboard/jornadas',       label: 'Jornadas' },
+  { to: '/dashboard/form',           label: 'Introducir resultado' },
+  { to: '/dashboard/competicion-2',  label: 'Competición' },
+  { to: '/dashboard/temporadas',     label: 'Temporadas' },
 ];
 
 function Dashboard() {

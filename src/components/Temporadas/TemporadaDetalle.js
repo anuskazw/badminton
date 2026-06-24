@@ -106,7 +106,7 @@ export default function TemporadaDetalle() {
   const borrar = async () => {
     if (!window.confirm(`¿Borrar temporada "${temporada.nombre}"? Esta acción no se puede deshacer.`)) return;
     await deleteTemporada(id);
-    navigate('/temporadas');
+    navigate('/dashboard/temporadas');
   };
 
   if (!temporada) return <div className="page"><p>Cargando...</p></div>;
@@ -119,7 +119,7 @@ export default function TemporadaDetalle() {
   return (
     <div className="page">
       <div className="page-header">
-        <button className="back-btn" onClick={() => navigate('/temporadas')}>← Temporadas</button>
+        <button className="back-btn" onClick={() => navigate('/dashboard/temporadas')}>← Temporadas</button>
 
         {editNombre && esPendiente ? (
           <div style={{ display: 'flex', gap: '.5rem', alignItems: 'center', flex: 1 }}>

@@ -63,7 +63,7 @@ export default function TemporadasList() {
             <span className={`badge-estado badge-${t.estado}`}>{t.estado}</span>
             {t.fechaInicio && <span style={{ fontSize: '.78rem', color: '#888' }}>Inicio: {t.fechaInicio}</span>}
             <div className="card-actions">
-              <button className="prim" onClick={() => navigate(`/temporadas/${t.id}`)}>Gestionar</button>
+              <button className="prim" onClick={() => navigate(`/dashboard/temporadas/${t.id}`)}>Gestionar</button>
               {t.estado === 'PENDIENTE' && (
                 <button className="danger" onClick={() => borrar(t.id, t.estado)}>Borrar</button>
               )}
