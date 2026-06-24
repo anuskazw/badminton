@@ -22,6 +22,28 @@
   border-radius: var(--radius-md);
 }
 
+/* ── Buscador ────────────────────────────────────────────── */
+.jornadas-busqueda {
+  margin-bottom: var(--sp-lg);
+}
+
+.jornadas-busqueda-input {
+  width: 100%;
+  max-width: 360px;
+  padding: 8px 12px;
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-family: var(--font-base);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.jornadas-busqueda-input:focus {
+  border-color: var(--c-accent);
+  box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.1);
+}
+
 .modalidad-filtro label {
   display: flex;
   align-items: center;

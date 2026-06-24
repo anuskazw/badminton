@@ -16,6 +16,7 @@ const capitalize = (s) => s.charAt(0) + s.slice(1).toLowerCase();
 const Jornadas = () => {
     const { temporada } = useTemporada();
     const [modalidad, setModalidad] = useState('Todos');
+    const [busqueda, setBusqueda] = useState('');
     const [jornadas, setJornadas] = useState([]);
     const [cargando, setCargando] = useState(false);
     const [error, setError] = useState(null);
@@ -30,8 +31,21 @@ const Jornadas = () => {
             .finally(() => setCargando(false));
     }, [temporada]);
 
+    const term = busqueda.trim().toLowerCase();
+
+    const partidoContieneParticipante = (j) => {
+        if (!term) return true;
+        const nombres = [
+            j.local.equipo,
+            j.visitante.equipo,
+            ...(j.local.jugadores ?? []).map(p => p.nombre ?? p),
+            ...(j.visitante.jugadores ?? []).map(p => p.nombre ?? p),
+        ];
+        return nombres.some(n => String(n).toLowerCase().includes(term));
+    };
+
     const jornadasFiltradas = jornadas.filter(
-        j => modalidad === 'Todos' || j.modalidad === modalidad
+        j => (modalidad === 'Todos' || j.modalidad === modalidad) && partidoContieneParticipante(j)
     );
 
     const agrupadas = jornadasFiltradas.reduce((acc, j) => {
@@ -57,6 +71,16 @@ const Jornadas = () => {
                         {capitalize(m)}
                     </label>
                 ))}
+            </div>
+
+            <div className="jornadas-busqueda">
+                <input
+                    type="search"
+                    placeholder="Buscar participante..."
+                    value={busqueda}
+                    onChange={e => setBusqueda(e.target.value)}
+                    className="jornadas-busqueda-input"
+                />
             </div>
 
             {cargando && <p className="jornadas-mensaje">Cargando...</p>}
