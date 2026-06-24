@@ -51,10 +51,22 @@ function validarFilas(filas, jornadas) {
       j.visitante.equipo === String(f['Visitante']).trim()
     );
     if (!existe) {
-      errores.push(
-        `${ref}: no se encontro "${f['Local']} vs ${f['Visitante']}" ` +
-        `en jornada ${f['Jornada']} (${f['Modalidad']}).`
+      const jornadaMod = jornadas.filter(j =>
+        j.modalidad === String(f['Modalidad']).trim() &&
+        Number(j.jornada) === Number(f['Jornada'])
       );
+      if (!jornadaMod.length) {
+        errores.push(
+          `${ref}: no existe la jornada ${f['Jornada']} para la modalidad "${f['Modalidad']}".`
+        );
+      } else {
+        const equiposEsperados = jornadaMod.map(j => `${j.local.equipo} vs ${j.visitante.equipo}`).join(', ');
+        errores.push(
+          `${ref}: "${f['Local']} vs ${f['Visitante']}" no coincide con ningun partido ` +
+          `en jornada ${f['Jornada']} (${f['Modalidad']}). ` +
+          `Partidos esperados: ${equiposEsperados}.`
+        );
+      }
     }
   });
   return errores;
@@ -125,6 +137,7 @@ function ModalError({ titulo, lineas, onClose }) {
           ))}
         </div>
         <p style={{ fontSize: '.8rem', color: 'var(--c-muted)', margin: '0 0 1.25rem' }}>
+          La importacion solo actualiza partidos existentes — no crea partidos nuevos.
           Descarga la plantilla con <strong>Partidos Excel</strong>, corrigela y vuelve a subirla.
         </p>
         <div className="modal-footer">
