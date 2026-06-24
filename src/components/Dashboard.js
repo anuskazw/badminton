@@ -1,33 +1,42 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Dashboard.css'; // Asegúrate de crear un archivo CSS para estilos específicos del dashboard
+import { useTemporada } from '../context/TemporadaContext';
+
+const NAV_ITEMS = [
+  { to: '/ranking',       label: 'Ranking' },
+  { to: '/equipos',       label: 'Equipos' },
+  { to: '/jugadores',     label: 'Jugadores' },
+  { to: '/jornadas',      label: 'Jornadas' },
+  { to: '/form',          label: 'Introducir resultado' },
+  { to: '/competicion-2', label: 'Competición' },
+  { to: '/temporadas',    label: 'Temporadas' },
+];
 
 function Dashboard() {
-    // Aquí puedes agregar lógica para obtener y mostrar los resultados de la liga
-    return (
-        <div className="dashboard-container">
-            <h2>Resultados de la Liga de Bádminton</h2>
-            {/* Aquí puedes agregar tablas, gráficos, etc. para mostrar los resultados */}
-            <div className="card-container">
-                <Link to="/ranking" className="card">
-                    <h3>Ranking</h3>
-                    <p>Accede al ranking de jugadores.</p>
-                </Link>
-                <Link to="/equipos" className="card">
-                    <h3>Equipos</h3>
-                    <p>Consulta la lista de equipos.</p>
-                </Link>
-                <Link to="/jugadores" className="card">
-                    <h3>Jugadores</h3>
-                    <p>Información sobre los jugadores.</p>
-                </Link>
-                <div className="card">
-                    <h3>Normativa</h3>
-                    <p>Revisa las normativas del juego.</p>
-                </div>
-            </div>
-        </div>
-    );
+  const { temporada } = useTemporada();
+
+  return (
+    <div className="dashboard-home">
+      <header className="dashboard-main-header">
+        <h2>Bienvenida a la Liga</h2>
+        {temporada && (
+          <span className="dashboard-badge">{temporada}</span>
+        )}
+      </header>
+
+      <p className="dashboard-intro">
+        Selecciona una sección en el menú lateral para gestionar la competición.
+      </p>
+
+      <div className="dashboard-cards">
+        {NAV_ITEMS.map(({ to, label }) => (
+          <Link key={to} to={to} className="dashboard-card">
+            <span>{label}</span>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
 }
 
-export default Dashboard; 
+export default Dashboard;

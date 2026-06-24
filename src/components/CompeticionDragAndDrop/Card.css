@@ -1,16 +1,20 @@
 article {
-  border: 1px #d0d0d0 solid;
-  border-radius: 5px;
-  /* padding: 0.5rem; */
-  margin: 0 0.5rem;
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-md);
+  margin: 0 var(--sp-sm);
   cursor: grab;
-  /* height: 50px; */
   font-size: 14px;
   width: 220px;
+  background: var(--c-surface);
+  transition: box-shadow 0.15s;
 }
 
-article:active{
-    border: 1px black solid;
-    opacity: 0.2;
-    cursor: grabbing;
+article:active {
+  border-color: var(--c-primary);
+  opacity: 0.2;
+  cursor: grabbing;
+}
+
+@media (max-width: 640px) {
+  article { width: 100%; margin: 0; }
 }

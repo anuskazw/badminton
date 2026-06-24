@@ -14,7 +14,7 @@ const Equipo = ({elemento}) => {
             <span className={`badge`} >{extraerPrimeraLetra(elemento.modalidad)}</span>
         </div>
         <hr />
-        {elemento.jugadores.map(j => j.PLAYER).join(', ')}
+        {elemento.jugadores.map(j => j.nombre).join(', ')}
     </div>
 </div>
   )

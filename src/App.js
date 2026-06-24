@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './components/Login';
+import AppLayout from './components/AppLayout';
 import Dashboard from './components/Dashboard';
 import Ranking from './components/Ranking';
 import Player from './components/Player';
@@ -9,39 +10,29 @@ import SetForm from './components/SetForm';
 import Jornadas from './components/Jornadas';
 import Competicion from './components/Competicion';
 import CompeticionDragAndDrop from './components/CompeticionDragAndDrop/CompeticionDragAndDrop';
-
-const players = [
-  { id: 1, name: 'Jugador 1', j1: 10, j2: 15, j3: 20, total: 45 },
-  { id: 2, name: 'Jugador 2', j1: 12, j2: 18, j3: 22, total: 52 },
-  { id: 3, name: 'Jugador 3', j1: 14, j2: 16, j3: 24, total: 54 },
-  { id: 4, name: 'Jugador 4', j1: 11, j2: 19, j3: 21, total: 51 },
-  // Añade más jugadores
-];
-const teams = [
-  { id: 1, name: 'Equipo A', total: 45, jugadores: ['Pepito Pérez', 'Ana Caballero', 'Juanito López'] },
-  { id: 2, name: 'Equipo B', total: 35, jugadores: ['Carlos Ruiz', 'María Gómez', 'Luis Fernández'] },
-  { id: 3, name: 'Equipo C', total: 55, jugadores: ['Sofía Martínez', 'Diego Torres', 'Ana Sánchez'] }
-]
+import TemporadasList from './components/Temporadas/TemporadasList';
+import TemporadaDetalle from './components/Temporadas/TemporadaDetalle';
 
 function App() {
-    return (
-        <Router>
-            <div className="App">
-                <Routes>
-                    <Route path="/" element={<Login />} />
-                    <Route path="/dashboard" element={<Dashboard />} />
-                    <Route path="/ranking" element={<Ranking />} />
-                    <Route path="/jugadores" element={<Player players={players} />} />
-                    <Route path="/equipos" element={<Teams teams={teams}/>} />
-                    <Route path="/form" element={<SetForm/>} />
-                    <Route path="/jornadas" element={<Jornadas />} />
-                    <Route path="/competicion" element={<Competicion />} />
-                    <Route path="/competicion-2" element={<CompeticionDragAndDrop />} />
-
-                </Routes>
-            </div>
-        </Router>
-    );
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route element={<AppLayout />}>
+          <Route path="/dashboard"      element={<Dashboard />} />
+          <Route path="/ranking"        element={<Ranking />} />
+          <Route path="/jugadores"      element={<Player />} />
+          <Route path="/equipos"        element={<Teams />} />
+          <Route path="/form"           element={<SetForm />} />
+          <Route path="/jornadas"       element={<Jornadas />} />
+          <Route path="/competicion"    element={<Competicion />} />
+          <Route path="/competicion-2"  element={<CompeticionDragAndDrop />} />
+          <Route path="/temporadas"     element={<TemporadasList />} />
+          <Route path="/temporadas/:id" element={<TemporadaDetalle />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

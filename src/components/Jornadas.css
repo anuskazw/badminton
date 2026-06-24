@@ -1,43 +1,132 @@
-.contenedor {
-    border: 1px #d0d0d0 solid;
-    border-radius: 5px;
-    padding: 0.5rem;
+/* ── Página ──────────────────────────────────────────────── */
+.jornadas-page {
+  padding: var(--sp-xl) var(--pad-h);
 }
 
-.jornadas-container{
-    width: 50vw;
-    /* background: #d0d0d0; */
-}
-/* .ronda {
-    border: 1px #d0d0d0 solid;
-    border-radius: 5px;
-    padding: 0.5rem;
-    background: #f0f0f0; 
-} */
-/* .competidores{
-    padding: 0.5rem;
-    border: 1px #d0d0d0 solid;
-    border-radius: 5px;
-    background: #f0f0f0;
-} */
-
-.competidor {
-    display: flex;
-    justify-content: between;
-}
-.competidor:active{
-    background: #f8f8f8; 
+.jornadas-titulo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--c-primary);
+  margin: 0 0 var(--sp-xl);
 }
 
-.set{
-    margin: 0 .5rem;
-    width:20px;
-    text-align: center;
+/* ── Filtro de modalidad ─────────────────────────────────── */
+.modalidad-filtro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  margin-bottom: var(--sp-lg);
+  padding: var(--sp-md);
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-md);
 }
 
-.participante{
-    flex: 3;
+.modalidad-filtro label {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+  font-size: 14px;
 }
-.participante:hover{
-    background: #f8f8f8; 
+
+/* ── Rondas ──────────────────────────────────────────────── */
+.ronda {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-md);
+  padding: var(--sp-md) var(--sp-lg);
+  margin-bottom: var(--sp-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.ronda h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 var(--sp-md);
+  padding-bottom: var(--sp-xs);
+  border-bottom: 2px solid var(--c-border);
+  color: var(--c-primary);
+}
+
+/* ── Partido ─────────────────────────────────────────────── */
+.partido {
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-md);
+  padding: var(--sp-sm) var(--sp-md);
+  margin-bottom: 0.6rem;
+  background: var(--c-bg);
+}
+
+.modalidad-badge {
+  font-size: 11px;
+  color: var(--c-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.partido-fila {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.equipo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.equipo.local    { align-items: flex-start; }
+.equipo.visitante { align-items: flex-end; text-align: right; }
+
+.nombre-equipo {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--c-primary);
+}
+
+.jugadores { display: flex; flex-direction: column; }
+.jugadores span { font-size: 12px; color: var(--c-muted); }
+
+/* ── Marcador ────────────────────────────────────────────── */
+.marcador {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex-shrink: 0;
+}
+
+.puntos {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #444;
+  min-width: 28px;
+  text-align: center;
+}
+
+.puntos.ganador { color: var(--c-success); }
+.separador      { font-size: 1rem; color: #bbb; }
+
+.pendiente {
+  font-size: 0.85rem;
+  color: #aaa;
+  font-style: italic;
+  padding: 0 0.25rem;
+}
+
+/* ── Mensajes ────────────────────────────────────────────── */
+.jornadas-mensaje { color: var(--c-muted);  font-size: 0.9rem; padding: 1rem 0; }
+.jornadas-error   { color: var(--c-danger); }
+
+/* ── Responsivo ─────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .partido-fila { flex-wrap: wrap; }
+
+  .nombre-equipo { font-size: 0.82rem; }
+
+  .puntos { font-size: 1.1rem; min-width: 22px; }
 }

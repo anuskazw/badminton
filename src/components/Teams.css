@@ -1,80 +1,160 @@
-.team {
-    /* Estilo general del contenedor del jugador */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
+/* ── Página ──────────────────────────────────────────────── */
+.teams-page {
+  padding: var(--sp-xl) var(--pad-h);
 }
 
-.team-controls {
-    /* Estilo para los controles del jugador */
-    display: flex;
-    gap: 10px;
+/* ── Cabecera ────────────────────────────────────────────── */
+.teams-header {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-md);
+  margin-bottom: var(--sp-xl);
+  flex-wrap: wrap;
 }
 
-.team-button {
-    /* Estilo para los botones del jugador */
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+.teams-header h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--c-primary);
+  margin: 0;
+  flex: 1;
 }
 
-.team-button:hover {
-    /* Efecto hover para los botones */
-    background-color: #0056b3;
+.teams-back {
+  color: var(--c-muted);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: color 0.15s;
+  white-space: nowrap;
 }
 
-.team-list {
-    list-style-type: none;
-    padding: 0;
+.teams-back:hover { color: var(--c-accent); }
+
+.teams-error { color: var(--c-danger); font-size: 0.9rem; }
+
+/* ── Secciones por modalidad ─────────────────────────────── */
+.teams-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.team-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px 0;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.modality-section {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
 }
 
-.team-item:hover {
-    background-color: #e0e0e0;
+/* ── Cabecera de modalidad (botón toggle) ────────────────── */
+.modality-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--sp-md) 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.modality-header:hover { background: #f7fafc; }
+
+.modality-header--open { border-bottom: 2px solid var(--c-accent); }
+
+.modality-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--c-primary);
+}
+
+.modality-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.modality-count {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--c-accent);
+  padding: 2px 9px;
+  border-radius: 20px;
+}
+
+.modality-chevron { font-size: 0.6rem; color: #9aa5b8; }
+.modality-header--open .modality-chevron { color: var(--c-accent); }
+
+/* ── Cuerpo con grid de equipos ──────────────────────────── */
+.modality-body {
+  padding: var(--sp-lg) 22px;
+  background: #fafbfd;
+}
+
+.modality-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+/* ── Tarjeta de equipo ───────────────────────────────────── */
+.team-card {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-md);
+  padding: 14px var(--sp-md);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.team-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: #c6cfe0;
 }
 
 .team-name {
-    font-weight: bold;
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: var(--c-primary);
+  line-height: 1.3;
 }
 
-.team-points {
-    background-color: #f0f0f0;
-    padding: 5px 10px;
-    border-radius: 5px;
+.team-players {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
-.team-modalities {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    /* margin-top: 10px; */
-    opacity: 1;
-    transition: all 0.3s ease;
+.player-tag {
+  background: #edf2f7;
+  color: #4a5568;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 2px 9px;
+  border-radius: 20px;
+  white-space: nowrap;
 }
 
-.team-modalities ul {
-    padding-left: 20px;
-}
+/* ── Responsivo ─────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .modality-grid {
+    grid-template-columns: 1fr;
+  }
 
-.team-card {
-    padding: 10px;
-    margin: 10px 0;
-    cursor: pointer;
-    width: 400px;
+  .modality-header {
+    padding: var(--sp-sm) var(--sp-md);
+  }
+
+  .modality-body {
+    padding: var(--sp-md);
+  }
 }

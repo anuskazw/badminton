@@ -1,53 +1,74 @@
-/* src/components/Login.css */
+/* ── Página de login (centrado vertical y horizontal) ───── */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--c-bg);
+  padding: var(--sp-md);
+}
+
+/* ── Tarjeta del formulario ─────────────────────────────── */
 .login-container {
-    min-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  background: var(--c-surface);
+  padding: var(--sp-xl) var(--sp-lg);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
 }
 
 .login-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin: 0 0 var(--sp-xl);
+  color: var(--c-primary);
+  font-size: 1.4rem;
 }
 
 .login-container form div {
-    margin-bottom: 15px;
+  margin-bottom: var(--sp-md);
 }
 
 .login-container label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: var(--sp-xs);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--c-muted);
 }
 
 .login-container input {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
+  width: 100%;
+  padding: 9px 12px;
+  box-sizing: border-box;
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+  font-family: var(--font-base);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.login-container input:focus {
+  border-color: var(--c-accent);
 }
 
 .login-container button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  background: var(--c-accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: var(--font-base);
+  transition: background 0.15s;
+  margin-top: var(--sp-sm);
 }
 
 .login-container button:hover {
-    background-color: #0056b3;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
+  background: var(--c-accent-dk);
 }

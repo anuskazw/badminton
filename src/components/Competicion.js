@@ -1,9 +1,10 @@
 import { closestCorners, DndContext, useDroppable } from '@dnd-kit/core';
 import { CSS } from '@dnd-kit/utilities';
 import { arrayMove, SortableContext, useSortable, verticalListSortingStrategy } from '@dnd-kit/sortable';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Competicion.css';
-import EQUIPOS from './ficheros/MODALIDAD_EQUIPOS.json'
+import { getCompetidores } from '../services/competidoresService';
+import { useTemporada } from '../context/TemporadaContext';
 
 const Equipo = ({ id, index, modalidad, equipo, jugadores }) => {
 
@@ -25,7 +26,7 @@ const Equipo = ({ id, index, modalidad, equipo, jugadores }) => {
             <div>
                 <strong>{equipo}</strong>
                 <hr />
-                {jugadores.map(j => j.PLAYER).join(', ')}
+                {jugadores.map(j => j.nombre).join(', ')}
             </div>
         </div>
     )
@@ -35,8 +36,17 @@ const Equipo = ({ id, index, modalidad, equipo, jugadores }) => {
 const Competicion = () => {
 
     const { setNodeRef1 } = useDroppable({ id: 'PISTA_1' });
+    const { temporada } = useTemporada();
 
-    const [equipos, setEquipos] = useState(EQUIPOS);
+    const [equipos, setEquipos] = useState([]);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        if (!temporada) return;
+        getCompetidores(temporada)
+            .then(setEquipos)
+            .catch(() => setError('No se pudo cargar los competidores. ¿Está el servidor en marcha?'));
+    }, [temporada]);
 
     const getPosicion = id => equipos.findIndex(eq => eq.id === id);
 
@@ -52,6 +62,8 @@ const Competicion = () => {
     }
 
 
+
+    if (error) return <div className="competicion-page"><p className="error">{error}</p></div>;
 
     return (
         <div className="competicion-page">

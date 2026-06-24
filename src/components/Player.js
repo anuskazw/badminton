@@ -1,103 +1,82 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { useState } from 'react';
 import './Player.css';
-import RANKINGS from './ficheros/RANKINGS.json';
-import JUGADORES from './ficheros/ID_JUGADORES.json';
+import { getJugadores } from '../services/jugadoresService';
+import { getRankings } from '../services/rankingsService';
+import { useTemporada } from '../context/TemporadaContext';
 
+const LABEL_MODALIDAD = {
+  'RANK FEM IND': 'Individual femenino',
+  'RANK MASC IND': 'Individual masculino',
+  'RANK FEM DOB': 'Dobles femenino',
+  'RANK MASC DOB': 'Dobles masculino',
+  'RANK MIX DOB': 'Dobles mixto',
+};
 
-function Player({ players }) {
+function Player() {
+  const location = useLocation();
+  const playerId = new URLSearchParams(location.search).get('id');
 
-    const location = useLocation();
-    const queryParams = new URLSearchParams(location.search);
-    const playerId = queryParams.get('id');
-    const [openPlayerId, setOpenPlayerId] = useState(null);
+  const [jugadores, setJugadores] = useState([]);
+  const [rankings, setRankings] = useState([]);
+  const [openPlayerId, setOpenPlayerId] = useState(null);
+  const [error, setError] = useState(null);
+  const { temporada } = useTemporada();
 
-    const getFilteredPlayers = (playerId) => {
-        const filtered = playerId ? (JUGADORES || []).filter(p => p.ID === parseInt(playerId)) : JUGADORES;
-        filtered.sort((a, b) => b.total - a.total);
-        return filtered;
-    };
+  useEffect(() => {
+    if (!temporada) return;
+    Promise.all([getJugadores(), getRankings(temporada)])
+      .then(([j, r]) => { setJugadores(j); setRankings(r); })
+      .catch(() => setError('No se pudo cargar los datos. ¿Está el servidor en marcha?'));
+  }, [temporada]);
 
-    const assignModalities = (jugador, playerId) => {
-        let modalidades = [];
-        Object.keys(RANKINGS).forEach(key => {
-            RANKINGS[key].forEach(element => {
-                if (element.ID === parseInt(playerId)) {
-                    if (key === 'RANKING') {
-                        jugador.total = element.Total;
-                    } else {
-                        modalidades.push({ mod: key, value: element.Total });
-                    }
-                }
-            });
-        });
-        jugador.modalidades = modalidades;
-    };
+  const getTotal = (idJugador) => {
+    const entry = rankings.find(r => r.tipo === 'RANKING' && r.ID === +idJugador);
+    return entry?.Total ?? 0;
+  };
 
-    let filteredPlayers = getFilteredPlayers(playerId);
-    filteredPlayers.forEach(jugador => assignModalities(jugador, jugador.ID));
+  const getModalidades = (idJugador) =>
+    rankings
+      .filter(r => r.tipo !== 'RANKING' && r.ID === +idJugador)
+      .map(r => ({ mod: r.tipo, value: r.Total }));
 
-    const getText = (key) => {
-        switch (key) {
-            case 'RANK FEM IND':
-                return 'Individual femenino: ';
-            case 'RANK MASC IND':
-                return 'Individual masculino: ';
-            case 'RANK FEM DOB':
-                return 'Dobles femenino: ';
-            case 'RANK MASC DOB':
-                return 'Dobles masculino: ';
-            case 'RANK MIX DOB':
-                return 'Dobles mixto: ';
-            default:
-                return '';
-        }
-    }
+  const lista = playerId
+    ? jugadores.filter(j => String(j.id) === String(playerId))
+    : [...jugadores].sort((a, b) => getTotal(+b.id) - getTotal(+a.id));
 
-    return (
-        <div>
-            <h2>{playerId ? 'Jugador ' : 'Lista de Jugadores'}</h2>
+  if (error) return <div className="player-page"><p className="msg-error">{error}</p></div>;
 
-            <ul className="player-list">
-                {filteredPlayers.map((player) => (
-                    <li
-                        id={player.id}
-                        key={'p_' + player.id}
-                        className="player-card"
-                    >
-                        <div className={`player-item ${openPlayerId === player?.ID ? 'selected' : ''}`}
-                            onClick={() => setOpenPlayerId(openPlayerId === player.ID ? null : player.ID)}>
-                            <div className="player-name">
-                                {player.PLAYER}
-                            </div>
-                            <div className="player-points">
-                                {player.total}
-                            </div>
-                        </div>
-                        {openPlayerId === player.ID && (
-                            <div className="player-modalities">
-                                <p><strong>MODALIDADES:</strong></p>
-                                <ul>
-                                    {(player.modalidades || []).map((modalidad, index) => (
-                                        <li id={'m_' + index} key={'m_' + index} className='player-modalidad'>
-                                            <span>{getText(modalidad.mod)}</span>
-                                            <span className="player-points">{modalidad.value}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        )}
-                        {playerId && openPlayerId === player.ID && (
-                            <div className="player-competiciones">
-                                <p><strong>Competiciones:</strong></p>
-                            </div>
-                        )}
+  return (
+    <div className="player-page">
+      <h2>{playerId ? 'Jugador' : 'Lista de Jugadores'}</h2>
+      <ul className="player-list">
+        {lista.map((player) => (
+          <li key={player.id} className="player-card">
+            <div
+              className={`player-item ${openPlayerId === player.id ? 'selected' : ''}`}
+              onClick={() => setOpenPlayerId(openPlayerId === player.id ? null : player.id)}
+            >
+              <div className="player-name">{player.nombre}</div>
+              <div className="player-points">{getTotal(player.id)}</div>
+            </div>
+            {openPlayerId === player.id && (
+              <div className="player-modalities">
+                <p><strong>MODALIDADES:</strong></p>
+                <ul>
+                  {getModalidades(player.id).map((m, i) => (
+                    <li key={i} className='player-modalidad'>
+                      <span>{LABEL_MODALIDAD[m.mod] ?? m.mod}: </span>
+                      <span className="player-points">{m.value}</span>
                     </li>
-                ))}
-            </ul>
-        </div>
-    );
+                  ))}
+                </ul>
+              </div>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 export default Player;

@@ -1,107 +1,116 @@
-.set-form {
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+/* ── Página ──────────────────────────────────────────────── */
+.set-form-page {
+  padding: var(--sp-xl) var(--pad-h);
 }
 
-.form-group {
-    margin: 10px;
+/* ── Formulario ──────────────────────────────────────────── */
+.set-form {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-xl);
+  box-shadow: var(--shadow-sm);
 }
+
+.form-group { margin: var(--sp-sm) 0; }
 
 .form-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-.form-input {
-    width: -webkit-fill-available;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    margin: 5px 0;
+  display: block;
+  margin-bottom: var(--sp-xs);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--c-muted);
 }
 
-.form-input:focus {
-    border-color: #007bff;
-    outline: none;
+.form-input {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+  font-family: var(--font-base);
+  outline: none;
+  transition: border-color 0.15s;
+  box-sizing: border-box;
 }
+
+.form-input:focus { border-color: var(--c-accent); }
 
 .form-button {
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+  padding: 10px var(--sp-md);
+  background: var(--c-accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: var(--font-base);
+  transition: background 0.15s;
 }
 
-.form-button:hover {
-    background-color: #0056b3;
+.form-button:hover { background: var(--c-accent-dk); }
+
+/* ── Mensajes de feedback ────────────────────────────────── */
+.feedback { font-size: 0.88rem; margin: var(--sp-sm) 0; }
+.feedback-ok    { color: var(--c-success); }
+.feedback-error { color: var(--c-danger); }
+
+/* ── Layout de equipos (local/visitante) ─────────────────── */
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-md);
 }
 
-.d-flex{
-    /* max-width: 1200px; */
-    display: flex;
-    flex-wrap: wrap;
-}
-.sets{
-    margin: 20px;
-    display: grid; 
-    grid-template-columns: 100px 20px 100px; 
-    grid-template-rows: repeat(4, 1fr); 
-    gap: 10px;
-    justify-content: center;
-}
-.local, .visitante{
-    margin: 10px;
-    width: 421px;
-}
-.local select, .visitante select {
-    width: 100%; /* Asegura que el select ocupe toda la anchura del contenedor */
-}
-.header_local{
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 100%; 
-    grid-column: 0;
-    grid-row: 1;
-}
-.header_vs{
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 100%; 
-    grid-column: 2;
-    grid-row: 1;
-}
-.header-visitante{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    grid-column: 3;
-    grid-row: 1;
+.local,
+.visitante {
+  flex: 1;
+  min-width: 240px;
 }
 
-
-.sets_local{
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 100%; 
-    grid-column: 0;
+.local select,
+.visitante select {
+  width: 100%;
 }
 
-.sets_visitante{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    grid-column: 3;
+/* ── Grid de sets ────────────────────────────────────────── */
+.sets {
+  margin: var(--sp-lg) 0;
+  display: grid;
+  grid-template-columns: 100px 20px 100px;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+
+.header_local,
+.header_vs,
+.header-visitante,
+.sets_local,
+.sets_visitante {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* ── Responsivo ─────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .set-form {
+    padding: var(--sp-md);
+  }
+
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .local,
+  .visitante {
+    min-width: unset;
+  }
+
+  .sets {
+    grid-template-columns: 80px 16px 80px;
+  }
 }

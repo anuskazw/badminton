@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
-import './Login.css'; // Importa el archivo CSS
-
+import { useNavigate } from 'react-router-dom';
+import './Login.css';
 
 function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Aquí puedes manejar el envío del formulario, por ejemplo, llamando a una API
-        console.log('Email:', email);
-        console.log('Password:', password);
+        navigate('/dashboard');
     };
 
     return (
+        <div className="login-page">
         <div className="login-container">
             <h2>Iniciar sesión</h2>
             <form onSubmit={handleSubmit}>
@@ -40,7 +40,8 @@ function Login() {
                 <button type="submit">Iniciar sesión</button>
             </form>
         </div>
+        </div>
     );
 }
 
-export default Login; 
+export default Login;

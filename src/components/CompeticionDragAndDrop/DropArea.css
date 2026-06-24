@@ -1,16 +1,15 @@
 .drop_area {
-  padding: 0.5rem;
-  margin: 0.5rem;
-  border-radius: 5px;
-  border: 1px #dcdcdc dashed;
+  padding: var(--sp-sm);
+  margin: var(--sp-sm);
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--c-border);
   opacity: 1;
   transition: all 0.2s ease-in-out;
   height: 100px;
 }
 
 .drop_hide {
-  border: 1px #dcdcdc dashed;
-  border-radius: 5px;
+  border: 1px dashed var(--c-border);
+  border-radius: var(--radius-md);
   opacity: 0;
-  /* height: 1px; */
 }

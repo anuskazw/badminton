@@ -1,71 +1,25 @@
-.flex{
-    display: flex;
-    justify-content: space-between;
-}
-.overflow-hidden{
-    overflow: hidden;
-}
-.equipo{
-    background: white;
-    position: relative;
-    font-size: 12px;
-    padding: 0.5rem;
-    border-radius: 5px;
-    /* margin: 0.5rem; */
-    /* width: 360px; */
+/* (Las clases .badge y .badge-N vienen de global.css) */
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--sp-sm);
 }
 
-.badge{
-    font-size: 10px;
-    padding: 0.25rem 0.5rem;
-    background: lightgrey;
-    border-radius: 5px;
-    position: initial!important;
-    white-space: nowrap;
-    height: fit-content;
-    top: 0.5rem;
-    right: 0.5rem;
+.overflow-hidden { overflow: hidden; }
+
+.equipo {
+  background: var(--c-surface);
+  font-size: 12px;
+  padding: var(--sp-sm);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--c-border);
 }
 
-.badge-1{
-    background: green;
-}
-.badge-2{
-    background: #f2c464; /* Color aleatorio */
-}
-.badge-3{
-    background: #8bc34a; /* Color aleatorio */
-}
-.badge-4{
-    background: #4caf50; /* Color aleatorio */
-}
-.badge-5{
-    background: #f2c464; /* Color aleatorio */
-}
-.badge-6{
-    background: #8bc34a; /* Color aleatorio */
-}
-.badge-7{
-    background: #4caf50; /* Color aleatorio */
-}
-.badge-8{
-    background: #9c27b0; /* Color aleatorio */
-}
-.badge-9{
-    background: #03a9f4; /* Color aleatorio */
-}
-.badge-10{
-    background: #e91e63; /* Color aleatorio */
-}
-.badge-11{
-    background: #4caf50; /* Color aleatorio */
-}
-.badge-12{
-    background: #f2c464; /* Color aleatorio */
-}
-.badge-13{
-    background: #8bc34a; /* Color aleatorio */
-}
-.badge-14{
-    background: #9c27b0; /* Color aleatorio */
+/* Override de position para el badge en este contexto */
+.equipo .badge {
+  position: initial;
+  white-space: nowrap;
+  flex-shrink: 0;
 }

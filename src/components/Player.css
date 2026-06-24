@@ -1,100 +1,86 @@
-.player {
-    /* Estilo general del contenedor del jugador */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
+/* ── Página ──────────────────────────────────────────────── */
+.player-page {
+  padding: var(--sp-xl) var(--pad-h);
 }
 
-.player-controls {
-    /* Estilo para los controles del jugador */
-    display: flex;
-    gap: 10px;
+.player-page > h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--c-primary);
+  margin: 0 0 var(--sp-xl);
 }
 
-.player-button {
-    /* Estilo para los botones del jugador */
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.player-button:hover {
-    /* Efecto hover para los botones */
-    background-color: #0056b3;
-}
-
+/* ── Lista de jugadores ──────────────────────────────────── */
 .player-list {
-    list-style-type: none;
-    padding: 0;
-    width: 60vw;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
+
+.player-card { cursor: pointer; }
 
 .player-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    /* margin: 10px 0; */
-    cursor: pointer;
-    transition: background-color 0.3s;
-    border-radius: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  padding: 10px var(--sp-md);
+  cursor: pointer;
+  transition: background 0.15s;
+  border-radius: var(--radius-sm);
 }
 
-.player-item:hover {
-    background-color: #e0e0e0;
-}
-
-.player-item.selected{
-    background-color: #e0e0e0;
+.player-item:hover,
+.player-item.selected {
+  background: #edf2f7;
 }
 
 .player-name {
-    font-weight: bold;
+  font-weight: 600;
+  color: var(--c-primary);
 }
 
 .player-points {
-    background-color: #f0f0f0;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-weight: bold;
+  background: var(--c-bg);
+  color: var(--c-primary);
+  padding: 3px 10px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.88rem;
+  border: 1px solid var(--c-border);
 }
 
+/* ── Detalle de modalidades ──────────────────────────────── */
 .player-modalities {
-    border: 1px solid #ccc;
-    border-top: none;
-    padding: 10px;
+  background: #fafbfd;
+  border: 1px solid var(--c-border);
+  border-top: none;
+  padding: var(--sp-md);
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
 }
 
-.player-modalities p{
-    margin: 10px 0;
+.player-modalities p { margin: 0 0 var(--sp-sm); font-size: 0.85rem; color: var(--c-muted); }
+
+.player-modalities ul { padding: 0; margin: 0; }
+
+.player-modalidad {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 5px var(--sp-sm);
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
 }
 
-.player-modalities ul {
-    padding-left: 5px;
-}
+.player-modalidad:hover { background: var(--c-bg); }
 
-.player-modalities ul li:hover {
-    background-color: #f8f8f8;
-    transition: background-color 0s;
-    border-radius: 5px;
-}
-
-.player-card {
-    padding: 5px;
-    cursor: pointer;
-}
-
-.player-modalidad{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 5px;
+/* ── Responsivo ─────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .player-name  { font-size: 0.9rem; }
+  .player-points { font-size: 0.82rem; padding: 2px 8px; }
 }

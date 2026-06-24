@@ -1,130 +1,115 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Jornadas.css';
+import { useTemporada } from '../context/TemporadaContext';
+import { getJornadas } from '../services/jornadasService';
+
+const MODALIDADES = [
+    'DOBLES FEMENINO',
+    'DOBLES MASCULINO',
+    'DOBLES MIXTO',
+    'INDIVIDUAL FEMENINO',
+    'INDIVIDUAL MASCULINO',
+];
+
+const capitalize = (s) => s.charAt(0) + s.slice(1).toLowerCase();
 
 const Jornadas = () => {
+    const { temporada } = useTemporada();
+    const [modalidad, setModalidad] = useState('Todos');
+    const [jornadas, setJornadas] = useState([]);
+    const [cargando, setCargando] = useState(false);
+    const [error, setError] = useState(null);
 
-    const [competidor, setCompetidor] = useState('');
+    useEffect(() => {
+        if (!temporada) return;
+        setCargando(true);
+        setError(null);
+        getJornadas(temporada)
+            .then(setJornadas)
+            .catch(() => setError('No se pudieron cargar las jornadas. ¿Está el servidor en marcha?'))
+            .finally(() => setCargando(false));
+    }, [temporada]);
 
-    const [modalidad, setModalidad ] = useState('Todos');
+    const jornadasFiltradas = jornadas.filter(
+        j => modalidad === 'Todos' || j.modalidad === modalidad
+    );
 
-    const rondas = [
-        {
-            titulo: 'Ronda 1',
-            jugados: 9,
-            competidores: [
-                {
-                    local: {
-                        nombre: 'Equipo B',
-                        jugadores: ['Marta Rodríguez', 'Mónica Castrillejo'],
-                        sets: [21, 10, 21],
-                        modalidad: 'Dobles Femenino',
-                        puntos: 2
-                    },
-                    visitante: {
-                        nombre: 'Equipo A',
-                        jugadores: ['Anuska Caballero', 'Mónica Rodríguez'],
-                        sets: [18, 21, 13],
-                        modalidad: 'Dobles Femenino',
-                        puntos: 1
-                    }
-                },
-                {
-                    local: {
-                        nombre: 'Equipo B',
-                        jugadores: ['Ander Falquina', 'Javier Sordo'],
-                        sets: [21, 10, 21],
-                        modalidad: 'Dobles Masculino',
-                        puntos: 2
-                    },
-                    visitante: {
-                        nombre: 'Equipo A',
-                        jugadores: ['Raul Bak', 'Simon Bak'],
-                        sets: [18, 21, 13],
-                        modalidad: 'Dobles Masculino',
-                        puntos: 1
-                    }
-                },
-                {
-                    local: {
-                        nombre: 'Equipo B',
-                        jugadores: ['Marta Rodríguez', 'Mónica Castrillejo'],
-                        sets: [21, 10, 21],
-                        modalidad: 'Dobles Femenino',
-                        puntos: 2
-                    },
-                    visitante: {
-                        nombre: 'Equipo A',
-                        jugadores: ['Anuska Caballero', 'Mónica Rodríguez'],
-                        sets: [18, 21, 13],
-                        modalidad: 'Dobles Femenino',
-                        puntos: 1
-                    }
-                }
-            ]
-        }
-    ]
+    const agrupadas = jornadasFiltradas.reduce((acc, j) => {
+        if (!acc[j.jornada]) acc[j.jornada] = [];
+        acc[j.jornada].push(j);
+        return acc;
+    }, {});
 
-
+    const numeros = Object.keys(agrupadas).map(Number).sort((a, b) => a - b);
 
     return (
-        <div className="jornadas-container">
+        <div className="jornadas-page">
+            <h2 className="jornadas-titulo">Temporada {temporada}</h2>
+
             <div className="modalidad-filtro">
                 <label>
-                    <input type="radio" name="modalidad" value="Todos" onClick={() => setModalidad('Todos')} checked={modalidad === 'Todos'} />
-                    Todas las modalidades
+                    <input type="radio" name="modalidad" value="Todos" onChange={() => setModalidad('Todos')} checked={modalidad === 'Todos'} />
+                    Todas
                 </label>
-                <label>
-                    <input type="radio" name="modalidad" value="Dobles Femenino" onClick={() => setModalidad('Dobles Femenino')} checked={modalidad === 'Dobles Femenino'} />
-                    Dobles Femenino
-                </label>
-                <label>
-                    <input type="radio" name="modalidad" value="Dobles Masculino" onClick={() => setModalidad('Dobles Masculino')} checked={modalidad === 'Dobles Masculino'} />
-                    Dobles Masculino
-                </label>
-                <label>
-                    <input type="radio" name="modalidad" value="Dobles Mixto" onClick={() => setModalidad('Dobles Mixto')} checked={modalidad === 'Dobles Mixto'} />
-                    Dobles Mixto
-                </label>
-                <label>
-                    <input type="radio" name="modalidad" value="Individual Femenino" onClick={() => setModalidad('Individual Femenino')} checked={modalidad === 'Individual Femenino'} />
-                    Individual Femenino
-                </label>
-                <label>
-                    <input type="radio" name="modalidad" value="Individual Masculino" onClick={() => setModalidad('Individual Masculino')} checked={modalidad === 'Individual Masculino'} />
-                    Individual Masculino
-                </label>
-
+                {MODALIDADES.map(m => (
+                    <label key={m}>
+                        <input type="radio" name="modalidad" value={m} onChange={() => setModalidad(m)} checked={modalidad === m} />
+                        {capitalize(m)}
+                    </label>
+                ))}
             </div>
-            {rondas.map((ronda, index) => (
-                <div key={index} className="ronda">
-                    <h4 className="">{ronda.titulo}</h4>
-                    {ronda.competidores.filter(c => modalidad === 'Todos' || c.local.modalidad === modalidad).map((c) => (
-                        <div>
-                            <div className='contenedor competidor' onClick={() => setCompetidor(c)}>
-                                <div className="contenedor participante">{c.local.nombre}</div>
-                                <div className="contenedor set">{c.local.puntos}</div>
-                                <div className="contenedor set">{c.visitante.puntos}</div>
-                                <div className="contenedor participante">{c.visitante.nombre}</div>
-                            </div>
-                            <div className='contenedor competidor'>
-                            {
-                                c.local.jugadores && c.local.jugadores.map((jugador)=> (
-                                    <p className='participante'>{jugador}</p>
-                                ))
-                            }
-                            {
-                                c.local.jugadores && c.visitante.jugadores.map((jugador)=> (
-                                    <p className='participante'>{jugador}</p>
-                                ))
-                            }
-                            </div>
-                        </div>
 
-                    ))}
+            {cargando && <p className="jornadas-mensaje">Cargando...</p>}
+            {error && <p className="jornadas-mensaje jornadas-error">{error}</p>}
+            {!cargando && !error && numeros.length === 0 && (
+                <p className="jornadas-mensaje">No hay jornadas para esta temporada.</p>
+            )}
+
+            {numeros.map(num => (
+                <div key={num} className="ronda">
+                    <h4>Jornada {num}</h4>
+                    {agrupadas[num].map(partido => {
+                        const pL = partido.resultado?.puntos?.local;
+                        const pV = partido.resultado?.puntos?.visitante;
+                        const hayResultado = pL != null && pV != null;
+
+                        return (
+                            <div key={partido.id} className="partido">
+                                <span className="modalidad-badge">
+                                    {capitalize(partido.modalidad)}{partido.tipo ? ` · ${partido.tipo}` : ''}
+                                </span>
+                                <div className="partido-fila">
+                                    <div className="equipo local">
+                                        <div className="nombre-equipo">{partido.local.equipo}</div>
+                                        {partido.resultado?.jugadores?.local?.map((j, i) => (
+                                            <span key={i} className="jugador">{j}</span>
+                                        ))}
+                                    </div>
+                                    <div className="marcador">
+                                        {hayResultado ? (
+                                            <>
+                                                <span className={`puntos${pL > pV ? ' ganador' : ''}`}>{pL}</span>
+                                                <span className="separador">-</span>
+                                                <span className={`puntos${pV > pL ? ' ganador' : ''}`}>{pV}</span>
+                                            </>
+                                        ) : (
+                                            <span className="pendiente">vs</span>
+                                        )}
+                                    </div>
+                                    <div className="equipo visitante">
+                                        <div className="nombre-equipo">{partido.visitante.equipo}</div>
+                                        {partido.resultado?.jugadores?.visitante?.map((j, i) => (
+                                            <span key={i} className="jugador">{j}</span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    })}
                 </div>
             ))}
         </div>
     );
 };
 
-export default Jornadas; 
+export default Jornadas;
