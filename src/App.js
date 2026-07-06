@@ -17,7 +17,7 @@ import Styling from './components/Styling';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         {/* Acceso */}
         <Route path="/" element={<Login />} />
