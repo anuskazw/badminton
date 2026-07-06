@@ -1,0 +1,5594 @@
+{
+  "temporadas": [
+    {
+      "id": "2024-2025",
+      "nombre": "2024-2025",
+      "estado": "FINALIZADA",
+      "idaYVuelta": false,
+      "fechaInicio": "2024-09-01",
+      "fechaFin": null
+    },
+    {
+      "id": "2025-2026",
+      "nombre": "2025-2026",
+      "estado": "INICIADA",
+      "idaYVuelta": true,
+      "fechaInicio": "2025-10-01",
+      "fechaFin": null
+    }
+  ],
+  "jugadores": [
+    {
+      "id": 1,
+      "nombre": "ALBERTO ARJONA ROMERO",
+      "genero": "M"
+    },
+    {
+      "id": 2,
+      "nombre": "BELÉN NAVAS SERNA",
+      "genero": "F"
+    },
+    {
+      "id": 3,
+      "nombre": "CHARLOTTE BERTHIER",
+      "genero": "F"
+    },
+    {
+      "id": 4,
+      "nombre": "DAVY VAN LANDUYT",
+      "genero": "M"
+    },
+    {
+      "id": 5,
+      "nombre": "ESTHER RIVERO GARCÍA",
+      "genero": "F"
+    },
+    {
+      "id": 6,
+      "nombre": "JAVIER ILIE CANDEA",
+      "genero": "M"
+    },
+    {
+      "id": 7,
+      "nombre": "MARGARITA ARIZAGA VALDIVIESO",
+      "genero": "F"
+    },
+    {
+      "id": 8,
+      "nombre": "MÓNICA RODRÍGUEZ VARELA",
+      "genero": "F"
+    },
+    {
+      "id": 9,
+      "nombre": "SIMON BAK",
+      "genero": "M"
+    },
+    {
+      "id": 10,
+      "nombre": "ANA MARÍA CABALLERO GÓMEZ",
+      "genero": "F"
+    },
+    {
+      "id": 11,
+      "nombre": "ANDRÉS RODRÍGUEZ FALQUINA",
+      "genero": "M"
+    },
+    {
+      "id": 12,
+      "nombre": "CARLOTA KIELBUS ALONSO",
+      "genero": "F"
+    },
+    {
+      "id": 13,
+      "nombre": "CLAUDIA LIMA NEBRERA",
+      "genero": "F"
+    },
+    {
+      "id": 14,
+      "nombre": "DIANA BAK",
+      "genero": "F"
+    },
+    {
+      "id": 15,
+      "nombre": "DORA YANEZ RAMOS",
+      "genero": "F"
+    },
+    {
+      "id": 16,
+      "nombre": "FRANCISCO JAVIER PEÑA RODRIGO",
+      "genero": "M"
+    },
+    {
+      "id": 17,
+      "nombre": "JAMIE GISSEL",
+      "genero": "F"
+    },
+    {
+      "id": 18,
+      "nombre": "JAVIER MARTÍNEZ POZO",
+      "genero": "M"
+    },
+    {
+      "id": 19,
+      "nombre": "KEVIN KIELBUS ALONSO ",
+      "genero": "M"
+    },
+    {
+      "id": 20,
+      "nombre": "LUCÍA ALMORZA CORNEJO",
+      "genero": "F"
+    },
+    {
+      "id": 21,
+      "nombre": "MARÍA JESÚS SERNA SERNA",
+      "genero": "F"
+    },
+    {
+      "id": 22,
+      "nombre": "MÓNICA CASTRILLEJO MANSO",
+      "genero": "F"
+    },
+    {
+      "id": 23,
+      "nombre": "PAULA BAK",
+      "genero": "F"
+    },
+    {
+      "id": 24,
+      "nombre": "RAUL BAK MAJ",
+      "genero": "M"
+    },
+    {
+      "id": 25,
+      "nombre": "ALEXANDRA COROBA BELLAVISTA",
+      "genero": "F"
+    },
+    {
+      "id": 26,
+      "nombre": "CLARA EVA FERNÁNDEZ DELGADO",
+      "genero": "F"
+    },
+    {
+      "id": 27,
+      "nombre": "LUCÍA RODRÍGUEZ AYUSO",
+      "genero": "F"
+    },
+    {
+      "id": 28,
+      "nombre": "MARÍA JOSÉ LÓPEZ ESPEJO",
+      "genero": "F"
+    },
+    {
+      "id": 29,
+      "nombre": "MARÍA JOSÉ SERNA SERNA",
+      "genero": "F"
+    },
+    {
+      "id": 30,
+      "nombre": "MARTA RODRÍGUEZ AYUSO",
+      "genero": "F"
+    },
+    {
+      "id": 31,
+      "nombre": "NADIA MARCOS",
+      "genero": "F"
+    },
+    {
+      "id": "adad",
+      "nombre": "LUCIA RODRÍGUEZ AYUSO",
+      "genero": "F"
+    },
+    {
+      "id": "8c2e",
+      "nombre": "MARÍA JOSÉ VACAS",
+      "genero": "F"
+    },
+    {
+      "id": "f270",
+      "nombre": "BEA CAMPILLO",
+      "genero": "F"
+    },
+    {
+      "id": "a212",
+      "nombre": "ELENA SABIDO",
+      "genero": "F"
+    },
+    {
+      "id": "d803",
+      "nombre": "ALVARO CUERVO",
+      "genero": "M"
+    },
+    {
+      "id": "c768",
+      "nombre": "FRANCISCO RODRIGUEZ",
+      "genero": "M"
+    },
+    {
+      "id": "8424",
+      "nombre": "CARLOTA KIELBUS",
+      "genero": "F"
+    },
+    {
+      "id": "84fc",
+      "nombre": "DANIEL JIMENEZ",
+      "genero": "M"
+    }
+  ],
+  "competidores": [
+    {
+      "id": 1,
+      "idModalidad": 1,
+      "modalidad": "DOBLES FEMENINO",
+      "idEquipo": 1,
+      "equipo": "CDC ALTATORRE A",
+      "jugadores": [
+        {
+          "PLAYER": "MÓNICA RODRÍGUEZ VARELA",
+          "ID": 8
+        },
+        {
+          "PLAYER": "ANA MARÍA CABALLERO GÓMEZ",
+          "ID": 10
+        },
+        {
+          "PLAYER": "MARÍA JOSÉ LÓPEZ ESPEJO",
+          "ID": 28
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 2,
+      "idModalidad": 1,
+      "modalidad": "DOBLES FEMENINO",
+      "idEquipo": 2,
+      "equipo": "CDC ALTATORRE B + CDS PARLA",
+      "jugadores": [
+        {
+          "PLAYER": "MARTA RODRÍGUEZ AYUSO",
+          "ID": 30
+        },
+        {
+          "PLAYER": "MÓNICA CASTRILLEJO MANSO",
+          "ID": 22
+        },
+        {
+          "PLAYER": "DIANA BAK",
+          "ID": 14
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 3,
+      "idModalidad": 1,
+      "modalidad": "DOBLES FEMENINO",
+      "idEquipo": 3,
+      "equipo": "CDC ALTATORRE C",
+      "jugadores": [
+        {
+          "PLAYER": "MARGARITA ARIZAGA VALDIVIESO",
+          "ID": 7
+        },
+        {
+          "PLAYER": "DORA YANEZ RAMOS",
+          "ID": 15
+        },
+        {
+          "PLAYER": "MARÍA JOSÉ SERNA SERNA",
+          "ID": 29
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 4,
+      "idModalidad": 1,
+      "modalidad": "DOBLES FEMENINO",
+      "idEquipo": 4,
+      "equipo": "CDC ALTATORRE D",
+      "jugadores": [
+        {
+          "PLAYER": "LUCÍA ALMORZA CORNEJO",
+          "ID": 20
+        },
+        {
+          "PLAYER": "BELÉN NAVAS SERNA",
+          "ID": 2
+        },
+        {
+          "PLAYER": "MARÍA JESÚS SERNA SERNA",
+          "ID": 21
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 5,
+      "idModalidad": 1,
+      "modalidad": "DOBLES FEMENINO",
+      "idEquipo": 5,
+      "equipo": "CDC ALTATORRE E",
+      "jugadores": [
+        {
+          "PLAYER": "PAULA BAK",
+          "ID": 23
+        },
+        {
+          "PLAYER": "JAMIE GISSEL",
+          "ID": 17
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 6,
+      "idModalidad": 1,
+      "modalidad": "DOBLES FEMENINO",
+      "idEquipo": 6,
+      "equipo": "CDC ALTATORRE F",
+      "jugadores": [
+        {
+          "PLAYER": "CHARLOTTE BERTHIER",
+          "ID": 3
+        },
+        {
+          "PLAYER": "ESTHER RIVERO GARCÍA",
+          "ID": 5
+        },
+        {
+          "PLAYER": "LUCÍA RODRÍGUEZ AYUSO",
+          "ID": 27
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 7,
+      "idModalidad": 1,
+      "modalidad": "DOBLES FEMENINO",
+      "idEquipo": 7,
+      "equipo": "CDC ALTATORRE G",
+      "jugadores": [
+        {
+          "PLAYER": "CLARA EVA FERNÁNDEZ DELGADO",
+          "ID": 26
+        },
+        {
+          "PLAYER": "ALEXANDRA COROBA BELLAVISTA",
+          "ID": 25
+        },
+        {
+          "PLAYER": "NADIA MARCOS",
+          "ID": 31
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 8,
+      "idModalidad": 2,
+      "modalidad": "DOBLES MASCULINO",
+      "idEquipo": 1,
+      "equipo": "CDC ALTATORRE A",
+      "jugadores": [
+        {
+          "PLAYER": "ANDRÉS RODRÍGUEZ FALQUINA",
+          "ID": 11
+        },
+        {
+          "PLAYER": "JAVIER MARTÍNEZ POZO",
+          "ID": 18
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 9,
+      "idModalidad": 2,
+      "modalidad": "DOBLES MASCULINO",
+      "idEquipo": 2,
+      "equipo": "CDC ALTATORRE B",
+      "jugadores": [
+        {
+          "PLAYER": "FRANCISCO JAVIER PEÑA RODRIGO",
+          "ID": 16
+        },
+        {
+          "PLAYER": "RAUL BAK MAJ",
+          "ID": 24
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 10,
+      "idModalidad": 2,
+      "modalidad": "DOBLES MASCULINO",
+      "idEquipo": 3,
+      "equipo": "CDC ALTATORRE C",
+      "jugadores": [
+        {
+          "PLAYER": "DAVY VAN LANDUYT",
+          "ID": 4
+        },
+        {
+          "PLAYER": "SIMON BAK",
+          "ID": 9
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 11,
+      "idModalidad": 2,
+      "modalidad": "DOBLES MASCULINO",
+      "idEquipo": 4,
+      "equipo": "CDC ALTATORRE D + ASM",
+      "jugadores": [
+        {
+          "PLAYER": "ALBERTO ARJONA ROMERO",
+          "ID": 1
+        },
+        {
+          "PLAYER": "JAVIER ILIE CANDEA",
+          "ID": 6
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 12,
+      "idModalidad": 3,
+      "modalidad": "DOBLES MIXTO",
+      "idEquipo": 1,
+      "equipo": "CDC ALTATORRE A",
+      "jugadores": [
+        {
+          "PLAYER": "MARÍA JESÚS SERNA SERNA",
+          "ID": 21
+        },
+        {
+          "PLAYER": "JAVIER MARTÍNEZ POZO",
+          "ID": 18
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 13,
+      "idModalidad": 3,
+      "modalidad": "DOBLES MIXTO",
+      "idEquipo": 2,
+      "equipo": "CDC ALTATORRE B",
+      "jugadores": [
+        {
+          "PLAYER": "MARGARITA ARIZAGA VALDIVIESO",
+          "ID": 7
+        },
+        {
+          "PLAYER": "ANDRÉS RODRÍGUEZ FALQUINA",
+          "ID": 11
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 14,
+      "idModalidad": 3,
+      "modalidad": "DOBLES MIXTO",
+      "idEquipo": 3,
+      "equipo": "CDC ALTATORRE C",
+      "jugadores": [
+        {
+          "PLAYER": "MÓNICA RODRÍGUEZ VARELA",
+          "ID": 8
+        },
+        {
+          "PLAYER": "RAUL BAK MAJ",
+          "ID": 24
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 15,
+      "idModalidad": 3,
+      "modalidad": "DOBLES MIXTO",
+      "idEquipo": 4,
+      "equipo": "CDC ALTATORRE D",
+      "jugadores": [
+        {
+          "PLAYER": "DORA YANEZ RAMOS",
+          "ID": 15
+        },
+        {
+          "PLAYER": "ALBERTO ARJONA ROMERO",
+          "ID": 1
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 16,
+      "idModalidad": 3,
+      "modalidad": "DOBLES MIXTO",
+      "idEquipo": 5,
+      "equipo": "CDC ALTATORRE E",
+      "jugadores": [
+        {
+          "PLAYER": "ESTHER RIVERO GARCÍA",
+          "ID": 5
+        },
+        {
+          "PLAYER": "DAVY VAN LANDUYT",
+          "ID": 4
+        },
+        {
+          "PLAYER": "BELÉN NAVAS SERNA",
+          "ID": 2
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 17,
+      "idModalidad": 3,
+      "modalidad": "DOBLES MIXTO",
+      "idEquipo": 6,
+      "equipo": "CDC ALTATORRE F",
+      "jugadores": [
+        {
+          "PLAYER": "CHARLOTTE BERTHIER",
+          "ID": 3
+        },
+        {
+          "PLAYER": "SIMON BAK",
+          "ID": 9
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 18,
+      "idModalidad": 3,
+      "modalidad": "DOBLES MIXTO",
+      "idEquipo": 7,
+      "equipo": "ASM",
+      "jugadores": [
+        {
+          "PLAYER": "CLAUDIA LIMA NEBRERA",
+          "ID": 13
+        },
+        {
+          "PLAYER": "JAVIER ILIE CANDEA",
+          "ID": 6
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 19,
+      "idModalidad": 3,
+      "modalidad": "DOBLES MIXTO",
+      "idEquipo": 8,
+      "equipo": "LEGANES",
+      "jugadores": [
+        {
+          "PLAYER": "CARLOTA KIELBUS ALONSO",
+          "ID": 12
+        },
+        {
+          "PLAYER": "KEVIN KIELBUS ALONSO",
+          "ID": 19
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 20,
+      "idModalidad": 4,
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "idEquipo": 1,
+      "equipo": "MÓNICA RODRÍGUEZ VARELA",
+      "jugadores": [
+        {
+          "PLAYER": "MÓNICA RODRÍGUEZ VARELA",
+          "ID": 8
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 21,
+      "idModalidad": 4,
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "idEquipo": 2,
+      "equipo": "ANA MARÍA CABALLERO GÓMEZ",
+      "jugadores": [
+        {
+          "PLAYER": "ANA MARÍA CABALLERO GÓMEZ",
+          "ID": 10
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 22,
+      "idModalidad": 4,
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "idEquipo": 3,
+      "equipo": "PAULA BAK",
+      "jugadores": [
+        {
+          "PLAYER": "PAULA BAK",
+          "ID": 23
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 23,
+      "idModalidad": 4,
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "idEquipo": 4,
+      "equipo": "LUCÍA ALMORZA CORNEJO",
+      "jugadores": [
+        {
+          "PLAYER": "LUCÍA ALMORZA CORNEJO",
+          "ID": 20
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 24,
+      "idModalidad": 4,
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "idEquipo": 5,
+      "equipo": "MARGARITA ARIZAGA VALDIVIESO",
+      "jugadores": [
+        {
+          "PLAYER": "MARGARITA ARIZAGA VALDIVIESO",
+          "ID": 7
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 25,
+      "idModalidad": 4,
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "idEquipo": 6,
+      "equipo": "BELÉN NAVAS SERNA",
+      "jugadores": [
+        {
+          "PLAYER": "BELÉN NAVAS SERNA",
+          "ID": 2
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 26,
+      "idModalidad": 4,
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "idEquipo": 7,
+      "equipo": "MÓNICA CASTRILLEJO MANSO",
+      "jugadores": [
+        {
+          "PLAYER": "MÓNICA CASTRILLEJO MANSO",
+          "ID": 22
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 27,
+      "idModalidad": 4,
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "idEquipo": 8,
+      "equipo": "CHARLOTTE BERTHIER",
+      "jugadores": [
+        {
+          "PLAYER": "CHARLOTTE BERTHIER",
+          "ID": 3
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 28,
+      "idModalidad": 4,
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "idEquipo": 9,
+      "equipo": "ESTHER RIVERO GARCÍA",
+      "jugadores": [
+        {
+          "PLAYER": "ESTHER RIVERO GARCÍA",
+          "ID": 5
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 29,
+      "idModalidad": 4,
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "idEquipo": 10,
+      "equipo": "JAMIE GISSEL",
+      "jugadores": [
+        {
+          "PLAYER": "JAMIE GISSEL",
+          "ID": 17
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 30,
+      "idModalidad": 4,
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "idEquipo": 11,
+      "equipo": "DIANA BAK",
+      "jugadores": [
+        {
+          "PLAYER": "DIANA BAK",
+          "ID": 14
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 31,
+      "idModalidad": 4,
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "idEquipo": 12,
+      "equipo": "CLAUDIA LIMA NEBRERA",
+      "jugadores": [
+        {
+          "PLAYER": "CLAUDIA LIMA NEBRERA",
+          "ID": 13
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 32,
+      "idModalidad": 4,
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "idEquipo": 13,
+      "equipo": "CARLOTA KIELBUS ALONSO",
+      "jugadores": [
+        {
+          "PLAYER": "CARLOTA KIELBUS ALONSO",
+          "ID": 12
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 33,
+      "idModalidad": 5,
+      "modalidad": "INDIVIDUAL MASCULINO",
+      "idEquipo": 1,
+      "equipo": "FRANCISCO JAVIER PEÑA RODRIGO",
+      "jugadores": [
+        {
+          "PLAYER": "FRANCISCO JAVIER PEÑA RODRIGO",
+          "ID": 16
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 34,
+      "idModalidad": 5,
+      "modalidad": "INDIVIDUAL MASCULINO",
+      "idEquipo": 2,
+      "equipo": "ALBERTO ARJONA ROMERO",
+      "jugadores": [
+        {
+          "PLAYER": "ALBERTO ARJONA ROMERO",
+          "ID": 1
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 35,
+      "idModalidad": 5,
+      "modalidad": "INDIVIDUAL MASCULINO",
+      "idEquipo": 3,
+      "equipo": "RAUL BAK MAJ",
+      "jugadores": [
+        {
+          "PLAYER": "RAUL BAK MAJ",
+          "ID": 24
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 36,
+      "idModalidad": 5,
+      "modalidad": "INDIVIDUAL MASCULINO",
+      "idEquipo": 4,
+      "equipo": "DAVY VAN LANDUYT",
+      "jugadores": [
+        {
+          "PLAYER": "DAVY VAN LANDUYT",
+          "ID": 4
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 37,
+      "idModalidad": 5,
+      "modalidad": "INDIVIDUAL MASCULINO",
+      "idEquipo": 5,
+      "equipo": "SIMON BAK",
+      "jugadores": [
+        {
+          "PLAYER": "SIMON BAK",
+          "ID": 9
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 38,
+      "idModalidad": 5,
+      "modalidad": "INDIVIDUAL MASCULINO",
+      "idEquipo": 6,
+      "equipo": "JAVIER ILIE CANDEA",
+      "jugadores": [
+        {
+          "PLAYER": "JAVIER ILIE CANDEA",
+          "ID": 6
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    },
+    {
+      "id": 39,
+      "idModalidad": 5,
+      "modalidad": "INDIVIDUAL MASCULINO",
+      "idEquipo": 7,
+      "equipo": "KEVIN KIELBUS ALONSO",
+      "jugadores": [
+        {
+          "PLAYER": "KEVIN KIELBUS ALONSO",
+          "ID": 19
+        }
+      ],
+      "temporada": "2024-2025",
+      "pista": "0"
+    }
+  ],
+  "rankings": [
+    {
+      "id": 1,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 11,
+      "JUGADOR": "ANDRÉS RODRÍGUEZ FALQUINA",
+      "J1": 6,
+      "J2": 6,
+      "J3": 6,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 18
+    },
+    {
+      "id": 2,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 7,
+      "JUGADOR": "MARGARITA ARIZAGA VALDIVIESO",
+      "J1": 4,
+      "J2": 7,
+      "J3": 7,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 18
+    },
+    {
+      "id": 3,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 8,
+      "JUGADOR": "MÓNICA RODRÍGUEZ VARELA",
+      "J1": 4,
+      "J2": 6,
+      "J3": 6,
+      "J4": 1,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 17
+    },
+    {
+      "id": 4,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 9,
+      "JUGADOR": "SIMON BAK",
+      "J1": 7,
+      "J2": 1,
+      "J3": -1,
+      "J4": 6,
+      "J5": 3,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 16
+    },
+    {
+      "id": 5,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 3,
+      "JUGADOR": "CHARLOTTE BERTHIER",
+      "J1": 9,
+      "J2": 0,
+      "J3": 2,
+      "J4": 3,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 14
+    },
+    {
+      "id": 6,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 1,
+      "JUGADOR": "ALBERTO ARJONA ROMERO",
+      "J1": 4,
+      "J2": 5,
+      "J3": 4,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 13
+    },
+    {
+      "id": 7,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 10,
+      "JUGADOR": "ANA MARÍA CABALLERO GÓMEZ",
+      "J1": 0,
+      "J2": 6,
+      "J3": 6,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 12
+    },
+    {
+      "id": 8,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 18,
+      "JUGADOR": "JAVIER MARTÍNEZ POZO",
+      "J1": 3,
+      "J2": 4,
+      "J3": 4,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 11
+    },
+    {
+      "id": 9,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 16,
+      "JUGADOR": "FRANCISCO JAVIER PEÑA RODRIGO",
+      "J1": 4,
+      "J2": 6,
+      "J3": 1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 11
+    },
+    {
+      "id": 10,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 24,
+      "JUGADOR": "RAUL BAK MAJ",
+      "J1": 4,
+      "J2": 4,
+      "J3": 2,
+      "J4": 1,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 11
+    },
+    {
+      "id": 11,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 18,
+      "JUGADOR": "JAVIER MARTÍNEZ POZO",
+      "J1": 3,
+      "J2": 4,
+      "J3": 4,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 11
+    },
+    {
+      "id": 12,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 21,
+      "JUGADOR": "MARÍA JESÚS SERNA SERNA",
+      "J1": 3,
+      "J2": 4,
+      "J3": 2,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 9
+    },
+    {
+      "id": 13,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 4,
+      "JUGADOR": "DAVY VAN LANDUYT",
+      "J1": 3,
+      "J2": 5,
+      "J3": 0,
+      "J4": 0,
+      "J5": 1,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 9
+    },
+    {
+      "id": 14,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 30,
+      "JUGADOR": "MARTA RODRÍGUEZ AYUSO",
+      "J1": 3,
+      "J2": 3,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 9
+    },
+    {
+      "id": 15,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 2,
+      "JUGADOR": "BELÉN NAVAS SERNA",
+      "J1": -1,
+      "J2": 3,
+      "J3": 4,
+      "J4": 3,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 9
+    },
+    {
+      "id": 16,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 22,
+      "JUGADOR": "MÓNICA CASTRILLEJO MANSO",
+      "J1": 4,
+      "J2": 3,
+      "J3": 1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 8
+    },
+    {
+      "id": 17,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 14,
+      "JUGADOR": "DIANA BAK",
+      "J1": 1,
+      "J2": 1,
+      "J3": 6,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 8
+    },
+    {
+      "id": 18,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 20,
+      "JUGADOR": "LUCÍA ALMORZA CORNEJO",
+      "J1": 6,
+      "J2": 0,
+      "J3": 1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 7
+    },
+    {
+      "id": 19,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 13,
+      "JUGADOR": "CLAUDIA LIMA NEBRERA",
+      "J1": 2,
+      "J2": 2,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 7
+    },
+    {
+      "id": 20,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 6,
+      "JUGADOR": "JAVIER ILIE CANDEA",
+      "J1": 3,
+      "J2": 3,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 6
+    },
+    {
+      "id": 21,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 26,
+      "JUGADOR": "CLARA EVA FERNÁNDEZ DELGADO",
+      "J1": 1,
+      "J2": 1,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 5
+    },
+    {
+      "id": 22,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 31,
+      "JUGADOR": "NADIA MARCOS",
+      "J1": 1,
+      "J2": 1,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 5
+    },
+    {
+      "id": 23,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 23,
+      "JUGADOR": "PAULA BAK",
+      "J1": 2,
+      "J2": 2,
+      "J3": 1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 5
+    },
+    {
+      "id": 24,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 27,
+      "JUGADOR": "LUCÍA RODRÍGUEZ AYUSO",
+      "J1": 3,
+      "J2": 0,
+      "J3": 1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 4
+    },
+    {
+      "id": 25,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 17,
+      "JUGADOR": "JAMIE GISSEL",
+      "J1": 1,
+      "J2": 1,
+      "J3": 1,
+      "J4": 0,
+      "J5": 1,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 4
+    },
+    {
+      "id": 26,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 15,
+      "JUGADOR": "DORA YANEZ RAMOS",
+      "J1": 1,
+      "J2": 1,
+      "J3": 2,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 4
+    },
+    {
+      "id": 27,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 28,
+      "JUGADOR": "MARÍA JOSÉ LÓPEZ ESPEJO",
+      "J1": 0,
+      "J2": 3,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 3
+    },
+    {
+      "id": 28,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 29,
+      "JUGADOR": "MARÍA JOSÉ SERNA SERNA",
+      "J1": 1,
+      "J2": 1,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 2
+    },
+    {
+      "id": 29,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 19,
+      "JUGADOR": "KEVIN KIELBUS ALONSO ",
+      "J1": 0,
+      "J2": 1,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 1
+    },
+    {
+      "id": 30,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 25,
+      "JUGADOR": "ALEXANDRA COROBA BELLAVISTA",
+      "J1": 0,
+      "J2": 0,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 0
+    },
+    {
+      "id": 31,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 12,
+      "JUGADOR": "CARLOTA KIELBUS ALONSO",
+      "J1": 0,
+      "J2": 0,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 0
+    },
+    {
+      "id": 32,
+      "temporada": "2024-2025",
+      "tipo": "RANKING",
+      "ID": 5,
+      "JUGADOR": "ESTHER RIVERO GARCÍA",
+      "J1": 0,
+      "J2": -1,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": -1
+    },
+    {
+      "id": 33,
+      "temporada": "2024-2025",
+      "tipo": "RANK MIX DOB",
+      "ID": 7,
+      "JUGADOR": "MARGARITA ARIZAGA VALDIVIESO",
+      "J1": 3,
+      "J2": 3,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 9
+    },
+    {
+      "id": 34,
+      "temporada": "2024-2025",
+      "tipo": "RANK MIX DOB",
+      "ID": 11,
+      "JUGADOR": "ANDRÉS RODRÍGUEZ FALQUINA",
+      "J1": 3,
+      "J2": 3,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 9
+    },
+    {
+      "id": 35,
+      "temporada": "2024-2025",
+      "tipo": "RANK MIX DOB",
+      "ID": 8,
+      "JUGADOR": "MÓNICA RODRÍGUEZ VARELA",
+      "J1": 1,
+      "J2": 3,
+      "J3": 3,
+      "J4": 1,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 8
+    },
+    {
+      "id": 36,
+      "temporada": "2024-2025",
+      "tipo": "RANK MIX DOB",
+      "ID": 3,
+      "JUGADOR": "CHARLOTTE BERTHIER",
+      "J1": 3,
+      "J2": 0,
+      "J3": -1,
+      "J4": 3,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 5
+    },
+    {
+      "id": 37,
+      "temporada": "2024-2025",
+      "tipo": "RANK MIX DOB",
+      "ID": 9,
+      "JUGADOR": "SIMON BAK",
+      "J1": 3,
+      "J2": 0,
+      "J3": -1,
+      "J4": 3,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 5
+    },
+    {
+      "id": 38,
+      "temporada": "2024-2025",
+      "tipo": "RANK MIX DOB",
+      "ID": 4,
+      "JUGADOR": "DAVY VAN LANDUYT",
+      "J1": 1,
+      "J2": 1,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 2
+    },
+    {
+      "id": 39,
+      "temporada": "2024-2025",
+      "tipo": "RANK MIX DOB",
+      "ID": 21,
+      "JUGADOR": "MARÍA JESÚS SERNA SERNA",
+      "J1": 0,
+      "J2": 1,
+      "J3": 1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 2
+    },
+    {
+      "id": 40,
+      "temporada": "2024-2025",
+      "tipo": "RANK MIX DOB",
+      "ID": 18,
+      "JUGADOR": "JAVIER MARTÍNEZ POZO",
+      "J1": 0,
+      "J2": 1,
+      "J3": 1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 2
+    },
+    {
+      "id": 41,
+      "temporada": "2024-2025",
+      "tipo": "RANK MIX DOB",
+      "ID": 15,
+      "JUGADOR": "DORA YANEZ RAMOS",
+      "J1": 0,
+      "J2": 1,
+      "J3": 1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 2
+    },
+    {
+      "id": 42,
+      "temporada": "2024-2025",
+      "tipo": "RANK MIX DOB",
+      "ID": 1,
+      "JUGADOR": "ALBERTO ARJONA ROMERO",
+      "J1": 0,
+      "J2": 1,
+      "J3": 1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 2
+    },
+    {
+      "id": 43,
+      "temporada": "2024-2025",
+      "tipo": "RANK MIX DOB",
+      "ID": 13,
+      "JUGADOR": "CLAUDIA LIMA NEBRERA",
+      "J1": -1,
+      "J2": 3,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 2
+    },
+    {
+      "id": 44,
+      "temporada": "2024-2025",
+      "tipo": "RANK MIX DOB",
+      "ID": 6,
+      "JUGADOR": "JAVIER ILIE CANDEA",
+      "J1": -1,
+      "J2": 3,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 2
+    },
+    {
+      "id": 45,
+      "temporada": "2024-2025",
+      "tipo": "RANK MIX DOB",
+      "ID": 5,
+      "JUGADOR": "ESTHER RIVERO GARCÍA",
+      "J1": 1,
+      "J2": 0,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 1
+    },
+    {
+      "id": 46,
+      "temporada": "2024-2025",
+      "tipo": "RANK MIX DOB",
+      "ID": 2,
+      "JUGADOR": "BELÉN NAVAS SERNA",
+      "J1": 0,
+      "J2": 1,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 1
+    },
+    {
+      "id": 47,
+      "temporada": "2024-2025",
+      "tipo": "RANK MIX DOB",
+      "ID": 24,
+      "JUGADOR": "RAUL BAK MAJ",
+      "J1": 0,
+      "J2": 0,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 0
+    },
+    {
+      "id": 48,
+      "temporada": "2024-2025",
+      "tipo": "RANK MIX DOB",
+      "ID": 12,
+      "JUGADOR": "CARLOTA KIELBUS ALONSO",
+      "J1": 0,
+      "J2": 0,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 0
+    },
+    {
+      "id": 49,
+      "temporada": "2024-2025",
+      "tipo": "RANK MIX DOB",
+      "ID": 19,
+      "JUGADOR": "KEVIN KIELBUS ALONSO ",
+      "J1": 0,
+      "J2": 0,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 0
+    },
+    {
+      "id": 50,
+      "temporada": "2024-2025",
+      "tipo": "RANK MASC IND",
+      "ID": 9,
+      "JUGADOR": "SIMON BAK",
+      "J1": 3,
+      "J2": 0,
+      "J3": 0,
+      "J4": 3,
+      "J5": 3,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 9
+    },
+    {
+      "id": 51,
+      "temporada": "2024-2025",
+      "tipo": "RANK MASC IND",
+      "ID": 1,
+      "JUGADOR": "ALBERTO ARJONA ROMERO",
+      "J1": 1,
+      "J2": 3,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 7
+    },
+    {
+      "id": 52,
+      "temporada": "2024-2025",
+      "tipo": "RANK MASC IND",
+      "ID": 16,
+      "JUGADOR": "FRANCISCO JAVIER PEÑA RODRIGO",
+      "J1": 3,
+      "J2": 3,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 6
+    },
+    {
+      "id": 53,
+      "temporada": "2024-2025",
+      "tipo": "RANK MASC IND",
+      "ID": 24,
+      "JUGADOR": "RAUL BAK MAJ",
+      "J1": 3,
+      "J2": 1,
+      "J3": 1,
+      "J4": 1,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 6
+    },
+    {
+      "id": 54,
+      "temporada": "2024-2025",
+      "tipo": "RANK MASC IND",
+      "ID": 4,
+      "JUGADOR": "DAVY VAN LANDUYT",
+      "J1": 1,
+      "J2": 3,
+      "J3": 0,
+      "J4": 0,
+      "J5": 1,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 5
+    },
+    {
+      "id": 55,
+      "temporada": "2024-2025",
+      "tipo": "RANK MASC IND",
+      "ID": 19,
+      "JUGADOR": "KEVIN KIELBUS ALONSO ",
+      "J1": 0,
+      "J2": 1,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 1
+    },
+    {
+      "id": 56,
+      "temporada": "2024-2025",
+      "tipo": "RANK MASC IND",
+      "ID": 6,
+      "JUGADOR": "JAVIER ILIE CANDEA",
+      "J1": 1,
+      "J2": -1,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 0
+    },
+    {
+      "id": 57,
+      "temporada": "2024-2025",
+      "tipo": "RANK MASC DOB",
+      "ID": 11,
+      "JUGADOR": "ANDRÉS RODRÍGUEZ FALQUINA",
+      "J1": 3,
+      "J2": 3,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 9
+    },
+    {
+      "id": 58,
+      "temporada": "2024-2025",
+      "tipo": "RANK MASC DOB",
+      "ID": 18,
+      "JUGADOR": "JAVIER MARTÍNEZ POZO",
+      "J1": 3,
+      "J2": 3,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 9
+    },
+    {
+      "id": 59,
+      "temporada": "2024-2025",
+      "tipo": "RANK MASC DOB",
+      "ID": 16,
+      "JUGADOR": "FRANCISCO JAVIER PEÑA RODRIGO",
+      "J1": 1,
+      "J2": 3,
+      "J3": 1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 5
+    },
+    {
+      "id": 60,
+      "temporada": "2024-2025",
+      "tipo": "RANK MASC DOB",
+      "ID": 24,
+      "JUGADOR": "RAUL BAK MAJ",
+      "J1": 1,
+      "J2": 3,
+      "J3": 1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 5
+    },
+    {
+      "id": 61,
+      "temporada": "2024-2025",
+      "tipo": "RANK MASC DOB",
+      "ID": 1,
+      "JUGADOR": "ALBERTO ARJONA ROMERO",
+      "J1": 3,
+      "J2": 1,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 4
+    },
+    {
+      "id": 62,
+      "temporada": "2024-2025",
+      "tipo": "RANK MASC DOB",
+      "ID": 6,
+      "JUGADOR": "JAVIER ILIE CANDEA",
+      "J1": 3,
+      "J2": 1,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 4
+    },
+    {
+      "id": 63,
+      "temporada": "2024-2025",
+      "tipo": "RANK MASC DOB",
+      "ID": 4,
+      "JUGADOR": "DAVY VAN LANDUYT",
+      "J1": 1,
+      "J2": 1,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 2
+    },
+    {
+      "id": 64,
+      "temporada": "2024-2025",
+      "tipo": "RANK MASC DOB",
+      "ID": 9,
+      "JUGADOR": "SIMON BAK",
+      "J1": 1,
+      "J2": 1,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 2
+    },
+    {
+      "id": 65,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM IND",
+      "ID": 7,
+      "JUGADOR": "MARGARITA ARIZAGA VALDIVIESO",
+      "J1": 1,
+      "J2": 3,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 7
+    },
+    {
+      "id": 66,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM IND",
+      "ID": 8,
+      "JUGADOR": "MÓNICA RODRÍGUEZ VARELA",
+      "J1": 3,
+      "J2": 3,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 6
+    },
+    {
+      "id": 67,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM IND",
+      "ID": 3,
+      "JUGADOR": "CHARLOTTE BERTHIER",
+      "J1": 3,
+      "J2": 0,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 6
+    },
+    {
+      "id": 68,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM IND",
+      "ID": 10,
+      "JUGADOR": "ANA MARÍA CABALLERO GÓMEZ",
+      "J1": 0,
+      "J2": 3,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 6
+    },
+    {
+      "id": 69,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM IND",
+      "ID": 14,
+      "JUGADOR": "DIANA BAK",
+      "J1": 1,
+      "J2": 1,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 5
+    },
+    {
+      "id": 70,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM IND",
+      "ID": 13,
+      "JUGADOR": "CLAUDIA LIMA NEBRERA",
+      "J1": 3,
+      "J2": -1,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 5
+    },
+    {
+      "id": 71,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM IND",
+      "ID": 20,
+      "JUGADOR": "LUCÍA ALMORZA CORNEJO",
+      "J1": 3,
+      "J2": 0,
+      "J3": 1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 4
+    },
+    {
+      "id": 72,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM IND",
+      "ID": 2,
+      "JUGADOR": "BELÉN NAVAS SERNA",
+      "J1": -1,
+      "J2": -1,
+      "J3": 3,
+      "J4": 3,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 4
+    },
+    {
+      "id": 73,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM IND",
+      "ID": 23,
+      "JUGADOR": "PAULA BAK",
+      "J1": 1,
+      "J2": 1,
+      "J3": 1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 3
+    },
+    {
+      "id": 74,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM IND",
+      "ID": 22,
+      "JUGADOR": "MÓNICA CASTRILLEJO MANSO",
+      "J1": 1,
+      "J2": 0,
+      "J3": 1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 2
+    },
+    {
+      "id": 75,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM IND",
+      "ID": 17,
+      "JUGADOR": "JAMIE GISSEL",
+      "J1": 0,
+      "J2": 0,
+      "J3": 1,
+      "J4": 0,
+      "J5": 1,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 2
+    },
+    {
+      "id": 76,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM IND",
+      "ID": 12,
+      "JUGADOR": "CARLOTA KIELBUS ALONSO",
+      "J1": 0,
+      "J2": 0,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 0
+    },
+    {
+      "id": 77,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM IND",
+      "ID": 5,
+      "JUGADOR": "ESTHER RIVERO GARCÍA",
+      "J1": -1,
+      "J2": -1,
+      "J3": -1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": -3
+    },
+    {
+      "id": 78,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM DOB",
+      "ID": 30,
+      "JUGADOR": "MARTA RODRÍGUEZ AYUSO",
+      "J1": 3,
+      "J2": 3,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 9
+    },
+    {
+      "id": 79,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM DOB",
+      "ID": 21,
+      "JUGADOR": "MARÍA JESÚS SERNA SERNA",
+      "J1": 3,
+      "J2": 3,
+      "J3": 1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 7
+    },
+    {
+      "id": 80,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM DOB",
+      "ID": 22,
+      "JUGADOR": "MÓNICA CASTRILLEJO MANSO",
+      "J1": 3,
+      "J2": 3,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 6
+    },
+    {
+      "id": 81,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM DOB",
+      "ID": 10,
+      "JUGADOR": "ANA MARÍA CABALLERO GÓMEZ",
+      "J1": 0,
+      "J2": 3,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 6
+    },
+    {
+      "id": 82,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM DOB",
+      "ID": 26,
+      "JUGADOR": "CLARA EVA FERNÁNDEZ DELGADO",
+      "J1": 1,
+      "J2": 1,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 5
+    },
+    {
+      "id": 83,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM DOB",
+      "ID": 31,
+      "JUGADOR": "NADIA MARCOS",
+      "J1": 1,
+      "J2": 1,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 5
+    },
+    {
+      "id": 84,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM DOB",
+      "ID": 2,
+      "JUGADOR": "BELÉN NAVAS SERNA",
+      "J1": 0,
+      "J2": 3,
+      "J3": 1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 4
+    },
+    {
+      "id": 85,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM DOB",
+      "ID": 27,
+      "JUGADOR": "LUCÍA RODRÍGUEZ AYUSO",
+      "J1": 3,
+      "J2": 0,
+      "J3": 1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 4
+    },
+    {
+      "id": 86,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM DOB",
+      "ID": 28,
+      "JUGADOR": "MARÍA JOSÉ LÓPEZ ESPEJO",
+      "J1": 0,
+      "J2": 3,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 3
+    },
+    {
+      "id": 87,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM DOB",
+      "ID": 20,
+      "JUGADOR": "LUCÍA ALMORZA CORNEJO",
+      "J1": 3,
+      "J2": 0,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 3
+    },
+    {
+      "id": 88,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM DOB",
+      "ID": 3,
+      "JUGADOR": "CHARLOTTE BERTHIER",
+      "J1": 3,
+      "J2": 0,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 3
+    },
+    {
+      "id": 89,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM DOB",
+      "ID": 8,
+      "JUGADOR": "MÓNICA RODRÍGUEZ VARELA",
+      "J1": 0,
+      "J2": 0,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 3
+    },
+    {
+      "id": 90,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM DOB",
+      "ID": 14,
+      "JUGADOR": "DIANA BAK",
+      "J1": 0,
+      "J2": 0,
+      "J3": 3,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 3
+    },
+    {
+      "id": 91,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM DOB",
+      "ID": 29,
+      "JUGADOR": "MARÍA JOSÉ SERNA SERNA",
+      "J1": 1,
+      "J2": 1,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 2
+    },
+    {
+      "id": 92,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM DOB",
+      "ID": 23,
+      "JUGADOR": "PAULA BAK",
+      "J1": 1,
+      "J2": 1,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 2
+    },
+    {
+      "id": 93,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM DOB",
+      "ID": 17,
+      "JUGADOR": "JAMIE GISSEL",
+      "J1": 1,
+      "J2": 1,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 2
+    },
+    {
+      "id": 94,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM DOB",
+      "ID": 7,
+      "JUGADOR": "MARGARITA ARIZAGA VALDIVIESO",
+      "J1": 0,
+      "J2": 1,
+      "J3": 1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 2
+    },
+    {
+      "id": 95,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM DOB",
+      "ID": 15,
+      "JUGADOR": "DORA YANEZ RAMOS",
+      "J1": 1,
+      "J2": 0,
+      "J3": 1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 2
+    },
+    {
+      "id": 96,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM DOB",
+      "ID": 5,
+      "JUGADOR": "ESTHER RIVERO GARCÍA",
+      "J1": 0,
+      "J2": 0,
+      "J3": 1,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 1
+    },
+    {
+      "id": 97,
+      "temporada": "2024-2025",
+      "tipo": "RANK FEM DOB",
+      "ID": 25,
+      "JUGADOR": "ALEXANDRA COROBA BELLAVISTA",
+      "J1": 0,
+      "J2": 0,
+      "J3": 0,
+      "J4": 0,
+      "J5": 0,
+      "J6": 0,
+      "J7": 0,
+      "J8": 0,
+      "J9": 0,
+      "J10": 0,
+      "J11": 0,
+      "J12": 0,
+      "J13": 0,
+      "J14": 0,
+      "Total": 0
+    }
+  ],
+  "jornadas": [
+    {
+      "id": "c1e4",
+      "jornada": 1,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "615f",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "visitante": {
+        "idParticipante": "9407",
+        "equipo": "CDC ALTATORRE F"
+      },
+      "resultado": {
+        "sets": [
+          {
+            "local": 21,
+            "visitante": 14
+          },
+          {
+            "local": 21,
+            "visitante": 13
+          }
+        ],
+        "puntos": {
+          "local": 2,
+          "visitante": 0
+        },
+        "ganador": "CDC ALTATORRE A"
+      },
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "d633",
+      "jornada": 1,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "9f62",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "visitante": {
+        "idParticipante": "4e47",
+        "equipo": "CDC ALTATORRE E"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "4677",
+      "jornada": 1,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "98a1",
+        "equipo": "CDC ALTATORRE C"
+      },
+      "visitante": {
+        "idParticipante": "3585",
+        "equipo": "CDC ALTATORRE D"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "e480",
+      "jornada": 2,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "9407",
+        "equipo": "CDC ALTATORRE F"
+      },
+      "visitante": {
+        "idParticipante": "3585",
+        "equipo": "CDC ALTATORRE D"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "674f",
+      "jornada": 2,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "4e47",
+        "equipo": "CDC ALTATORRE E"
+      },
+      "visitante": {
+        "idParticipante": "98a1",
+        "equipo": "CDC ALTATORRE C"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "0f2a",
+      "jornada": 2,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "615f",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "visitante": {
+        "idParticipante": "9f62",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "1352",
+      "jornada": 3,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "9f62",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "visitante": {
+        "idParticipante": "9407",
+        "equipo": "CDC ALTATORRE F"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "4786",
+      "jornada": 3,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "98a1",
+        "equipo": "CDC ALTATORRE C"
+      },
+      "visitante": {
+        "idParticipante": "615f",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "fdd5",
+      "jornada": 3,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "3585",
+        "equipo": "CDC ALTATORRE D"
+      },
+      "visitante": {
+        "idParticipante": "4e47",
+        "equipo": "CDC ALTATORRE E"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "10b2",
+      "jornada": 4,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "9407",
+        "equipo": "CDC ALTATORRE F"
+      },
+      "visitante": {
+        "idParticipante": "4e47",
+        "equipo": "CDC ALTATORRE E"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "11a5",
+      "jornada": 4,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "615f",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "visitante": {
+        "idParticipante": "3585",
+        "equipo": "CDC ALTATORRE D"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "7d46",
+      "jornada": 4,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "9f62",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "visitante": {
+        "idParticipante": "98a1",
+        "equipo": "CDC ALTATORRE C"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "2acd",
+      "jornada": 5,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "98a1",
+        "equipo": "CDC ALTATORRE C"
+      },
+      "visitante": {
+        "idParticipante": "9407",
+        "equipo": "CDC ALTATORRE F"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "5fe8",
+      "jornada": 5,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "3585",
+        "equipo": "CDC ALTATORRE D"
+      },
+      "visitante": {
+        "idParticipante": "9f62",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "9d6e",
+      "jornada": 5,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "4e47",
+        "equipo": "CDC ALTATORRE E"
+      },
+      "visitante": {
+        "idParticipante": "615f",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "e615",
+      "jornada": 6,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "9407",
+        "equipo": "CDC ALTATORRE F"
+      },
+      "visitante": {
+        "idParticipante": "615f",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "7974",
+      "jornada": 6,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "4e47",
+        "equipo": "CDC ALTATORRE E"
+      },
+      "visitante": {
+        "idParticipante": "9f62",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "7e08",
+      "jornada": 6,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "3585",
+        "equipo": "CDC ALTATORRE D"
+      },
+      "visitante": {
+        "idParticipante": "98a1",
+        "equipo": "CDC ALTATORRE C"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "7eaa",
+      "jornada": 7,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "3585",
+        "equipo": "CDC ALTATORRE D"
+      },
+      "visitante": {
+        "idParticipante": "9407",
+        "equipo": "CDC ALTATORRE F"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "0f18",
+      "jornada": 7,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "98a1",
+        "equipo": "CDC ALTATORRE C"
+      },
+      "visitante": {
+        "idParticipante": "4e47",
+        "equipo": "CDC ALTATORRE E"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "77ba",
+      "jornada": 7,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "9f62",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "visitante": {
+        "idParticipante": "615f",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "c3ff",
+      "jornada": 8,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "9407",
+        "equipo": "CDC ALTATORRE F"
+      },
+      "visitante": {
+        "idParticipante": "9f62",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "d00a",
+      "jornada": 8,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "615f",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "visitante": {
+        "idParticipante": "98a1",
+        "equipo": "CDC ALTATORRE C"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "c1f6",
+      "jornada": 8,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "4e47",
+        "equipo": "CDC ALTATORRE E"
+      },
+      "visitante": {
+        "idParticipante": "3585",
+        "equipo": "CDC ALTATORRE D"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "f180",
+      "jornada": 9,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "4e47",
+        "equipo": "CDC ALTATORRE E"
+      },
+      "visitante": {
+        "idParticipante": "9407",
+        "equipo": "CDC ALTATORRE F"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "8188",
+      "jornada": 9,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "3585",
+        "equipo": "CDC ALTATORRE D"
+      },
+      "visitante": {
+        "idParticipante": "615f",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "dbf8",
+      "jornada": 9,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "98a1",
+        "equipo": "CDC ALTATORRE C"
+      },
+      "visitante": {
+        "idParticipante": "9f62",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "1188",
+      "jornada": 10,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "9407",
+        "equipo": "CDC ALTATORRE F"
+      },
+      "visitante": {
+        "idParticipante": "98a1",
+        "equipo": "CDC ALTATORRE C"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "2050",
+      "jornada": 10,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "9f62",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "visitante": {
+        "idParticipante": "3585",
+        "equipo": "CDC ALTATORRE D"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "b3e5",
+      "jornada": 10,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "615f",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "visitante": {
+        "idParticipante": "4e47",
+        "equipo": "CDC ALTATORRE E"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO"
+    },
+    {
+      "id": "9dd8",
+      "jornada": 1,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "5744",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "visitante": {
+        "idParticipante": "e607",
+        "equipo": "CD LEGANES"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MASCULINO"
+    },
+    {
+      "id": "9eb5",
+      "jornada": 2,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "eecf",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "visitante": {
+        "idParticipante": "5744",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MASCULINO"
+    },
+    {
+      "id": "733b",
+      "jornada": 3,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "e607",
+        "equipo": "CD LEGANES"
+      },
+      "visitante": {
+        "idParticipante": "eecf",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MASCULINO"
+    },
+    {
+      "id": "6ac7",
+      "jornada": 4,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "e607",
+        "equipo": "CD LEGANES"
+      },
+      "visitante": {
+        "idParticipante": "5744",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MASCULINO"
+    },
+    {
+      "id": "90a8",
+      "jornada": 5,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "5744",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "visitante": {
+        "idParticipante": "eecf",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MASCULINO"
+    },
+    {
+      "id": "b437",
+      "jornada": 6,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "eecf",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "visitante": {
+        "idParticipante": "e607",
+        "equipo": "CD LEGANES"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MASCULINO"
+    },
+    {
+      "id": "f3db",
+      "jornada": 1,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "3457",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "visitante": {
+        "idParticipante": "fb4a",
+        "equipo": "CD LEGANES"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO"
+    },
+    {
+      "id": "25f1",
+      "jornada": 1,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "dd9f",
+        "equipo": "CDC ALTATORRE C"
+      },
+      "visitante": {
+        "idParticipante": "e46a",
+        "equipo": "CDC ALTATORRE D"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO"
+    },
+    {
+      "id": "4b98",
+      "jornada": 2,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "fb4a",
+        "equipo": "CD LEGANES"
+      },
+      "visitante": {
+        "idParticipante": "dd9f",
+        "equipo": "CDC ALTATORRE C"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO"
+    },
+    {
+      "id": "f0c2",
+      "jornada": 2,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "5a18",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "visitante": {
+        "idParticipante": "3457",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO"
+    },
+    {
+      "id": "8aea",
+      "jornada": 3,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "dd9f",
+        "equipo": "CDC ALTATORRE C"
+      },
+      "visitante": {
+        "idParticipante": "5a18",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO"
+    },
+    {
+      "id": "b910",
+      "jornada": 3,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "e46a",
+        "equipo": "CDC ALTATORRE D"
+      },
+      "visitante": {
+        "idParticipante": "fb4a",
+        "equipo": "CD LEGANES"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO"
+    },
+    {
+      "id": "6fc5",
+      "jornada": 4,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "5a18",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "visitante": {
+        "idParticipante": "e46a",
+        "equipo": "CDC ALTATORRE D"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO"
+    },
+    {
+      "id": "5fb0",
+      "jornada": 4,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "3457",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "visitante": {
+        "idParticipante": "dd9f",
+        "equipo": "CDC ALTATORRE C"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO"
+    },
+    {
+      "id": "557f",
+      "jornada": 5,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "e46a",
+        "equipo": "CDC ALTATORRE D"
+      },
+      "visitante": {
+        "idParticipante": "3457",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO"
+    },
+    {
+      "id": "c7d3",
+      "jornada": 5,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "fb4a",
+        "equipo": "CD LEGANES"
+      },
+      "visitante": {
+        "idParticipante": "5a18",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO"
+    },
+    {
+      "id": "c50d",
+      "jornada": 6,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "fb4a",
+        "equipo": "CD LEGANES"
+      },
+      "visitante": {
+        "idParticipante": "3457",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO"
+    },
+    {
+      "id": "114c",
+      "jornada": 6,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "e46a",
+        "equipo": "CDC ALTATORRE D"
+      },
+      "visitante": {
+        "idParticipante": "dd9f",
+        "equipo": "CDC ALTATORRE C"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO"
+    },
+    {
+      "id": "5b09",
+      "jornada": 7,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "dd9f",
+        "equipo": "CDC ALTATORRE C"
+      },
+      "visitante": {
+        "idParticipante": "fb4a",
+        "equipo": "CD LEGANES"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO"
+    },
+    {
+      "id": "84ae",
+      "jornada": 7,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "3457",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "visitante": {
+        "idParticipante": "5a18",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO"
+    },
+    {
+      "id": "e765",
+      "jornada": 8,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "5a18",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "visitante": {
+        "idParticipante": "dd9f",
+        "equipo": "CDC ALTATORRE C"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO"
+    },
+    {
+      "id": "1f31",
+      "jornada": 8,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "fb4a",
+        "equipo": "CD LEGANES"
+      },
+      "visitante": {
+        "idParticipante": "e46a",
+        "equipo": "CDC ALTATORRE D"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO"
+    },
+    {
+      "id": "81e5",
+      "jornada": 9,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "e46a",
+        "equipo": "CDC ALTATORRE D"
+      },
+      "visitante": {
+        "idParticipante": "5a18",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO"
+    },
+    {
+      "id": "e313",
+      "jornada": 9,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "dd9f",
+        "equipo": "CDC ALTATORRE C"
+      },
+      "visitante": {
+        "idParticipante": "3457",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO"
+    },
+    {
+      "id": "8ae2",
+      "jornada": 10,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "3457",
+        "equipo": "CDC ALTATORRE B"
+      },
+      "visitante": {
+        "idParticipante": "e46a",
+        "equipo": "CDC ALTATORRE D"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO"
+    },
+    {
+      "id": "a5a3",
+      "jornada": 10,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "5a18",
+        "equipo": "CDC ALTATORRE A"
+      },
+      "visitante": {
+        "idParticipante": "fb4a",
+        "equipo": "CD LEGANES"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO"
+    },
+    {
+      "id": "5806",
+      "jornada": 1,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "0ffb",
+        "equipo": "ANA MARÍA CABALLERO GÓMEZ"
+      },
+      "visitante": {
+        "idParticipante": "d98f",
+        "equipo": "MARÍA JOSÉ SERNA SERNA"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "7ab5",
+      "jornada": 1,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "09e7",
+        "equipo": "JAMIE GISSEL"
+      },
+      "visitante": {
+        "idParticipante": "5c21",
+        "equipo": "CARLOTA KIELBUS ALONSO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "c815",
+      "jornada": 1,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "5c27",
+        "equipo": "MARGARITA ARIZAGA VALDIVIESO"
+      },
+      "visitante": {
+        "idParticipante": "7597",
+        "equipo": "MARÍA JESÚS SERNA SERNA"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "c872",
+      "jornada": 1,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "8570",
+        "equipo": "MÓNICA CASTRILLEJO MANSO"
+      },
+      "visitante": {
+        "idParticipante": "ec3e",
+        "equipo": "PAULA BAK"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "ab29",
+      "jornada": 2,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "7597",
+        "equipo": "MARÍA JESÚS SERNA SERNA"
+      },
+      "visitante": {
+        "idParticipante": "8570",
+        "equipo": "MÓNICA CASTRILLEJO MANSO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "87f1",
+      "jornada": 2,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "5c21",
+        "equipo": "CARLOTA KIELBUS ALONSO"
+      },
+      "visitante": {
+        "idParticipante": "5c27",
+        "equipo": "MARGARITA ARIZAGA VALDIVIESO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "c836",
+      "jornada": 2,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "d98f",
+        "equipo": "MARÍA JOSÉ SERNA SERNA"
+      },
+      "visitante": {
+        "idParticipante": "09e7",
+        "equipo": "JAMIE GISSEL"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "90c7",
+      "jornada": 2,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "0eb4",
+        "equipo": "MÓNICA RODRÍGUEZ VARELA"
+      },
+      "visitante": {
+        "idParticipante": "0ffb",
+        "equipo": "ANA MARÍA CABALLERO GÓMEZ"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "a206",
+      "jornada": 3,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "09e7",
+        "equipo": "JAMIE GISSEL"
+      },
+      "visitante": {
+        "idParticipante": "0eb4",
+        "equipo": "MÓNICA RODRÍGUEZ VARELA"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "2079",
+      "jornada": 3,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "5c27",
+        "equipo": "MARGARITA ARIZAGA VALDIVIESO"
+      },
+      "visitante": {
+        "idParticipante": "d98f",
+        "equipo": "MARÍA JOSÉ SERNA SERNA"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "f87e",
+      "jornada": 3,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "8570",
+        "equipo": "MÓNICA CASTRILLEJO MANSO"
+      },
+      "visitante": {
+        "idParticipante": "5c21",
+        "equipo": "CARLOTA KIELBUS ALONSO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "ffc2",
+      "jornada": 3,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "ec3e",
+        "equipo": "PAULA BAK"
+      },
+      "visitante": {
+        "idParticipante": "7597",
+        "equipo": "MARÍA JESÚS SERNA SERNA"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "b794",
+      "jornada": 4,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "5c21",
+        "equipo": "CARLOTA KIELBUS ALONSO"
+      },
+      "visitante": {
+        "idParticipante": "ec3e",
+        "equipo": "PAULA BAK"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "5686",
+      "jornada": 4,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "d98f",
+        "equipo": "MARÍA JOSÉ SERNA SERNA"
+      },
+      "visitante": {
+        "idParticipante": "8570",
+        "equipo": "MÓNICA CASTRILLEJO MANSO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "7ccd",
+      "jornada": 4,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "0eb4",
+        "equipo": "MÓNICA RODRÍGUEZ VARELA"
+      },
+      "visitante": {
+        "idParticipante": "5c27",
+        "equipo": "MARGARITA ARIZAGA VALDIVIESO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "7b56",
+      "jornada": 4,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "0ffb",
+        "equipo": "ANA MARÍA CABALLERO GÓMEZ"
+      },
+      "visitante": {
+        "idParticipante": "09e7",
+        "equipo": "JAMIE GISSEL"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "5ab5",
+      "jornada": 5,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "5c27",
+        "equipo": "MARGARITA ARIZAGA VALDIVIESO"
+      },
+      "visitante": {
+        "idParticipante": "0ffb",
+        "equipo": "ANA MARÍA CABALLERO GÓMEZ"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "de83",
+      "jornada": 5,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "8570",
+        "equipo": "MÓNICA CASTRILLEJO MANSO"
+      },
+      "visitante": {
+        "idParticipante": "0eb4",
+        "equipo": "MÓNICA RODRÍGUEZ VARELA"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "d9e3",
+      "jornada": 5,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "ec3e",
+        "equipo": "PAULA BAK"
+      },
+      "visitante": {
+        "idParticipante": "d98f",
+        "equipo": "MARÍA JOSÉ SERNA SERNA"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "d8d5",
+      "jornada": 5,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "7597",
+        "equipo": "MARÍA JESÚS SERNA SERNA"
+      },
+      "visitante": {
+        "idParticipante": "5c21",
+        "equipo": "CARLOTA KIELBUS ALONSO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "0e64",
+      "jornada": 6,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "d98f",
+        "equipo": "MARÍA JOSÉ SERNA SERNA"
+      },
+      "visitante": {
+        "idParticipante": "7597",
+        "equipo": "MARÍA JESÚS SERNA SERNA"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "e22a",
+      "jornada": 6,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "0eb4",
+        "equipo": "MÓNICA RODRÍGUEZ VARELA"
+      },
+      "visitante": {
+        "idParticipante": "ec3e",
+        "equipo": "PAULA BAK"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "ebc2",
+      "jornada": 6,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "0ffb",
+        "equipo": "ANA MARÍA CABALLERO GÓMEZ"
+      },
+      "visitante": {
+        "idParticipante": "8570",
+        "equipo": "MÓNICA CASTRILLEJO MANSO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "62a1",
+      "jornada": 6,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "09e7",
+        "equipo": "JAMIE GISSEL"
+      },
+      "visitante": {
+        "idParticipante": "5c27",
+        "equipo": "MARGARITA ARIZAGA VALDIVIESO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "6c6d",
+      "jornada": 7,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "8570",
+        "equipo": "MÓNICA CASTRILLEJO MANSO"
+      },
+      "visitante": {
+        "idParticipante": "09e7",
+        "equipo": "JAMIE GISSEL"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "3776",
+      "jornada": 7,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "ec3e",
+        "equipo": "PAULA BAK"
+      },
+      "visitante": {
+        "idParticipante": "0ffb",
+        "equipo": "ANA MARÍA CABALLERO GÓMEZ"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "03da",
+      "jornada": 7,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "7597",
+        "equipo": "MARÍA JESÚS SERNA SERNA"
+      },
+      "visitante": {
+        "idParticipante": "0eb4",
+        "equipo": "MÓNICA RODRÍGUEZ VARELA"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "0e03",
+      "jornada": 7,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "5c21",
+        "equipo": "CARLOTA KIELBUS ALONSO"
+      },
+      "visitante": {
+        "idParticipante": "d98f",
+        "equipo": "MARÍA JOSÉ SERNA SERNA"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "7d1e",
+      "jornada": 8,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "0eb4",
+        "equipo": "MÓNICA RODRÍGUEZ VARELA"
+      },
+      "visitante": {
+        "idParticipante": "5c21",
+        "equipo": "CARLOTA KIELBUS ALONSO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "16ff",
+      "jornada": 8,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "0ffb",
+        "equipo": "ANA MARÍA CABALLERO GÓMEZ"
+      },
+      "visitante": {
+        "idParticipante": "7597",
+        "equipo": "MARÍA JESÚS SERNA SERNA"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "897e",
+      "jornada": 8,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "09e7",
+        "equipo": "JAMIE GISSEL"
+      },
+      "visitante": {
+        "idParticipante": "ec3e",
+        "equipo": "PAULA BAK"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "f423",
+      "jornada": 8,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "5c27",
+        "equipo": "MARGARITA ARIZAGA VALDIVIESO"
+      },
+      "visitante": {
+        "idParticipante": "8570",
+        "equipo": "MÓNICA CASTRILLEJO MANSO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "0804",
+      "jornada": 9,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "ec3e",
+        "equipo": "PAULA BAK"
+      },
+      "visitante": {
+        "idParticipante": "5c27",
+        "equipo": "MARGARITA ARIZAGA VALDIVIESO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "c147",
+      "jornada": 9,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "7597",
+        "equipo": "MARÍA JESÚS SERNA SERNA"
+      },
+      "visitante": {
+        "idParticipante": "09e7",
+        "equipo": "JAMIE GISSEL"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "e90c",
+      "jornada": 9,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "5c21",
+        "equipo": "CARLOTA KIELBUS ALONSO"
+      },
+      "visitante": {
+        "idParticipante": "0ffb",
+        "equipo": "ANA MARÍA CABALLERO GÓMEZ"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "4a3d",
+      "jornada": 9,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "d98f",
+        "equipo": "MARÍA JOSÉ SERNA SERNA"
+      },
+      "visitante": {
+        "idParticipante": "0eb4",
+        "equipo": "MÓNICA RODRÍGUEZ VARELA"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO"
+    },
+    {
+      "id": "b6dc",
+      "jornada": 1,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "0c1c",
+        "equipo": "ANDRÉS RODRÍGUEZ FALQUINA"
+      },
+      "visitante": {
+        "idParticipante": "c986",
+        "equipo": "DANIEL JIMENEZ"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "d50c",
+      "jornada": 1,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "2897",
+        "equipo": "ALBERTO ARJONA ROMERO"
+      },
+      "visitante": {
+        "idParticipante": "ba94",
+        "equipo": "FRANCISCO RODRIGUEZ"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "1d61",
+      "jornada": 1,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "85a6",
+        "equipo": "FRANCISCO JAVIER PEÑA RODRIGO"
+      },
+      "visitante": {
+        "idParticipante": "599b",
+        "equipo": "ALVARO CUERVO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "a125",
+      "jornada": 2,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "c986",
+        "equipo": "DANIEL JIMENEZ"
+      },
+      "visitante": {
+        "idParticipante": "599b",
+        "equipo": "ALVARO CUERVO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "56c1",
+      "jornada": 2,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "ba94",
+        "equipo": "FRANCISCO RODRIGUEZ"
+      },
+      "visitante": {
+        "idParticipante": "85a6",
+        "equipo": "FRANCISCO JAVIER PEÑA RODRIGO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "b42e",
+      "jornada": 2,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "0c1c",
+        "equipo": "ANDRÉS RODRÍGUEZ FALQUINA"
+      },
+      "visitante": {
+        "idParticipante": "2897",
+        "equipo": "ALBERTO ARJONA ROMERO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "5145",
+      "jornada": 3,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "2897",
+        "equipo": "ALBERTO ARJONA ROMERO"
+      },
+      "visitante": {
+        "idParticipante": "c986",
+        "equipo": "DANIEL JIMENEZ"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "c2c9",
+      "jornada": 3,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "85a6",
+        "equipo": "FRANCISCO JAVIER PEÑA RODRIGO"
+      },
+      "visitante": {
+        "idParticipante": "0c1c",
+        "equipo": "ANDRÉS RODRÍGUEZ FALQUINA"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "fe52",
+      "jornada": 3,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "599b",
+        "equipo": "ALVARO CUERVO"
+      },
+      "visitante": {
+        "idParticipante": "ba94",
+        "equipo": "FRANCISCO RODRIGUEZ"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "7d8a",
+      "jornada": 4,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "c986",
+        "equipo": "DANIEL JIMENEZ"
+      },
+      "visitante": {
+        "idParticipante": "ba94",
+        "equipo": "FRANCISCO RODRIGUEZ"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "5df8",
+      "jornada": 4,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "0c1c",
+        "equipo": "ANDRÉS RODRÍGUEZ FALQUINA"
+      },
+      "visitante": {
+        "idParticipante": "599b",
+        "equipo": "ALVARO CUERVO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "ed9d",
+      "jornada": 4,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "2897",
+        "equipo": "ALBERTO ARJONA ROMERO"
+      },
+      "visitante": {
+        "idParticipante": "85a6",
+        "equipo": "FRANCISCO JAVIER PEÑA RODRIGO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "95aa",
+      "jornada": 5,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "85a6",
+        "equipo": "FRANCISCO JAVIER PEÑA RODRIGO"
+      },
+      "visitante": {
+        "idParticipante": "c986",
+        "equipo": "DANIEL JIMENEZ"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "fe4e",
+      "jornada": 5,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "599b",
+        "equipo": "ALVARO CUERVO"
+      },
+      "visitante": {
+        "idParticipante": "2897",
+        "equipo": "ALBERTO ARJONA ROMERO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "0e19",
+      "jornada": 5,
+      "tipo": "IDA",
+      "local": {
+        "idParticipante": "ba94",
+        "equipo": "FRANCISCO RODRIGUEZ"
+      },
+      "visitante": {
+        "idParticipante": "0c1c",
+        "equipo": "ANDRÉS RODRÍGUEZ FALQUINA"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "f765",
+      "jornada": 6,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "c986",
+        "equipo": "DANIEL JIMENEZ"
+      },
+      "visitante": {
+        "idParticipante": "0c1c",
+        "equipo": "ANDRÉS RODRÍGUEZ FALQUINA"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "4234",
+      "jornada": 6,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "ba94",
+        "equipo": "FRANCISCO RODRIGUEZ"
+      },
+      "visitante": {
+        "idParticipante": "2897",
+        "equipo": "ALBERTO ARJONA ROMERO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "00bc",
+      "jornada": 6,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "599b",
+        "equipo": "ALVARO CUERVO"
+      },
+      "visitante": {
+        "idParticipante": "85a6",
+        "equipo": "FRANCISCO JAVIER PEÑA RODRIGO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "36e6",
+      "jornada": 7,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "599b",
+        "equipo": "ALVARO CUERVO"
+      },
+      "visitante": {
+        "idParticipante": "c986",
+        "equipo": "DANIEL JIMENEZ"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "d008",
+      "jornada": 7,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "85a6",
+        "equipo": "FRANCISCO JAVIER PEÑA RODRIGO"
+      },
+      "visitante": {
+        "idParticipante": "ba94",
+        "equipo": "FRANCISCO RODRIGUEZ"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "32d8",
+      "jornada": 7,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "2897",
+        "equipo": "ALBERTO ARJONA ROMERO"
+      },
+      "visitante": {
+        "idParticipante": "0c1c",
+        "equipo": "ANDRÉS RODRÍGUEZ FALQUINA"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "a363",
+      "jornada": 8,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "c986",
+        "equipo": "DANIEL JIMENEZ"
+      },
+      "visitante": {
+        "idParticipante": "2897",
+        "equipo": "ALBERTO ARJONA ROMERO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "3df8",
+      "jornada": 8,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "0c1c",
+        "equipo": "ANDRÉS RODRÍGUEZ FALQUINA"
+      },
+      "visitante": {
+        "idParticipante": "85a6",
+        "equipo": "FRANCISCO JAVIER PEÑA RODRIGO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "de8a",
+      "jornada": 8,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "ba94",
+        "equipo": "FRANCISCO RODRIGUEZ"
+      },
+      "visitante": {
+        "idParticipante": "599b",
+        "equipo": "ALVARO CUERVO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "0c78",
+      "jornada": 9,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "ba94",
+        "equipo": "FRANCISCO RODRIGUEZ"
+      },
+      "visitante": {
+        "idParticipante": "c986",
+        "equipo": "DANIEL JIMENEZ"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "86c2",
+      "jornada": 9,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "599b",
+        "equipo": "ALVARO CUERVO"
+      },
+      "visitante": {
+        "idParticipante": "0c1c",
+        "equipo": "ANDRÉS RODRÍGUEZ FALQUINA"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "0523",
+      "jornada": 9,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "85a6",
+        "equipo": "FRANCISCO JAVIER PEÑA RODRIGO"
+      },
+      "visitante": {
+        "idParticipante": "2897",
+        "equipo": "ALBERTO ARJONA ROMERO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "40cb",
+      "jornada": 10,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "c986",
+        "equipo": "DANIEL JIMENEZ"
+      },
+      "visitante": {
+        "idParticipante": "85a6",
+        "equipo": "FRANCISCO JAVIER PEÑA RODRIGO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "e10e",
+      "jornada": 10,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "2897",
+        "equipo": "ALBERTO ARJONA ROMERO"
+      },
+      "visitante": {
+        "idParticipante": "599b",
+        "equipo": "ALVARO CUERVO"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    },
+    {
+      "id": "8c91",
+      "jornada": 10,
+      "tipo": "VUELTA",
+      "local": {
+        "idParticipante": "0c1c",
+        "equipo": "ANDRÉS RODRÍGUEZ FALQUINA"
+      },
+      "visitante": {
+        "idParticipante": "ba94",
+        "equipo": "FRANCISCO RODRIGUEZ"
+      },
+      "resultado": null,
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO"
+    }
+  ],
+  "participantes": [
+    {
+      "id": "615f",
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO",
+      "equipo": "CDC ALTATORRE A",
+      "jugadores": [
+        {
+          "id": "10",
+          "nombre": "ANA MARÍA CABALLERO GÓMEZ",
+          "rol": "titular",
+          "genero": "F"
+        },
+        {
+          "id": "8",
+          "nombre": "MÓNICA RODRÍGUEZ VARELA",
+          "rol": "titular",
+          "genero": "F"
+        }
+      ],
+      "orden": 1,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "9f62",
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO",
+      "equipo": "CDC ALTATORRE B",
+      "jugadores": [
+        {
+          "id": "adad",
+          "nombre": "LUCIA RODRÍGUEZ AYUSO",
+          "rol": "titular",
+          "genero": "F"
+        },
+        {
+          "id": "8c2e",
+          "nombre": "MARÍA JOSÉ VACAS",
+          "rol": "titular",
+          "genero": "F"
+        },
+        {
+          "id": "f270",
+          "nombre": "BEA CAMPILLO",
+          "rol": "titular",
+          "genero": "F"
+        }
+      ],
+      "orden": 2,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "98a1",
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO",
+      "equipo": "CDC ALTATORRE C",
+      "jugadores": [
+        {
+          "id": "31",
+          "nombre": "NADIA MARCOS",
+          "rol": "titular",
+          "genero": "F"
+        },
+        {
+          "id": "26",
+          "nombre": "CLARA EVA FERNÁNDEZ DELGADO",
+          "rol": "titular",
+          "genero": "F"
+        },
+        {
+          "id": "25",
+          "nombre": "ALEXANDRA COROBA BELLAVISTA",
+          "rol": "titular",
+          "genero": "F"
+        }
+      ],
+      "orden": 3,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "3585",
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO",
+      "equipo": "CDC ALTATORRE D",
+      "jugadores": [
+        {
+          "id": "30",
+          "nombre": "MARTA RODRÍGUEZ AYUSO",
+          "rol": "titular",
+          "genero": "F"
+        },
+        {
+          "id": "22",
+          "nombre": "MÓNICA CASTRILLEJO MANSO",
+          "rol": "titular",
+          "genero": "F"
+        },
+        {
+          "id": "a212",
+          "nombre": "ELENA SABIDO",
+          "rol": "titular",
+          "genero": "F"
+        }
+      ],
+      "orden": 4,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "4e47",
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO",
+      "equipo": "CDC ALTATORRE E",
+      "jugadores": [
+        {
+          "id": "17",
+          "nombre": "JAMIE GISSEL",
+          "rol": "titular",
+          "genero": "F"
+        },
+        {
+          "id": "23",
+          "nombre": "PAULA BAK",
+          "rol": "titular",
+          "genero": "F"
+        },
+        {
+          "id": "21",
+          "nombre": "MARÍA JESÚS SERNA SERNA",
+          "rol": "titular",
+          "genero": "F"
+        }
+      ],
+      "orden": 5,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "9407",
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES FEMENINO",
+      "equipo": "CDC ALTATORRE F",
+      "jugadores": [
+        {
+          "id": "29",
+          "nombre": "MARÍA JOSÉ SERNA SERNA",
+          "rol": "titular",
+          "genero": "F"
+        },
+        {
+          "id": "15",
+          "nombre": "DORA YANEZ RAMOS",
+          "rol": "titular",
+          "genero": "F"
+        },
+        {
+          "id": "7",
+          "nombre": "MARGARITA ARIZAGA VALDIVIESO",
+          "rol": "titular",
+          "genero": "F"
+        }
+      ],
+      "orden": 6,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "eecf",
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MASCULINO",
+      "equipo": "CDC ALTATORRE A",
+      "jugadores": [
+        {
+          "id": "1",
+          "nombre": "ALBERTO ARJONA ROMERO",
+          "rol": "titular",
+          "genero": "M"
+        },
+        {
+          "id": "11",
+          "nombre": "ANDRÉS RODRÍGUEZ FALQUINA",
+          "rol": "titular",
+          "genero": "M"
+        }
+      ],
+      "orden": 1,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "5744",
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MASCULINO",
+      "equipo": "CDC ALTATORRE B",
+      "jugadores": [
+        {
+          "id": "24",
+          "nombre": "RAUL BAK MAJ",
+          "rol": "titular",
+          "genero": "M"
+        },
+        {
+          "id": "16",
+          "nombre": "FRANCISCO JAVIER PEÑA RODRIGO",
+          "rol": "titular",
+          "genero": "M"
+        }
+      ],
+      "orden": 2,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "e607",
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MASCULINO",
+      "equipo": "CD LEGANES",
+      "jugadores": [
+        {
+          "id": "d803",
+          "nombre": "ALVARO CUERVO",
+          "rol": "titular",
+          "genero": "M"
+        },
+        {
+          "id": "c768",
+          "nombre": "FRANCISCO RODRIGUEZ",
+          "rol": "titular",
+          "genero": "M"
+        }
+      ],
+      "orden": 3,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "5a18",
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO",
+      "equipo": "CDC ALTATORRE A",
+      "jugadores": [
+        {
+          "id": "7",
+          "nombre": "MARGARITA ARIZAGA VALDIVIESO",
+          "rol": "titular",
+          "genero": "F"
+        },
+        {
+          "id": "11",
+          "nombre": "ANDRÉS RODRÍGUEZ FALQUINA",
+          "rol": "titular",
+          "genero": "M"
+        }
+      ],
+      "orden": 1,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "3457",
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO",
+      "equipo": "CDC ALTATORRE B",
+      "jugadores": [
+        {
+          "id": "24",
+          "nombre": "RAUL BAK MAJ",
+          "rol": "titular",
+          "genero": "M"
+        },
+        {
+          "id": "a212",
+          "nombre": "ELENA SABIDO",
+          "rol": "titular",
+          "genero": "F"
+        }
+      ],
+      "orden": 2,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "dd9f",
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO",
+      "equipo": "CDC ALTATORRE C",
+      "jugadores": [
+        {
+          "id": "15",
+          "nombre": "DORA YANEZ RAMOS",
+          "rol": "titular",
+          "genero": "F"
+        },
+        {
+          "id": "1",
+          "nombre": "ALBERTO ARJONA ROMERO",
+          "rol": "titular",
+          "genero": "M"
+        }
+      ],
+      "orden": 3,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "e46a",
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO",
+      "equipo": "CDC ALTATORRE D",
+      "jugadores": [
+        {
+          "id": "16",
+          "nombre": "FRANCISCO JAVIER PEÑA RODRIGO",
+          "rol": "titular",
+          "genero": "M"
+        },
+        {
+          "id": "adad",
+          "nombre": "LUCIA RODRÍGUEZ AYUSO",
+          "rol": "titular",
+          "genero": "F"
+        }
+      ],
+      "orden": 4,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "fb4a",
+      "temporada": "2025-2026",
+      "modalidad": "DOBLES MIXTO",
+      "equipo": "CD LEGANES",
+      "jugadores": [
+        {
+          "id": "d803",
+          "nombre": "ALVARO CUERVO",
+          "rol": "titular",
+          "genero": "M"
+        },
+        {
+          "id": "12",
+          "nombre": "CARLOTA KIELBUS ALONSO",
+          "rol": "titular",
+          "genero": "F"
+        }
+      ],
+      "orden": 5,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "0eb4",
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "equipo": "MÓNICA RODRÍGUEZ VARELA",
+      "jugadores": [
+        {
+          "id": 8,
+          "nombre": "MÓNICA RODRÍGUEZ VARELA",
+          "rol": "titular",
+          "genero": "F"
+        }
+      ],
+      "orden": 1,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "0ffb",
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "equipo": "ANA MARÍA CABALLERO GÓMEZ",
+      "jugadores": [
+        {
+          "id": 10,
+          "nombre": "ANA MARÍA CABALLERO GÓMEZ",
+          "rol": "titular",
+          "genero": "F"
+        }
+      ],
+      "orden": 2,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "09e7",
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "equipo": "JAMIE GISSEL",
+      "jugadores": [
+        {
+          "id": 17,
+          "nombre": "JAMIE GISSEL",
+          "rol": "titular",
+          "genero": "F"
+        }
+      ],
+      "orden": 3,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "5c27",
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "equipo": "MARGARITA ARIZAGA VALDIVIESO",
+      "jugadores": [
+        {
+          "id": 7,
+          "nombre": "MARGARITA ARIZAGA VALDIVIESO",
+          "rol": "titular",
+          "genero": "F"
+        }
+      ],
+      "orden": 4,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "8570",
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "equipo": "MÓNICA CASTRILLEJO MANSO",
+      "jugadores": [
+        {
+          "id": 22,
+          "nombre": "MÓNICA CASTRILLEJO MANSO",
+          "rol": "titular",
+          "genero": "F"
+        }
+      ],
+      "orden": 5,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "ec3e",
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "equipo": "PAULA BAK",
+      "jugadores": [
+        {
+          "id": 23,
+          "nombre": "PAULA BAK",
+          "rol": "titular",
+          "genero": "F"
+        }
+      ],
+      "orden": 6,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "7597",
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "equipo": "MARÍA JESÚS SERNA SERNA",
+      "jugadores": [
+        {
+          "id": 21,
+          "nombre": "MARÍA JESÚS SERNA SERNA",
+          "rol": "titular",
+          "genero": "F"
+        }
+      ],
+      "orden": 7,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "5c21",
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "equipo": "CARLOTA KIELBUS ALONSO",
+      "jugadores": [
+        {
+          "id": 12,
+          "nombre": "CARLOTA KIELBUS ALONSO",
+          "rol": "titular",
+          "genero": "F"
+        }
+      ],
+      "orden": 8,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "d98f",
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL FEMENINO",
+      "equipo": "MARÍA JOSÉ SERNA SERNA",
+      "jugadores": [
+        {
+          "id": 29,
+          "nombre": "MARÍA JOSÉ SERNA SERNA",
+          "rol": "titular",
+          "genero": "F"
+        }
+      ],
+      "orden": 9,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "0c1c",
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO",
+      "equipo": "ANDRÉS RODRÍGUEZ FALQUINA",
+      "jugadores": [
+        {
+          "id": 11,
+          "nombre": "ANDRÉS RODRÍGUEZ FALQUINA",
+          "rol": "titular",
+          "genero": "M"
+        }
+      ],
+      "orden": 1,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "2897",
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO",
+      "equipo": "ALBERTO ARJONA ROMERO",
+      "jugadores": [
+        {
+          "id": 1,
+          "nombre": "ALBERTO ARJONA ROMERO",
+          "rol": "titular",
+          "genero": "M"
+        }
+      ],
+      "orden": 2,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "85a6",
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO",
+      "equipo": "FRANCISCO JAVIER PEÑA RODRIGO",
+      "jugadores": [
+        {
+          "id": 16,
+          "nombre": "FRANCISCO JAVIER PEÑA RODRIGO",
+          "rol": "titular",
+          "genero": "M"
+        }
+      ],
+      "orden": 3,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "599b",
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO",
+      "equipo": "ALVARO CUERVO",
+      "jugadores": [
+        {
+          "id": "d803",
+          "nombre": "ALVARO CUERVO",
+          "rol": "titular",
+          "genero": "M"
+        }
+      ],
+      "orden": 4,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "ba94",
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO",
+      "equipo": "FRANCISCO RODRIGUEZ",
+      "jugadores": [
+        {
+          "id": "c768",
+          "nombre": "FRANCISCO RODRIGUEZ",
+          "rol": "titular",
+          "genero": "M"
+        }
+      ],
+      "orden": 5,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": "c986",
+      "temporada": "2025-2026",
+      "modalidad": "INDIVIDUAL MASCULINO",
+      "equipo": "DANIEL JIMENEZ",
+      "jugadores": [
+        {
+          "id": "84fc",
+          "nombre": "DANIEL JIMENEZ",
+          "rol": "titular",
+          "genero": "M"
+        }
+      ],
+      "orden": 6,
+      "estado": "ACTIVO"
+    }
+  ]
+}
