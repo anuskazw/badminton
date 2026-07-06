@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import Login from './components/Login';
 import AppLayout from './components/AppLayout';
 import PublicLayout from './components/PublicLayout';
@@ -15,9 +15,11 @@ import TemporadasList from './components/Temporadas/TemporadasList';
 import TemporadaDetalle from './components/Temporadas/TemporadaDetalle';
 import Styling from './components/Styling';
 
+const Router = process.env.NODE_ENV === 'production' ? HashRouter : BrowserRouter;
+
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <Routes>
         {/* Acceso */}
         <Route path="/" element={<Login />} />
