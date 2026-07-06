@@ -11,6 +11,9 @@
 # production
 /build
 
+# generado por scripts/copy-db.js antes de cada build
+/public/database.json
+
 # misc
 .DS_Store
 .env.local
