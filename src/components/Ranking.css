@@ -96,7 +96,7 @@
 }
 
 .ranking-page tr:nth-child(even) { background: #f9f9f9; }
-.ranking-page tr:hover           { background: #edf2f7; cursor: pointer; }
+.ranking-page tr.clicable:hover  { background: #edf2f7; cursor: pointer; }
 
 .ranking-page .sticky {
   position: sticky;

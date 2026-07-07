@@ -56,7 +56,11 @@ function Ranking() {
         </thead>
         <tbody>
           {entries.map((entry, i) => (
-            <tr key={i} onClick={() => navigate(`${jugadoresPath}?id=${entry.ID}`)}>
+            <tr
+              key={i}
+              className={entry.JUGADOR ? 'clicable' : ''}
+              onClick={entry.JUGADOR ? () => navigate(`${jugadoresPath}?id=${entry.ID}`) : undefined}
+            >
               {headers.map(h => (
                 <td className={h === 'Total' ? 'bold' : ''} key={h}>{entry[h]}</td>
               ))}
