@@ -39,8 +39,8 @@ const Jornadas = () => {
         const nombres = [
             j.local.equipo,
             j.visitante.equipo,
-            ...(j.local.jugadores ?? []).map(p => p.nombre ?? p),
-            ...(j.visitante.jugadores ?? []).map(p => p.nombre ?? p),
+            ...(j.resultado?.jugadores?.local ?? []).map(p => p.nombre ?? p),
+            ...(j.resultado?.jugadores?.visitante ?? []).map(p => p.nombre ?? p),
         ];
         return nombres.some(n => String(n).toLowerCase().includes(term));
     };
