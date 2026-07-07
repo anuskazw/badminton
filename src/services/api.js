@@ -6,7 +6,9 @@ let _dbCache = null;
 
 const fetchStaticDb = async () => {
   if (!_dbCache) {
-    const res = await fetch(`${process.env.PUBLIC_URL}/database.json`);
+    // cache: 'no-store' + parámetro de versión para evitar servir un database.json
+    // cacheado (por el navegador o la CDN de GitHub Pages) tras un nuevo despliegue.
+    const res = await fetch(`${process.env.PUBLIC_URL}/database.json?v=${Date.now()}`, { cache: 'no-store' });
     if (!res.ok) throw new Error('No se pudo cargar la base de datos estática');
     _dbCache = await res.json();
   }
