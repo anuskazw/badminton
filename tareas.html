@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tareas pendientes — Badminton App</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 2rem; }
+    h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+    .subtitle { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+    .seccion { background: white; border-radius: 10px; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+    .seccion h2 { font-size: 0.95rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: #555; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+    .seccion h2 .ruta { font-weight: 400; font-size: 0.8rem; background: #eef; color: #446; padding: 2px 6px; border-radius: 4px; font-family: monospace; }
+    .tarea { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0; }
+    .tarea:last-child { border-bottom: none; }
+    .tarea input[type="checkbox"] { width: 17px; height: 17px; margin-top: 2px; cursor: pointer; accent-color: #4e54c8; flex-shrink: 0; }
+    .tarea label { cursor: pointer; font-size: 0.92rem; line-height: 1.4; }
+    .tarea.completada label { text-decoration: line-through; color: #aaa; }
+    .badge { display: inline-block; font-size: 0.7rem; padding: 1px 6px; border-radius: 10px; margin-left: 6px; font-weight: 600; vertical-align: middle; }
+    .badge-bug { background: #ffe0e0; color: #c0392b; }
+    .badge-api { background: #e0f0ff; color: #2471a3; }
+    .badge-ui { background: #e8f8e8; color: #1a7a1a; }
+    .badge-pendiente { background: #fff3cd; color: #7d6608; }
+    .progreso-barra { background: #e9ecef; border-radius: 50px; height: 10px; margin-bottom: 0.4rem; overflow: hidden; }
+    .progreso-barra div { background: linear-gradient(90deg, #4e54c8, #8f94fb); height: 100%; border-radius: 50px; transition: width 0.4s; }
+    .progreso-texto { font-size: 0.82rem; color: #555; margin-bottom: 2rem; }
+    footer { text-align: center; font-size: 0.78rem; color: #aaa; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+
+<h1>Tareas pendientes — Badminton App</h1>
+<p class="subtitle">Los checks se guardan automáticamente en el navegador.</p>
+
+<div class="progreso-barra"><div id="barra"></div></div>
+<p class="progreso-texto" id="progreso-texto">Cargando...</p>
+
+<!-- INFRAESTRUCTURA -->
+<div class="seccion">
+  <h2>Infraestructura</h2>
+  <div class="tarea" id="t-inf-1">
+    <input type="checkbox" id="inf-1" /><label for="inf-1">✅ Configurar json-server en puerto 3001 <span class="badge badge-api">API</span></label>
+  </div>
+  <div class="tarea" id="t-inf-2">
+    <input type="checkbox" id="inf-2" /><label for="inf-2">✅ Generar <code>db/database.json</code> con script seed <span class="badge badge-api">API</span></label>
+  </div>
+  <div class="tarea" id="t-inf-3">
+    <input type="checkbox" id="inf-3" /><label for="inf-3">✅ Crear capa de servicios (api.js + jugadoresService, rankingsService, competidoresService, jornadasService) <span class="badge badge-api">API</span></label>
+  </div>
+  <div class="tarea" id="t-inf-4">
+    <input type="checkbox" id="inf-4" /><label for="inf-4">✅ Añadir scripts <code>npm run server</code> y <code>npm run dev</code> <span class="badge badge-api">API</span></label>
+  </div>
+</div>
+
+<!-- LOGIN -->
+<div class="seccion">
+  <h2>Login <span class="ruta">/</span></h2>
+  <div class="tarea" id="t-login-1">
+    <input type="checkbox" id="login-1" /><label for="login-1">✅ Navegar a /dashboard al hacer submit <span class="badge badge-bug">Bug</span></label>
+  </div>
+  <div class="tarea" id="t-login-2">
+    <input type="checkbox" id="login-2" /><label for="login-2">Implementar autenticación real (usuario/contraseña contra BD) <span class="badge badge-pendiente">Pendiente</span></label>
+  </div>
+  <div class="tarea" id="t-login-3">
+    <input type="checkbox" id="login-3" /><label for="login-3">Añadir mensaje de error si las credenciales son incorrectas <span class="badge badge-ui">UI</span></label>
+  </div>
+</div>
+
+<!-- DASHBOARD -->
+<div class="seccion">
+  <h2>Dashboard <span class="ruta">/dashboard</span></h2>
+  <div class="tarea" id="t-dash-1">
+    <input type="checkbox" id="dash-1" /><label for="dash-1">Añadir tarjeta con link a <code>/jornadas</code> <span class="badge badge-ui">UI</span></label>
+  </div>
+  <div class="tarea" id="t-dash-2">
+    <input type="checkbox" id="dash-2" /><label for="dash-2">Añadir tarjeta con link a <code>/form</code> (introducir resultados) <span class="badge badge-ui">UI</span></label>
+  </div>
+  <div class="tarea" id="t-dash-3">
+    <input type="checkbox" id="dash-3" /><label for="dash-3">Añadir tarjeta con link a <code>/competicion-2</code> <span class="badge badge-ui">UI</span></label>
+  </div>
+  <div class="tarea" id="t-dash-4">
+    <input type="checkbox" id="dash-4" /><label for="dash-4">La tarjeta "Normativa" no tiene link — añadir ruta o contenido <span class="badge badge-pendiente">Pendiente</span></label>
+  </div>
+</div>
+
+<!-- RANKING -->
+<div class="seccion">
+  <h2>Ranking <span class="ruta">/ranking</span></h2>
+  <div class="tarea" id="t-rank-1">
+    <input type="checkbox" id="rank-1" /><label for="rank-1">✅ Cargar datos desde API en vez de JSON estático <span class="badge badge-api">API</span></label>
+  </div>
+  <div class="tarea" id="t-rank-2">
+    <input type="checkbox" id="rank-2" /><label for="rank-2">Añadir botón "Volver" al dashboard <span class="badge badge-ui">UI</span></label>
+  </div>
+  <div class="tarea" id="t-rank-3">
+    <input type="checkbox" id="rank-3" /><label for="rank-3">Mostrar estado de carga (spinner) mientras llegan los datos <span class="badge badge-ui">UI</span></label>
+  </div>
+</div>
+
+<!-- JUGADORES -->
+<div class="seccion">
+  <h2>Jugadores <span class="ruta">/jugadores</span></h2>
+  <div class="tarea" id="t-jug-1">
+    <input type="checkbox" id="jug-1" /><label for="jug-1">✅ Cargar jugadores y rankings desde API <span class="badge badge-api">API</span></label>
+  </div>
+  <div class="tarea" id="t-jug-2">
+    <input type="checkbox" id="jug-2" /><label for="jug-2">Completar la sección "Competiciones" en el detalle del jugador <span class="badge badge-pendiente">Pendiente</span></label>
+  </div>
+  <div class="tarea" id="t-jug-3">
+    <input type="checkbox" id="jug-3" /><label for="jug-3">Añadir botón "Volver" al dashboard <span class="badge badge-ui">UI</span></label>
+  </div>
+</div>
+
+<!-- EQUIPOS -->
+<div class="seccion">
+  <h2>Equipos <span class="ruta">/equipos</span></h2>
+  <div class="tarea" id="t-eq-1">
+    <input type="checkbox" id="eq-1" /><label for="eq-1">✅ Reemplazar datos hardcodeados por carga desde API <span class="badge badge-bug">Bug</span></label>
+  </div>
+  <div class="tarea" id="t-eq-2">
+    <input type="checkbox" id="eq-2" /><label for="eq-2">✅ Mostrar modalidades y jugadores reales por equipo <span class="badge badge-api">API</span></label>
+  </div>
+  <div class="tarea" id="t-eq-3">
+    <input type="checkbox" id="eq-3" /><label for="eq-3">Añadir filtro por modalidad <span class="badge badge-ui">UI</span></label>
+  </div>
+  <div class="tarea" id="t-eq-4">
+    <input type="checkbox" id="eq-4" /><label for="eq-4">Añadir botón "Volver" al dashboard <span class="badge badge-ui">UI</span></label>
+  </div>
+</div>
+
+<!-- FORMULARIO -->
+<div class="seccion">
+  <h2>Formulario de resultado <span class="ruta">/form</span></h2>
+  <div class="tarea" id="t-form-1">
+    <input type="checkbox" id="form-1" /><label for="form-1">✅ Corregir bug en selección de equipos (Object.keys sobre array) <span class="badge badge-bug">Bug</span></label>
+  </div>
+  <div class="tarea" id="t-form-2">
+    <input type="checkbox" id="form-2" /><label for="form-2">✅ Guardar partido en BD al hacer submit <span class="badge badge-api">API</span></label>
+  </div>
+  <div class="tarea" id="t-form-3">
+    <input type="checkbox" id="form-3" /><label for="form-3">✅ Mostrar mensaje de éxito/error tras enviar <span class="badge badge-ui">UI</span></label>
+  </div>
+  <div class="tarea" id="t-form-4">
+    <input type="checkbox" id="form-4" /><label for="form-4">✅ Cargar equipos/modalidades desde API <span class="badge badge-api">API</span></label>
+  </div>
+  <div class="tarea" id="t-form-5">
+    <input type="checkbox" id="form-5" /><label for="form-5">Resetear formulario tras envío exitoso <span class="badge badge-ui">UI</span></label>
+  </div>
+</div>
+
+<!-- JORNADAS -->
+<div class="seccion">
+  <h2>Jornadas <span class="ruta">/jornadas</span></h2>
+  <div class="tarea" id="t-jorn-1">
+    <input type="checkbox" id="jorn-1" /><label for="jorn-1">Cargar partidos desde API (actualmente hardcodeados) <span class="badge badge-api">API</span></label>
+  </div>
+  <div class="tarea" id="t-jorn-2">
+    <input type="checkbox" id="jorn-2" /><label for="jorn-2">Corregir partidos duplicados en el array hardcodeado <span class="badge badge-bug">Bug</span></label>
+  </div>
+  <div class="tarea" id="t-jorn-3">
+    <input type="checkbox" id="jorn-3" /><label for="jorn-3">Mostrar datos por jornada (actualmente solo hay 1 ronda mock) <span class="badge badge-pendiente">Pendiente</span></label>
+  </div>
+  <div class="tarea" id="t-jorn-4">
+    <input type="checkbox" id="jorn-4" /><label for="jorn-4">Añadir selector de jornada <span class="badge badge-ui">UI</span></label>
+  </div>
+</div>
+
+<!-- COMPETICION -->
+<div class="seccion">
+  <h2>Competición (dnd-kit) <span class="ruta">/competicion</span></h2>
+  <div class="tarea" id="t-comp1-1">
+    <input type="checkbox" id="comp1-1" /><label for="comp1-1">Las pistas de la derecha no tienen lógica de drop implementada <span class="badge badge-bug">Bug</span></label>
+  </div>
+  <div class="tarea" id="t-comp1-2">
+    <input type="checkbox" id="comp1-2" /><label for="comp1-2">Cargar equipos desde API <span class="badge badge-api">API</span></label>
+  </div>
+  <div class="tarea" id="t-comp1-3">
+    <input type="checkbox" id="comp1-3" /><label for="comp1-3">Guardar asignación a pistas en BD <span class="badge badge-api">API</span></label>
+  </div>
+</div>
+
+<!-- COMPETICION 2 -->
+<div class="seccion">
+  <h2>Competición drag-and-drop <span class="ruta">/competicion-2</span></h2>
+  <div class="tarea" id="t-comp2-1">
+    <input type="checkbox" id="comp2-1" /><label for="comp2-1">✅ Cargar competidores desde API (antes importaba JSON estático) <span class="badge badge-api">API</span></label>
+  </div>
+  <div class="tarea" id="t-comp2-2">
+    <input type="checkbox" id="comp2-2" /><label for="comp2-2">✅ Guardar pista asignada en BD al hacer drop (antes solo localStorage) <span class="badge badge-api">API</span></label>
+  </div>
+  <div class="tarea" id="t-comp2-3">
+    <input type="checkbox" id="comp2-3" /><label for="comp2-3">✅ Mostrar advertencia en UI cuando hay jugadores repetidos en el mismo tramo <span class="badge badge-ui">UI</span></label>
+  </div>
+  <div class="tarea" id="t-comp2-4">
+    <input type="checkbox" id="comp2-4" /><label for="comp2-4">Añadir botón para resetear todas las pistas a '0' <span class="badge badge-ui">UI</span></label>
+  </div>
+</div>
+
+<footer>Los cambios se guardan en localStorage de este navegador.</footer>
+
+<script>
+  const STORAGE_KEY = 'badminton_tareas';
+
+  function guardar() {
+    const estado = {};
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+      estado[cb.id] = cb.checked;
+    });
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(estado));
+    actualizarProgreso();
+  }
+
+  function cargar() {
+    const estado = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+      if (estado[cb.id] !== undefined) cb.checked = estado[cb.id];
+      const tarea = cb.closest('.tarea');
+      if (tarea) actualizarTarea(cb);
+    });
+    actualizarProgreso();
+  }
+
+  function actualizarTarea(cb) {
+    const tarea = cb.closest('.tarea');
+    if (cb.checked) tarea.classList.add('completada');
+    else tarea.classList.remove('completada');
+  }
+
+  function actualizarProgreso() {
+    const todos = document.querySelectorAll('input[type="checkbox"]');
+    const hechos = [...todos].filter(c => c.checked).length;
+    const pct = Math.round((hechos / todos.length) * 100);
+    document.getElementById('barra').style.width = pct + '%';
+    document.getElementById('progreso-texto').textContent = `${hechos} de ${todos.length} tareas completadas (${pct}%)`;
+  }
+
+  document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+    cb.addEventListener('change', () => { actualizarTarea(cb); guardar(); });
+  });
+
+  cargar();
+</script>
+</body>
+</html>
