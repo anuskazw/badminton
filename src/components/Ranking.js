@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './Ranking.css';
 import { getRankings } from '../services/rankingsService';
+import api from '../services/api';
 import { useTemporada } from '../context/TemporadaContext';
 
 const TIPOS = {
@@ -15,8 +16,15 @@ const TIPOS = {
 
 const CAMPOS_EXCLUIDOS = new Set(['id', 'tipo', 'ID', 'temporada', 'Temporada']);
 
+const MODALIDAD_POR_TIPO = {
+  'RANK FEM DOB': 'DOBLES FEMENINO',
+  'RANK MASC DOB': 'DOBLES MASCULINO',
+  'RANK MIX DOB': 'DOBLES MIXTO',
+};
+
 function Ranking() {
   const [rankings, setRankings] = useState([]);
+  const [competidores, setCompetidores] = useState([]);
   const [openSection, setOpenSection] = useState(null);
   const [busqueda, setBusqueda] = useState('');
   const [error, setError] = useState(null);
@@ -30,21 +38,38 @@ function Ranking() {
     getRankings(temporada)
       .then(setRankings)
       .catch(() => setError('No se pudo cargar el ranking. ¿Está el servidor en marcha?'));
+    api.get(`competidores?temporada=${encodeURIComponent(temporada)}`)
+      .then(setCompetidores)
+      .catch(() => setCompetidores([]));
   }, [temporada]);
+
+  // en los rankings de dobles cada fila es un EQUIPO, no un jugador: para que
+  // la búsqueda encuentre a una jugadora hay que mirar en el roster de esa
+  // modalidad concreta (el mismo nombre de equipo existe, con roster distinto,
+  // en Femenino/Masculino/Mixto)
+  const equipoTieneJugador = (modalidad, nombreEquipo, term) =>
+    competidores.some(c =>
+      c.modalidad === modalidad &&
+      (c.equipo === nombreEquipo || nombreEquipo.includes(c.equipo) || c.equipo.includes(nombreEquipo)) &&
+      c.jugadores.some(j => j.PLAYER.toLowerCase().includes(term))
+    );
 
   const toggleSection = (section) => {
     setOpenSection(openSection === section ? null : section);
   };
 
-  const filtrar = (entries) => {
+  const filtrar = (entries, tipo) => {
     const term = busqueda.trim().toLowerCase();
     if (!term) return entries;
-    return entries.filter(e =>
-      Object.values(e).some(v => String(v).toLowerCase().includes(term))
-    );
+    const modalidad = MODALIDAD_POR_TIPO[tipo];
+    return entries.filter(e => {
+      const coincideDirecto = Object.values(e).some(v => String(v).toLowerCase().includes(term));
+      if (coincideDirecto) return true;
+      return e.EQUIPO && modalidad ? equipoTieneJugador(modalidad, e.EQUIPO, term) : false;
+    });
   };
 
-  const getEntradasPorTipo = (tipo) => filtrar(rankings.filter(r => r.tipo === tipo));
+  const getEntradasPorTipo = (tipo) => filtrar(rankings.filter(r => r.tipo === tipo), tipo);
 
   const renderTable = (entries) => {
     if (!entries.length) return <p className="ranking-empty">No hay resultados</p>;
